@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <div id="sticky-header" class="menu-area">
+          <div class="container">
+            <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+              <div class="menu-wrap">
+                  <nav class="menu-nav">
+                      <div class="row align-items-center">
+                          <div class="col-lg-5 d-none d-lg-block">
+                              <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                  <ul class="navigation">
+                                      <li><a href="index.html">Home</a></li>
+                                      <li class="menu-item-has-children"><a href="#">Pages</a>
+                                          <ul class="sub-menu">
+                                              <li><a href="about-us.html">About Us</a></li>
+                                              <li><a href="blog.html">Our Blog</a></li>
+                                              <li><a href="blog-details.html">Blog Details</a></li>
+                                              <li><a href="contact.html">Contact Us</a></li>
+                                          </ul>
+                                          <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                                      </li>
+                                      <li class="active menu-item-has-children"><a href="shop.html">Shop</a>
+                                          <ul class="sub-menu">
+                                              <li class="active"><a href="shop.html">Our Shop</a></li>
+                                              <li><a href="shop-details.html">Shop Details</a></li>
+                                          </ul>
+                                          <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
+                                      </li>
+                                      <li><a href="ask-doctor.html">ASK DOCTOR</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-lg-2 col-md-3">
+                              <div class="logo">
+                                  <a href="index.html"><img src="img/logo.png" alt=""></a>
+                              </div>
+                          </div>
+                          <div class="col-lg-5 col-md-9">
+                              <div class="header-action">
+                                  <ul>
+                                      <li class="header-search">
+                                          <form action="#">
+                                              <button><i class="fas fa-search"></i></button>
+                                              <input type="text" placeholder="Search fre Medicines">
+                                          </form>
+                                      </li>
+                                      <li class="header-user d-none d-md-block">
+                                          <a href="contact.html"><i class="far fa-user"></i></a>
+                                      </li>
+                                      <li class="header-shop-cart d-none d-md-flex">
+                                          <a href="#">
+                                              <img src="img/cart.png" alt="">
+                                              <span class="cart-count">0</span>
+                                          </a>
+                                          <span class="cart-price">$0.00</span>
+                                          <ul class="minicart">
+                                              <li class="d-flex align-items-start">
+                                                  <div class="cart-img">
+                                                      <a href="#"><img src="img/cart1.jpg" alt=""></a>
+                                                  </div>
+                                                  <div class="cart-content">
+                                                      <h4><a href="#">Exclusive Winter Jackets</a></h4>
+                                                      <div class="cart-price">
+                                                          <span class="new">$229.9</span>
+                                                          <span><del>$229.9</del></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="del-icon">
+                                                      <a href="#"><i class="far fa-trash-alt"></i></a>
+                                                  </div>
+                                              </li>
+                                              <li class="d-flex align-items-start">
+                                                  <div class="cart-img">
+                                                      <a href="#"><img src="img/cart2.jpg" alt=""></a>
+                                                  </div>
+                                                  <div class="cart-content">
+                                                      <h4><a href="#">Winter Jackets For Women</a></h4>
+                                                      <div class="cart-price">
+                                                          <span class="new">$229.9</span>
+                                                          <span><del>$229.9</del></span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="del-icon">
+                                                      <a href="#"><i class="far fa-trash-alt"></i></a>
+                                                  </div>
+                                              </li>
+                                              <li>
+                                                  <div class="total-price">
+                                                      <span class="f-left">Total:</span>
+                                                      <span class="f-right">$239.9</span>
+                                                  </div>
+                                              </li>
+                                              <li>
+                                                  <div class="checkout-link">
+                                                      <a href="#">Shopping Cart</a>
+                                                      <a class="black-color" href="#">Checkout</a>
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+      <div class="header-category d-none d-lg-block">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="header-category-wrap">
+                          <div class="header-cat-list">
+                              <ul>
+                                  <li><a href="shop.html">Health Store</a></li>
+                                  <li><a href="shop.html">COLLECTIONS</a></li>
+                                  <li><a href="shop.html">protein Store</a></li>
+                                  <li><a href="shop.html">Pharmacy</a></li>
+                                  <li><a href="shop.html">Tests</a></li>
+                                  <li><a href="shop.html">MedPlus</a></li>
+                                  <li><a href="shop.html">BEAUTY</a></li>
+                              </ul>
+                          </div>
+                          <div class="header-category-btn">
+                              <a href="shop.html">GET 5% OFF NOW</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <main>
+
+      <!-- breadcrumb-area -->
+      <div class="breadcrumb-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="breadcrumb-wrap">
+                          <nav aria-label="breadcrumb">
+                              <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                              </ol>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- breadcrumb-area-end -->
+
+      <!-- shop-area -->
+      <div class="shop-area shop-inner-page pt-100 pb-100">
+          <div class="container">
+              <div class="row justify-content-center row-reverse">
+                  <div class="col-3 order-2 order-lg-0">
+                      <aside class="shop-sidebar">
+                          <div class="widget">
+                              <div class="sidebar-search">
+                                  <form action="#">
+                                      <input type="text" placeholder="Search ...">
+                                      <button type="submit"><i class="fa fa-search"></i></button>
+                                  </form>
+                              </div>
+                          </div>
+                          <div class="widget">
+                              <h4 class="sidebar-title">Category</h4>
+                              <div class="shop-cat-list">
+                                  <ul>
+                                      <li><a href="shop.html">Medication <span>+</span></a></li>
+                                      <li><a href="shop.html">Disposable <span>+</span></a></li>
+                                      <li><a href="shop.html">PPE-Kit <span>+</span></a></li>
+                                      <li><a href="shop.html">Face-Mask <span>+</span></a></li>
+                                      <li><a href="shop.html">Safety-Suits <span>+</span></a></li>
+                                      <li><a href="shop.html">Eye-Protect <span>+</span></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="widget">
+                              <h4 class="sidebar-title">Top Brand</h4>
+                              <div class="shop-brand-list">
+                                  <ul>
+                                      <li><a href="shop.html">Medication</a></li>
+                                      <li><a href="shop.html">Carnation</a></li>
+                                      <li><a href="shop.html">Suppke</a></li>
+                                      <li><a href="shop.html">WeBeyond</a></li>
+                                      <li><a href="shop.html">Edstudy</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="widget">
+                              <h4 class="sidebar-title">Filter by Price</h4>
+                              <div class="price_filter">
+                                  <div id="slider-range"
+                                      class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                      <div class="ui-slider-range ui-widget-header ui-corner-all"
+                                          style="left: 14.2857%; width: 64.2857%;"></div><span
+                                          class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"
+                                          style="left: 14.2857%;"></span><span
+                                          class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"
+                                          style="left: 78.5714%;"></span>
+                                  </div>
+                                  <div class="price_slider_amount">
+                                      <span>Price :</span>
+                                      <input type="text" id="amount" name="price" placeholder="Add Your Price">
+                                      <input type="submit" class="btn" value="Filter">
+                                  </div>
+                              </div>
+                          </div>
+
+                      </aside>
+                  </div>
+                  <div class="col-9">
+                      <div class="shop-wrap">
+                          <h4 class="title">Shop</h4>
+                          <div class="shop-page-meta mb-30">
+                              <div class="shop-grid-menu">
+                                  <ul>
+                                      <li class="active"><a href="#"><i class="fas fa-th"></i></a></li>
+                                      <li><a href="#"><i class="fas fa-list"></i></a></li>
+                                  </ul>
+                              </div>
+                              <div class="shop-showing-result">
+                                  <p>Total Items 1-12 of 13</p>
+                              </div>
+                              <div class="shop-show-list">
+                                  <form action="#">
+                                      <label for="show">Show</label>
+                                      <select id="show" class="selected" style="display: none;">
+                                          <option value="">08</option>
+                                          <option value="">12</option>
+                                          <option value="">16</option>
+                                          <option value="">18</option>
+                                          <option value="">20</option>
+                                      </select>
+                                      <div class="nice-select selected" tabindex="0"><span class="current">08</span>
+                                          <ul class="list">
+                                              <li data-value="" class="option selected">08</li>
+                                              <li data-value="" class="option">12</li>
+                                              <li data-value="" class="option">16</li>
+                                              <li data-value="" class="option">18</li>
+                                              <li data-value="" class="option">20</li>
+                                          </ul>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="shop-short-by">
+                                  <form action="#">
+                                      <label for="shortBy">Sort By</label>
+                                      <select id="shortBy" class="selected" style="display: none;">
+                                          <option value="">Sort by latest</option>
+                                          <option value="">Low to high</option>
+                                          <option value="">High to low</option>
+                                          <option value="">Popularity</option>
+                                      </select>
+                                      <div class="nice-select selected" tabindex="0"><span class="current">Sort by
+                                              latest</span>
+                                          <ul class="list">
+                                              <li data-value="" class="option selected">Sort by latest</li>
+                                              <li data-value="" class="option">Low to high</li>
+                                              <li data-value="" class="option">High to low</li>
+                                              <li data-value="" class="option">Popularity</li>
+                                          </ul>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img1.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Sanitizers</span>
+                                          <h5 class="title"><a href="shop-details.html">Axiom Karela Jamun Juice</a>
+                                          </h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 3.2 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$97.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img2.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Juice</span>
+                                          <h5 class="title"><a href="shop-details.html">Episoft AC Sunscreen Cream</a>
+                                          </h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$370.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img3.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Microscope</span>
+                                          <h5 class="title"><a href="shop-details.html">Glucon-D Instant Energy</a></h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$280.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img4.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Mask</span>
+                                          <h5 class="title"><a href="shop-details.html">Axiom Karela Jamun Juice</a>
+                                          </h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$190.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img5.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Juice</span>
+                                          <h5 class="title"><a href="shop-details.html">La Shield Sunscreen Gel SPF
+                                                  40</a></h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$29.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img6.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Sanitizers</span>
+                                          <h5 class="title"><a href="shop-details.html">Axiom Karela Jamun Juice</a>
+                                          </h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 3.2 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$97.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img7.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Juice</span>
+                                          <h5 class="title"><a href="shop-details.html">Episoft AC Sunscreen Cream</a>
+                                          </h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$370.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img8.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Microscope</span>
+                                          <h5 class="title"><a href="shop-details.html">Glucon-D Instant Energy</a></h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$280.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img9.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Mask</span>
+                                          <h5 class="title"><a href="shop-details.html">Axiom Karela Jamun Juice</a>
+                                          </h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$190.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img10.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Juice</span>
+                                          <h5 class="title"><a href="shop-details.html">La Shield Sunscreen Gel SPF
+                                                  40</a></h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$29.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img1.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Sanitizers</span>
+                                          <h5 class="title"><a href="shop-details.html">Axiom Karela Jamun Juice</a>
+                                          </h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 3.2 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$97.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  <div class="shop-item mb-45">
+                                      <div class="shop-thumb">
+                                          <a href="shop-details.html"><img src="img/img2.jpg" alt=""></a>
+                                      </div>
+                                      <div class="shop-content">
+                                          <span class="cat">Juice</span>
+                                          <h5 class="title"><a href="shop-details.html">Episoft AC Sunscreen Cream</a>
+                                          </h5>
+                                          <div class="shop-item-rating">
+                                              <span class="avg-rating"> 4.5 <i class="far fa-star"></i></span>
+                                              <span class="total-rating">349 Ratings</span>
+                                          </div>
+                                          <p class="shop-discount">MRP <del>$300</del> <span class="discount-off">6%
+                                                  OFF</span></p>
+                                          <div class="shop-bottom">
+                                              <ul>
+                                                  <li class="price">$370.00</li>
+                                                  <li class="add"><a href="shop-details.html">ADD +</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="shop-page-meta">
+                              <div class="shop-grid-menu">
+                                  <ul>
+                                      <li class="active"><a href="#"><i class="fas fa-th"></i></a></li>
+                                      <li><a href="#"><i class="fas fa-list"></i></a></li>
+                                  </ul>
+                              </div>
+                              <div class="shop-showing-result">
+                                  <p>Total Items 1-12 of 13</p>
+                              </div>
+                              <div class="shop-show-list">
+                                  <form action="#">
+                                      <label for="bottomShow">Show</label>
+                                      <select id="bottomShow" class="selected" style="display: none;">
+                                          <option value="">08</option>
+                                          <option value="">12</option>
+                                          <option value="">16</option>
+                                          <option value="">18</option>
+                                          <option value="">20</option>
+                                      </select>
+                                      <div class="nice-select selected" tabindex="0"><span class="current">08</span>
+                                          <ul class="list">
+                                              <li data-value="" class="option selected">08</li>
+                                              <li data-value="" class="option">12</li>
+                                              <li data-value="" class="option">16</li>
+                                              <li data-value="" class="option">18</li>
+                                              <li data-value="" class="option">20</li>
+                                          </ul>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="shop-pagination">
+                                  <ul>
+                                      <li class="active"><a href="shop.html">1</a></li>
+                                      <li><a href="shop.html">2</a></li>
+                                      <li><a href="shop.html"><i class="fas fa-angle-double-right"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- shop-area-end -->
+
+      <!-- core-features-area -->
+      <section class="core-features-area">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-4 col-md-6">
+                      <div class="core-features-item mb-30">
+                          <div class="core-features-icon">
+                              <img src="img/delivery.png" alt="">
+                          </div>
+                          <div class="core-features-content">
+                              <h4 class="title">Home Delivery</h4>
+                              <p>Product Delivery is a customer-centric approach to defining.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <div class="core-features-item mb-30">
+                          <div class="core-features-icon">
+                              <img src="img/return.png" alt="">
+                          </div>
+                          <div class="core-features-content">
+                              <h4 class="title">Click and Pick</h4>
+                              <p>Product Delivery is a customer-centric approach to defining.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <div class="core-features-item mb-30">
+                          <div class="core-features-icon">
+                              <img src="img/headphone.png" alt="">
+                          </div>
+                          <div class="core-features-content">
+                              <h4 class="title">Quality Support</h4>
+                              <p>Product Delivery is a customer-centric approach to defining.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- core-features-area-end -->
+
+  </main>
+
+  <footer>
+      <div class="footer-top-wrap">
+          <div class="container">
+              <div class="row justify-content-between">
+                  <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                      <div class="footer-widget">
+                          <h4 class="fw-title">Know Us</h4>
+                          <div class="fw-link">
+                              <ul>
+                                  <li><a href="about-us.html">About Us</a></li>
+                                  <li><a href="contact.html">Contact Us</a></li>
+                                  <li><a href="contact.html">Press Coverage</a></li>
+                                  <li><a href="contact.html">Business Partnership</a></li>
+                                  <li><a href="contact.html">Careers</a></li>
+                                  <li><a href="contact.html">Sehat Ke Sathi</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                      <div class="footer-widget">
+                          <h4 class="fw-title">Our Policies</h4>
+                          <div class="fw-link">
+                              <ul>
+                                  <li><a href="about-us.html">Privacy Policy</a></li>
+                                  <li><a href="contact.html">Terms and Conditions</a></li>
+                                  <li><a href="contact.html">Editorial Policy</a></li>
+                                  <li><a href="contact.html">Return Policy</a></li>
+                                  <li><a href="contact.html">IP Policy</a></li>
+                                  <li><a href="contact.html">Grievance Redressal Policy</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                      <div class="footer-widget">
+                          <h4 class="fw-title">Our Services</h4>
+                          <div class="fw-link">
+                              <ul>
+                                  <li><a href="about-us.html">Order Medicines</a></li>
+                                  <li><a href="contact.html">Book Lab Tests</a></li>
+                                  <li><a href="contact.html">Consult a Doctor</a></li>
+                                  <li><a href="contact.html">Ayurveda Articles</a></li>
+                                  <li><a href="contact.html">English Articles</a></li>
+                                  <li><a href="contact.html">1mg Care Plan</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                      <div class="footer-widget">
+                          <h4 class="fw-title">Subscribe Our Newsletter</h4>
+                          <div class="f-newsletter">
+                              <p>Get a free subscription to our health &amp; fitness</p>
+                              <form action="#" class="newsletter-form">
+                                  <input type="text" placeholder="Enter Your Email Address">
+                                  <button><i class="fas fa-rocket"></i></button>
+                              </form>
+                          </div>
+                          <div class="fw-download-btn">
+                              <a href="#"><img src="img/gp.png" alt=""></a>
+                              <a href="#"><img src="img/as.png" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="footer-counter-wrap">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="fcw-title text-center mb-45">
+                          <h4 class="title">world LARGEST HEALTHCARE PLATFORM</h4>
+                      </div>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="counter-item mb-30">
+                          <h2 class="count"><span class="odometer odometer-auto-theme" data-count="160">
+                                  <div class="odometer-inside"><span class="odometer-digit"><span
+                                              class="odometer-digit-spacer">8</span><span
+                                              class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                      class="odometer-ribbon-inner"><span
+                                                          class="odometer-value">1</span></span></span></span></span><span
+                                          class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                              class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                      class="odometer-ribbon-inner"><span
+                                                          class="odometer-value">6</span></span></span></span></span><span
+                                          class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                              class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                      class="odometer-ribbon-inner"><span
+                                                          class="odometer-value">0</span></span></span></span></span>
+                                  </div>
+                              </span>M+</h2>
+                          <p>Visitors</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="counter-item mb-30">
+                          <h2 class="count"><span class="odometer odometer-auto-theme" data-count="27">
+                                  <div class="odometer-inside"><span class="odometer-digit"><span
+                                              class="odometer-digit-spacer">8</span><span
+                                              class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                      class="odometer-ribbon-inner"><span
+                                                          class="odometer-value">2</span></span></span></span></span><span
+                                          class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                              class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                      class="odometer-ribbon-inner"><span
+                                                          class="odometer-value">7</span></span></span></span></span>
+                                  </div>
+                              </span>M+</h2>
+                          <p>Orders Delivered</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="counter-item mb-30">
+                          <h2 class="count"><span class="odometer odometer-auto-theme" data-count="190">
+                                  <div class="odometer-inside"><span class="odometer-digit"><span
+                                              class="odometer-digit-spacer">8</span><span
+                                              class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                      class="odometer-ribbon-inner"><span
+                                                          class="odometer-value">1</span></span></span></span></span><span
+                                          class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                              class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                      class="odometer-ribbon-inner"><span
+                                                          class="odometer-value">9</span></span></span></span></span><span
+                                          class="odometer-digit"><span class="odometer-digit-spacer">8</span><span
+                                              class="odometer-digit-inner"><span class="odometer-ribbon"><span
+                                                      class="odometer-ribbon-inner"><span
+                                                          class="odometer-value">0</span></span></span></span></span>
+                                  </div>
+                              </span>K+</h2>
+                          <p>Cities</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-md-6">
+                      <div class="copyright-text">
+                          <p>Copyright © 20221 Yed. All Rights Reserved</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="payment-method-img text-center text-md-right">
+                          <img src="img/card.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+ </body>
+
+ </html>
