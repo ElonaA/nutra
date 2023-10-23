@@ -7,21 +7,17 @@ import Offers from "./pages/Offers";
 import Categories from "./pages/Categories";
 import NotFound from "./pages/404";
 import Modal from "./pages/Modal";
+import AdminPanel from "./pages/AdminPanel";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <Link to="/">Home</Link>
-        <Link to="/offers">Offers</Link>
-        <Link to="/categories">Categories</Link>
-        <Link to="modal">Modal</Link>
-      </header>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/offers" element={<Offers />} />
         <Route path="/categories" element={<Categories />} />
-        <Route path="/modal" element={<Modal/>} />
+        <Route path="/modal" element={<Modal />} />
+        <Route path="/admin" element={<AdminPanel />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
