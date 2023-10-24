@@ -1,241 +1,685 @@
 import React from "react";
-import "../style.css";
-import { Link } from "react-router-dom";
+import "../../style.css";
+
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Homepage = (props) => {
   return (
     <div>
-      <header>
-        <div id="sticky-header" className="menu-area">
-          <div className="container">
-            <div className="mobile-nav-toggler">
-              <i className="fas fa-bars"></i>
-            </div>
-            <div className="menu-wrap">
-              <nav className="menu-nav">
-                <div className="row align-items-center">
-                  <div className="col-lg-5 d-none d-lg-block">
-                    <div className="navbar-wrap main-menu d-none d-lg-flex">
-                      <ul className="navigation">
-                        <li>
-                          <Link to="/">Home</Link>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <Link to="/categories">Pages</Link>
-                          <ul className="sub-menu">
-                            <li>
-                              <a href="about-us.html">About Us</a>
-                            </li>
-                            <li>
-                              <a href="blog.html">Our Blog</a>
-                            </li>
-                            <li>
-                              <a href="blog-details.html">Blog Details</a>
-                            </li>
-                            <li>
-                              <a href="contact.html">Contact Us</a>
-                            </li>
-                          </ul>
-                          <div className="dropdown-btn">
-                            <span className="fas fa-angle-down"></span>
-                          </div>
-                        </li>
-                        <li className="active menu-item-has-children">
-                          <Link to="/offers">Shop</Link>
-                          <ul className="sub-menu">
-                            <li className="active">
-                              <a href="shop.html">Our Shop</a>
-                            </li>
-                            <li>
-                              <a href="shop-details.html">Shop Details</a>
-                            </li>
-                          </ul>
-                          <div className="dropdown-btn">
-                            <span className="fas fa-angle-down"></span>
-                          </div>
-                        </li>
-                        <li>
-                          <Link to="#">ASK DOCTOR</Link>
-                        </li>
-
-                        <li>
-                          <Link to="/admin">Admin Panel</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-lg-2 col-md-3">
-                    <div className="logo">
-                      <a href="index.html">
-                        <img src="img/logo.png" alt="" />
+      <Header />
+      <main>
+        
+        {/* <!-- slider-area --> */}
+        <section class="slider-area">
+          <div class="slider-active">
+            <div
+              class="single-slider slider-bg d-flex align-items-center"
+              data-background="img/slider/slider_bg01.jpg"
+            >
+              <div class="container container-inner">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="slider-content">
+                      <h4
+                        class="sub-title"
+                        data-animation="fadeInUp"
+                        data-delay=".3s"
+                      >
+                        top <span>deal !</span>
+                      </h4>
+                      <h2
+                        class="title"
+                        data-animation="fadeInUp"
+                        data-delay=".6s"
+                      >
+                        servikal gloves
+                      </h2>
+                      <p data-animation="fadeInUp" data-delay=".9s">
+                        Get up to 50% off Today Only
+                      </p>
+                      <a
+                        href="#"
+                        class="btn"
+                        data-animation="fadeInUp"
+                        data-delay="1.2s"
+                      >
+                        contact us
                       </a>
                     </div>
                   </div>
-                  <div className="col-lg-5 col-md-9">
-                    <div className="header-action">
+                </div>
+              </div>
+            </div>
+            <div
+              class="single-slider slider-bg d-flex align-items-center"
+              data-background="img/slider/slider_bg02.jpg"
+            >
+              <div class="container container-inner">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="slider-content">
+                      <h4
+                        class="sub-title"
+                        data-animation="fadeInUp"
+                        data-delay=".3s"
+                      >
+                        top <span>deal !</span>
+                      </h4>
+                      <h2
+                        class="title"
+                        data-animation="fadeInUp"
+                        data-delay=".6s"
+                      >
+                        ONLINE PHARMACY
+                      </h2>
+                      <p data-animation="fadeInUp" data-delay=".9s">
+                        Get up to 50% off Today Only
+                      </p>
+                      <a
+                        href="#"
+                        class="btn"
+                        data-animation="fadeInUp"
+                        data-delay="1.2s"
+                      >
+                        contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="single-slider slider-bg d-flex align-items-center"
+              data-background="img/slider/slider_bg03.jpg"
+            >
+              <div class="container container-inner">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="slider-content">
+                      <h4
+                        class="sub-title"
+                        data-animation="fadeInUp"
+                        data-delay=".3s"
+                      >
+                        top <span>Digital</span>
+                      </h4>
+                      <h2
+                        class="title"
+                        data-animation="fadeInUp"
+                        data-delay=".6s"
+                      >
+                        Pressure Monitor
+                      </h2>
+                      <p data-animation="fadeInUp" data-delay=".9s">
+                        Get up to 50% off Today Only
+                      </p>
+                      <a
+                        href="#"
+                        class="btn"
+                        data-animation="fadeInUp"
+                        data-delay="1.2s"
+                      >
+                        contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="single-slider slider-bg d-flex align-items-center"
+              data-background="img/slider/slider_bg04.jpg"
+            >
+              <div class="container container-inner">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="slider-content">
+                      <h4
+                        class="sub-title"
+                        data-animation="fadeInUp"
+                        data-delay=".3s"
+                      >
+                        top <span>deal !</span>
+                      </h4>
+                      <h2
+                        class="title"
+                        data-animation="fadeInUp"
+                        data-delay=".6s"
+                      >
+                        ONLINE PHARMACY
+                      </h2>
+                      <p data-animation="fadeInUp" data-delay=".9s">
+                        Get up to 50% off Today Only
+                      </p>
+                      <a
+                        href="#"
+                        class="btn"
+                        data-animation="fadeInUp"
+                        data-delay="1.2s"
+                      >
+                        contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- slider-area-end--> */}
+        {/* <!-- categories-area --> */}
+        <section class="categories-area pt-85 pb-25">
+          <div class="container">
+            <div class="row align-items-end mb-35">
+              <div class="col-lg-6 col-md-8">
+                <div class="category-title">
+                  <span>EXPLORE</span>
+                  <h3 class="title">Popular Categories</h3>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-4">
+                <div class="category-view">
+                  <a href="#">View AlL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row category-active mb-70">
+              <div class="col">
+                <div class="category-item">
+                  <a href="#">
+                    <img src="img/products/categories_01.png" alt="" />
+                    <span class="content">Health &amp; Partein</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="category-item">
+                  <a href="#">
+                    <img src="img/products/categories_02.png" alt="" />
+                    <span class="content">Sesual Well</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="category-item">
+                  <a href="#">
+                    <img src="img/products/categories_03.png" alt="" />
+                    <span class="content">Health &amp; Partein</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="category-item">
+                  <a href="#">
+                    <img src="img/products/categories_04.png" alt="" />
+                    <span class="content">Vitamin C Tablet</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="category-item">
+                  <a href="#">
+                    <img src="img/products/categories_05.png" alt="" />
+                    <span class="content">Health &amp; Partein</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="category-item">
+                  <a href="#">
+                    <img src="img/products/categories_06.png" alt="" />
+                    <span class="content">Medicinal Kit</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="category-item">
+                  <a href="#">
+                    <img src="img/products/categories_07.png" alt="" />
+                    <span class="content">Sanitary Napkin</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="category-item">
+                  <a href="#">
+                    <img src="img/products/categories_08.png" alt="" />
+                    <span class="content">Health &amp; Partein</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row shop-active">
+              <div class="col">
+                <div class="shop-item mb-60">
+                  <div class="shop-thumb">
+                    <a href="#">
+                      <img src="img/products/shop_img01.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="shop-content">
+                    <span class="cat">Sanitizers</span>
+                    <h5 class="title">
+                      {" "}
+                      <a href="#">Axiom Karela Jamun Juice</a>
+                    </h5>
+                    <div class="shop-item-rating">
+                      <span class="avg-rating">
+                        {" "}
+                        3.2 <i class="far fa-star"></i>
+                      </span>
+                      <span class="total-rating">349 Ratings</span>
+                    </div>
+                    <p class="shop-discount">
+                      MRP <del>$300</del>{" "}
+                      <span class="discount-off">6% OFF</span>
+                    </p>
+                    <div class="shop-bottom">
                       <ul>
-                        <li className="header-search">
-                          <form action="#">
-                            <button>
-                              <i className="fas fa-search"></i>
-                            </button>
-                            <input
-                              type="text"
-                              placeholder="Search fre Medicines"
-                            />
-                          </form>
-                        </li>
-                        <li className="header-user d-none d-md-block">
-                          <a href="contact.html">
-                            <i className="far fa-user"></i>
-                          </a>
-                        </li>
-                        <li className="header-shop-cart d-none d-md-flex">
-                          <a href="#">
-                            <img src="img/cart.png" alt="" />
-                            <span className="cart-count">0</span>
-                          </a>
-                          <span className="cart-price">$0.00</span>
-                          <ul className="minicart">
-                            <li className="d-flex align-items-start">
-                              <div className="cart-img">
-                                <a href="#">
-                                  <img src="img/cart1.jpg" alt="" />
-                                </a>
-                              </div>
-                              <div className="cart-content">
-                                <h4>
-                                  <a href="#">Exclusive Winter Jackets</a>
-                                </h4>
-                                <div className="cart-price">
-                                  <span className="new">$229.9</span>
-                                  <span>
-                                    <del>$229.9</del>
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="del-icon">
-                                <a href="#">
-                                  <i className="far fa-trash-alt"></i>
-                                </a>
-                              </div>
-                            </li>
-                            <li className="d-flex align-items-start">
-                              <div className="cart-img">
-                                <a href="#">
-                                  <img src="img/cart2.jpg" alt="" />
-                                </a>
-                              </div>
-                              <div className="cart-content">
-                                <h4>
-                                  <a href="#">Winter Jackets For Women</a>
-                                </h4>
-                                <div className="cart-price">
-                                  <span className="new">$229.9</span>
-                                  <span>
-                                    <del>$229.9</del>
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="del-icon">
-                                <a href="#">
-                                  <i className="far fa-trash-alt"></i>
-                                </a>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="total-price">
-                                <span className="f-left">Total:</span>
-                                <span className="f-right">$239.9</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="checkout-link">
-                                <a href="#">Shopping Cart</a>
-                                <a className="black-color" href="#">
-                                  Checkout
-                                </a>
-                              </div>
-                            </li>
-                          </ul>
+                        <li class="price">$97.00</li>
+                        <li class="add">
+                          <a href="#">ADD +</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div className="header-category d-none d-lg-block">
-          <div className="container">
-            <div className="row">
-              <div className="col-12">
-                <div className="header-category-wrap">
-                  <div className="header-cat-list">
-                    <ul>
-                      <li>
-                        <a href="shop.html">Health Store</a>
-                      </li>
-                      <li>
-                        <a href="shop.html">COLLECTIONS</a>
-                      </li>
-                      <li>
-                        <a href="shop.html">protein Store</a>
-                      </li>
-                      <li>
-                        <a href="shop.html">Pharmacy</a>
-                      </li>
-                      <li>
-                        <a href="shop.html">Tests</a>
-                      </li>
-                      <li>
-                        <a href="shop.html">MedPlus</a>
-                      </li>
-                      <li>
-                        <a href="shop.html">BEAUTY</a>
-                      </li>
-                    </ul>
+              </div>
+              <div class="col">
+                <div class="shop-item mb-60">
+                  <div class="shop-thumb">
+                    <a href="#">
+                      <img src="img/products/shop_img02.jpg" alt="" />
+                    </a>
                   </div>
-                  <div className="header-category-btn">
-                    <a href="shop.html">GET 5% OFF NOW</a>
+                  <div class="shop-content">
+                    <span class="cat">Juice</span>
+                    <h5 class="title">
+                      {" "}
+                      <a href="#">Episoft AC Sunscreen Cream</a>
+                    </h5>
+                    <div class="shop-item-rating">
+                      <span class="avg-rating">
+                        {" "}
+                        4.5 <i class="far fa-star"></i>
+                      </span>
+                      <span class="total-rating">240 Ratings</span>
+                    </div>
+                    <p class="shop-discount">
+                      MRP <del>$300</del>{" "}
+                      <span class="discount-off">6% OFF</span>
+                    </p>
+                    <div class="shop-bottom">
+                      <ul>
+                        <li class="price">$370.00</li>
+                        <li class="add">
+                          <a href="#">ADD +</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="shop-item mb-60">
+                  <div class="shop-thumb">
+                    <a href="#">
+                      <img src="img/products/shop_img03.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="shop-content">
+                    <span class="cat">Microscope</span>
+                    <h5 class="title">
+                      {" "}
+                      <a href="#">Glucon-D Instant Energy</a>
+                    </h5>
+                    <div class="shop-item-rating">
+                      <span class="avg-rating">
+                        {" "}
+                        4.2 <i class="far fa-star"></i>
+                      </span>
+                      <span class="total-rating">349 Ratings</span>
+                    </div>
+                    <p class="shop-discount">
+                      MRP <del>$300</del>{" "}
+                      <span class="discount-off">6% OFF</span>
+                    </p>
+                    <div class="shop-bottom">
+                      <ul>
+                        <li class="price">$280.00</li>
+                        <li class="add">
+                          <a href="#">ADD +</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="shop-item mb-60">
+                  <div class="shop-thumb">
+                    <a href="#">
+                      <img src="img/products/shop_img04.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="shop-content">
+                    <span class="cat">Mask</span>
+                    <h5 class="title">
+                      {" "}
+                      <a href="#">Axiom Karela Jamun Juice</a>
+                    </h5>
+                    <div class="shop-item-rating">
+                      <span class="avg-rating">
+                        {" "}
+                        3.2 <i class="far fa-star"></i>
+                      </span>
+                      <span class="total-rating">349 Ratings</span>
+                    </div>
+                    <p class="shop-discount">
+                      MRP <del>$300</del>{" "}
+                      <span class="discount-off">6% OFF</span>
+                    </p>
+                    <div class="shop-bottom">
+                      <ul>
+                        <li class="price">$52.00</li>
+                        <li class="add">
+                          <a href="#">ADD +</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="shop-item mb-60">
+                  <div class="shop-thumb">
+                    <a href="#">
+                      <img src="img/products/shop_img05.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="shop-content">
+                    <span class="cat">Juice</span>
+                    <h5 class="title">
+                      {" "}
+                      <a href="#">La Shield Sunscreen Gel SPF 40</a>
+                    </h5>
+                    <div class="shop-item-rating">
+                      <span class="avg-rating">
+                        {" "}
+                        4.2 <i class="far fa-star"></i>
+                      </span>
+                      <span class="total-rating">145 Ratings</span>
+                    </div>
+                    <p class="shop-discount">
+                      MRP <del>$300</del>{" "}
+                      <span class="discount-off">6% OFF</span>
+                    </p>
+                    <div class="shop-bottom">
+                      <ul>
+                        <li class="price">$45.00</li>
+                        <li class="add">
+                          <a href="#">ADD +</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
-
-      <main>
-        {/* breadcrumb-area */}
-        <div className="breadcrumb-area">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="breadcrumb-wrap">
-                  <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb">
-                      <li className="breadcrumb-item">
-                        <a href="index.html">Home</a>
-                      </li>
-                      <li
-                        className="breadcrumb-item active"
-                        aria-current="page"
-                      >
-                        Shop
-                      </li>
-                    </ol>
-                  </nav>
+        </section>
+        {/* <!-- categories-area-end --> */}
+        {/* <!-- deal-week-area --> */}
+        <section class="deal-week-area">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="section-title text-center mb-30">
+                  <h3 class="title">Deal Of This Week</h3>
+                  <p>
+                    Want everyone to see it and find myself sharing the link
+                    anywhere
+                  </p>
+                </div>
+                <div class="deal-week-countdown mb-50">
+                  <div class="coming-time" data-countdown="2022/1/29"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-3 col-lg-4 col-sm-6 order-2 order-lg-0">
+                <div class="deal-week-item">
+                  <div class="deal-week-inner">
+                    <div class="deal-week-thumb">
+                      <img src="img/products/deal_week_img01.jpg" alt="" />
+                    </div>
+                    <div class="deal-week-content">
+                      <span>medical</span>
+                      <h4 class="title">
+                        <a href="#">
+                          Temperature <span>UP TO 25%</span>
+                        </a>
+                      </h4>
+                      <a href="#" class="btn">
+                        shop now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="deal-week-item">
+                  <div class="deal-week-inner">
+                    <div class="deal-week-thumb">
+                      <img src="img/products/deal_week_img02.jpg" alt="" />
+                    </div>
+                    <div class="deal-week-content">
+                      <span>medical</span>
+                      <h4 class="title">
+                        <a href="#">
+                          sanitizer Max <span>UP TO 25%</span>
+                        </a>
+                      </h4>
+                      <a href="#" class="btn">
+                        shop now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-4">
+                <div class="deal-week-item dw-big-item">
+                  <div class="deal-week-inner">
+                    <div class="deal-week-content">
+                      <span>medical pack</span>
+                      <h4 class="title">
+                        <a href="#">
+                          Lab Face Mask <span>UP TO 25%</span>
+                        </a>
+                      </h4>
+                      <a href="#" class="btn">
+                        shop now
+                      </a>
+                    </div>
+                    <div class="deal-week-thumb">
+                      <img
+                        src="img/products/deal_week_img03.jpg"
+                        class="main-img"
+                        alt=""
+                      />
+                      <img
+                        src="img/products/dw_item_des.png"
+                        class="discount-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="deal-week-item">
+                  <div class="deal-week-inner">
+                    <div class="deal-week-thumb">
+                      <img src="img/products/deal_week_img04.jpg" alt="" />
+                    </div>
+                    <div class="deal-week-content">
+                      <span>covid-19</span>
+                      <h4 class="title">
+                        <a href="#">
+                          co vaccine <span>UP TO 25%</span>
+                        </a>
+                      </h4>
+                      <a href="#" class="btn">
+                        shop now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="deal-week-item">
+                  <div class="deal-week-inner">
+                    <div class="deal-week-thumb">
+                      <img src="img/products/deal_week_img05.jpg" alt="" />
+                    </div>
+                    <div class="deal-week-content">
+                      <span>medical pack</span>
+                      <h4 class="title">
+                        <a href="#">
+                          hand gloves <span>UP TO 25%</span>
+                        </a>
+                      </h4>
+                      <a href="#" class="btn">
+                        shop now
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* breadcrumb-area-end */}
+        </section>
+        {/* <!-- deal-week-area-end --> */}
+        {/* <!-- testimonial-area --> */}
+        <section class="testimonial-area testimonial-bg">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-6 col-lg-8">
+                <div class="section-title text-center mb-45">
+                  <h3 class="title">Our Client Says</h3>
+                  <p>Want everyone to see it and find myself sharing</p>
+                </div>
+              </div>
+            </div>
+            <div class="row testimonial-active">
+              <div class="col-xl-4">
+                <div class="testimonial-item">
+                  <div class="testi-img">
+                    <img src="img/images/testimonial_img01.png" alt="" />
+                  </div>
+                  <div class="testi-content">
+                    <p>
+                      “ Want everyone to see and find myself sharing the link
+                      Lorem Ipsum is simply dummy text of printing typesing
+                      industry ”
+                    </p>
+                    <div class="testi-avatar-info">
+                      <h5 class="title">E. Tomas Felix</h5>
+                      <span>Founder. CEO</span>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="testimonial-item">
+                  <div class="testi-img">
+                    <img src="img/images/testimonial_img02.png" alt="" />
+                  </div>
+                  <div class="testi-content">
+                    <p>
+                      “ Want everyone to see and find myself sharing the link
+                      Lorem Ipsum is simply dummy text of printing typesing
+                      industry ”
+                    </p>
+                    <div class="testi-avatar-info">
+                      <h5 class="title">G. Faeian Felix</h5>
+                      <span>Founder. CEO</span>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="testimonial-item">
+                  <div class="testi-img">
+                    <img src="img/images/testimonial_img03.png" alt="" />
+                  </div>
+                  <div class="testi-content">
+                    <p>
+                      “ Want everyone to see and find myself sharing the link
+                      Lorem Ipsum is simply dummy text of printing typesing
+                      industry ”
+                    </p>
+                    <div class="testi-avatar-info">
+                      <h5 class="title">D. Nova Lunap</h5>
+                      <span>Founder. CEO</span>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="testimonial-item">
+                  <div class="testi-img">
+                    <img src="img/images/testimonial_img02.png" alt="" />
+                  </div>
+                  <div class="testi-content">
+                    <p>
+                      “ Want everyone to see and find myself sharing the link
+                      Lorem Ipsum is simply dummy text of printing typesing
+                      industry ”
+                    </p>
+                    <div class="testi-avatar-info">
+                      <h5 class="title">M. Hisana Kulan</h5>
+                      <span>Founder. CEO</span>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- testimonial-area-end --> */}
 
-        {/* shop-area */}
-        <div className="shop-area shop-inner-page pt-100 pb-100">
+
+
+        {/* shop-area - буде окремо*/}
+        {/* <div className="shop-area shop-inner-page pt-100 pb-100">
           <div className="container">
             <div className="row justify-content-center row-reverse">
               <div className="col-3 order-2 order-lg-0">
@@ -943,329 +1387,10 @@ const Homepage = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* shop-area-end */}
-
-        {/* core-features-area */}
-        <section className="core-features-area">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-4 col-md-6">
-                <div className="core-features-item mb-30">
-                  <div className="core-features-icon">
-                    <img src="img/delivery.png" alt="" />
-                  </div>
-                  <div className="core-features-content">
-                    <h4 className="title">Home Delivery</h4>
-                    <p>
-                      Product Delivery is a customer-centric approach to
-                      defining.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="core-features-item mb-30">
-                  <div className="core-features-icon">
-                    <img src="img/return.png" alt="" />
-                  </div>
-                  <div className="core-features-content">
-                    <h4 className="title">Click and Pick</h4>
-                    <p>
-                      Product Delivery is a customer-centric approach to
-                      defining.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="core-features-item mb-30">
-                  <div className="core-features-icon">
-                    <img src="img/headphone.png" alt="" />
-                  </div>
-                  <div className="core-features-content">
-                    <h4 className="title">Quality Support</h4>
-                    <p>
-                      Product Delivery is a customer-centric approach to
-                      defining.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* core-features-area-end */}
       </main>
-
-      <footer>
-        <div className="footer-top-wrap">
-          <div className="container">
-            <div className="row justify-content-between">
-              <div className="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                <div className="footer-widget">
-                  <h4 className="fw-title">Know Us</h4>
-                  <div className="fw-link">
-                    <ul>
-                      <li>
-                        <a href="about-us.html">About Us</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Contact Us</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Press Coverage</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Business Partnership</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Careers</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Sehat Ke Sathi</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                <div className="footer-widget">
-                  <h4 className="fw-title">Our Policies</h4>
-                  <div className="fw-link">
-                    <ul>
-                      <li>
-                        <a href="about-us.html">Privacy Policy</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Terms and Conditions</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Editorial Policy</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Return Policy</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">IP Policy</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Grievance Redressal Policy</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                <div className="footer-widget">
-                  <h4 className="fw-title">Our Services</h4>
-                  <div className="fw-link">
-                    <ul>
-                      <li>
-                        <a href="about-us.html">Order Medicines</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Book Lab Tests</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Consult a Doctor</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">Ayurveda Articles</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">English Articles</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">1mg Care Plan</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                <div className="footer-widget">
-                  <h4 className="fw-title">Subscribe Our Newsletter</h4>
-                  <div className="f-newsletter">
-                    <p>Get a free subscription to our health &amp; fitness</p>
-                    <form action="#" className="newsletter-form">
-                      <input
-                        type="text"
-                        placeholder="Enter Your Email Address"
-                      />
-                      <button>
-                        <i className="fas fa-rocket"></i>
-                      </button>
-                    </form>
-                  </div>
-                  <div className="fw-download-btn">
-                    <a href="#">
-                      <img src="img/gp.png" alt="" />
-                    </a>
-                    <a href="#">
-                      <img src="img/as.png" alt="" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="footer-counter-wrap">
-            <div className="row">
-              <div className="col-12">
-                <div className="fcw-title text-center mb-45">
-                  <h4 className="title">world LARGEST HEALTHCARE PLATFORM</h4>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-center">
-              <div className="col-lg-3 col-md-3 col-sm-4">
-                <div className="counter-item mb-30">
-                  <h2 className="count">
-                    <span
-                      className="odometer odometer-auto-theme"
-                      data-count="160"
-                    >
-                      <div className="odometer-inside">
-                        <span className="odometer-digit">
-                          <span className="odometer-digit-spacer">8</span>
-                          <span className="odometer-digit-inner">
-                            <span className="odometer-ribbon">
-                              <span className="odometer-ribbon-inner">
-                                <span className="odometer-value">1</span>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                        <span className="odometer-digit">
-                          <span className="odometer-digit-spacer">8</span>
-                          <span className="odometer-digit-inner">
-                            <span className="odometer-ribbon">
-                              <span className="odometer-ribbon-inner">
-                                <span className="odometer-value">6</span>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                        <span className="odometer-digit">
-                          <span className="odometer-digit-spacer">8</span>
-                          <span className="odometer-digit-inner">
-                            <span className="odometer-ribbon">
-                              <span className="odometer-ribbon-inner">
-                                <span className="odometer-value">0</span>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                      </div>
-                    </span>
-                    M+
-                  </h2>
-                  <p>Visitors</p>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-3 col-sm-4">
-                <div className="counter-item mb-30">
-                  <h2 className="count">
-                    <span
-                      className="odometer odometer-auto-theme"
-                      data-count="27"
-                    >
-                      <div className="odometer-inside">
-                        <span className="odometer-digit">
-                          <span className="odometer-digit-spacer">8</span>
-                          <span className="odometer-digit-inner">
-                            <span className="odometer-ribbon">
-                              <span className="odometer-ribbon-inner">
-                                <span className="odometer-value">2</span>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                        <span className="odometer-digit">
-                          <span className="odometer-digit-spacer">8</span>
-                          <span className="odometer-digit-inner">
-                            <span className="odometer-ribbon">
-                              <span className="odometer-ribbon-inner">
-                                <span className="odometer-value">7</span>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                      </div>
-                    </span>
-                    M+
-                  </h2>
-                  <p>Orders Delivered</p>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-3 col-sm-4">
-                <div className="counter-item mb-30">
-                  <h2 className="count">
-                    <span
-                      className="odometer odometer-auto-theme"
-                      data-count="190"
-                    >
-                      <div className="odometer-inside">
-                        <span className="odometer-digit">
-                          <span className="odometer-digit-spacer">8</span>
-                          <span className="odometer-digit-inner">
-                            <span className="odometer-ribbon">
-                              <span className="odometer-ribbon-inner">
-                                <span className="odometer-value">1</span>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                        <span className="odometer-digit">
-                          <span className="odometer-digit-spacer">8</span>
-                          <span className="odometer-digit-inner">
-                            <span className="odometer-ribbon">
-                              <span className="odometer-ribbon-inner">
-                                <span className="odometer-value">9</span>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                        <span className="odometer-digit">
-                          <span className="odometer-digit-spacer">8</span>
-                          <span className="odometer-digit-inner">
-                            <span className="odometer-ribbon">
-                              <span className="odometer-ribbon-inner">
-                                <span className="odometer-value">0</span>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                      </div>
-                    </span>
-                    K+
-                  </h2>
-                  <p>Cities</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="copyright-area">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-md-6">
-                <div className="copyright-text">
-                  <p>Copyright © 20221 Yed. All Rights Reserved</p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="payment-method-img text-center text-md-right">
-                  <img src="img/card.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
