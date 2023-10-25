@@ -1,6 +1,10 @@
-import { Link } from "react-router-dom";
+import "./Header.css";
 
-import logo from "../../img/logo.png";
+import { Link } from "react-router-dom";
+import logo from "../../img/header/logo.png";
+import cart from "../../img/header/cart.png";
+import cart1 from "../../img/header/cart1.jpg";
+import cart2 from "../../img/header/cart2.jpg";
 
 const Header = (props) => {
   return (
@@ -79,8 +83,8 @@ const Header = (props) => {
                 </div>
                 <div className="col-lg-2 col-md-3">
                   <div className="logo">
-                    <a href="index.html">
-                      <img src={logo} alt="" />
+                    <a href="#">
+                      <img src={ logo } alt="logo" />
                     </a>
                   </div>
                 </div>
@@ -105,7 +109,7 @@ const Header = (props) => {
                       </li>
                       <li className="header-shop-cart d-none d-md-flex">
                         <a href="#">
-                          <img src="img/cart.png" alt="" />
+                          <img src={cart} alt="" />
                           <span className="cart-count">0</span>
                         </a>
                         <span className="cart-price">$0.00</span>
@@ -113,7 +117,7 @@ const Header = (props) => {
                           <li className="d-flex align-items-start">
                             <div className="cart-img">
                               <a href="#">
-                                <img src="img/cart1.jpg" alt="" />
+                                <img src={cart1} alt="" />
                               </a>
                             </div>
                             <div className="cart-content">
@@ -136,7 +140,7 @@ const Header = (props) => {
                           <li className="d-flex align-items-start">
                             <div className="cart-img">
                               <a href="#">
-                                <img src="img/cart2.jpg" alt="" />
+                                <img src={cart2} alt="" />
                               </a>
                             </div>
                             <div className="cart-content">
@@ -178,9 +182,31 @@ const Header = (props) => {
               </div>
             </nav>
           </div>
+          {/* <!-- Mobile Menu  --> */}
+          <div className="mobile-menu">
+                        <nav className="menu-box">
+                            <div className="close-btn"><i className="fas fa-times"></i></div>
+                            <div className="nav-logo"><a href="#"><img src="img/logo/logo.png" alt="" title=""/></a>
+                            </div>
+                            <div className="menu-outer">
+                                {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
+                            </div>
+                            <div className="social-links">
+                                <ul className="clearfix">
+                                    <li><a href="#"><span className="fab fa-twitter"></span></a></li>
+                                    <li><a href="#"><span className="fab fa-facebook-square"></span></a></li>
+                                    <li><a href="#"><span className="fab fa-pinterest-p"></span></a></li>
+                                    <li><a href="#"><span className="fab fa-instagram"></span></a></li>
+                                    <li><a href="#"><span className="fab fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+              </div>
+          <div className="menu-backdrop"></div>
+          {/* <!-- End Mobile Menu --> */}
         </div>
       </div>
-      {/* <div className="header-category d-none d-lg-block">
+      <div className="header-category d-none d-lg-block">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -217,7 +243,7 @@ const Header = (props) => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* breadcrumb-area */}
       <div className="breadcrumb-area">
           <div className="container">

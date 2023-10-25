@@ -1,8 +1,38 @@
 import React from "react";
+
 import "../../style.css";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+
+// images
+  // додати через стилі для слайдера
+  import slider_bg01 from "../../img/slider/slider_bg01.jpg"; 
+  import slider_bg02 from "../../img/slider/slider_bg02.jpg";
+  import slider_bg03 from "../../img/slider/slider_bg03.jpg";
+  import slider_bg04 from "../../img/slider/slider_bg04.jpg";
+import categories_01 from "../../img/products/categories_01.png";
+import categories_02 from "../../img/products/categories_02.png";
+import categories_03 from "../../img/products/categories_03.png";
+import categories_04 from "../../img/products/categories_04.png";
+import categories_05 from "../../img/products/categories_05.png";
+import categories_06 from "../../img/products/categories_06.png";
+import categories_07 from "../../img/products/categories_07.png";
+import categories_08 from "../../img/products/categories_08.png";
+import shop_img01 from "../../img/products/shop_img01.jpg";
+import shop_img02 from "../../img/products/shop_img02.jpg";
+import shop_img03 from "../../img/products/shop_img03.jpg";
+import shop_img04 from "../../img/products/shop_img04.jpg";
+import shop_img05 from "../../img/products/shop_img05.jpg";
+import deal_week_img01 from "../../img/products/deal_week_img01.jpg";
+import deal_week_img02 from "../../img/products/deal_week_img02.jpg";
+import deal_week_img03 from "../../img/products/deal_week_img03.jpg";
+import deal_week_img04 from "../../img/products/deal_week_img04.jpg";
+import deal_week_img05 from "../../img/products/deal_week_img05.jpg";
+import testimonial_img01 from "../../img/images/testimonial_img01.png";
+import testimonial_img02 from "../../img/images/testimonial_img02.png";
+import testimonial_img03 from "../../img/images/testimonial_img03.png";
+
 
 const Homepage = (props) => {
   return (
@@ -11,25 +41,25 @@ const Homepage = (props) => {
       <main>
         
         {/* <!-- slider-area --> */}
-        <section class="slider-area">
-          <div class="slider-active">
+        <section className="slider-area">
+          <div classNameName="slider-active">
             <div
-              class="single-slider slider-bg d-flex align-items-center"
-              data-background="img/slider/slider_bg01.jpg"
+              classNameName="single-slider slider-bg d-flex align-items-center"
+              data-background={slider_bg01}
             >
-              <div class="container container-inner">
-                <div class="row align-items-center">
-                  <div class="col-lg-6">
-                    <div class="slider-content">
+              <div className="container container-inner">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="slider-content">
                       <h4
-                        class="sub-title"
+                        className="sub-title"
                         data-animation="fadeInUp"
                         data-delay=".3s"
                       >
                         top <span>deal !</span>
                       </h4>
                       <h2
-                        class="title"
+                        className="title"
                         data-animation="fadeInUp"
                         data-delay=".6s"
                       >
@@ -40,7 +70,7 @@ const Homepage = (props) => {
                       </p>
                       <a
                         href="#"
-                        class="btn"
+                        className="btn"
                         data-animation="fadeInUp"
                         data-delay="1.2s"
                       >
@@ -52,22 +82,22 @@ const Homepage = (props) => {
               </div>
             </div>
             <div
-              class="single-slider slider-bg d-flex align-items-center"
-              data-background="img/slider/slider_bg02.jpg"
+              className="single-slider slider-bg d-flex align-items-center"
+              data-background={slider_bg02}
             >
-              <div class="container container-inner">
-                <div class="row align-items-center">
-                  <div class="col-lg-6">
-                    <div class="slider-content">
+              <div className="container container-inner">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="slider-content">
                       <h4
-                        class="sub-title"
+                        className="sub-title"
                         data-animation="fadeInUp"
                         data-delay=".3s"
                       >
                         top <span>deal !</span>
                       </h4>
                       <h2
-                        class="title"
+                        className="title"
                         data-animation="fadeInUp"
                         data-delay=".6s"
                       >
@@ -78,7 +108,7 @@ const Homepage = (props) => {
                       </p>
                       <a
                         href="#"
-                        class="btn"
+                        className="btn"
                         data-animation="fadeInUp"
                         data-delay="1.2s"
                       >
@@ -90,22 +120,22 @@ const Homepage = (props) => {
               </div>
             </div>
             <div
-              class="single-slider slider-bg d-flex align-items-center"
-              data-background="img/slider/slider_bg03.jpg"
+              className="single-slider slider-bg d-flex align-items-center"
+              data-background={slider_bg03}
             >
-              <div class="container container-inner">
-                <div class="row align-items-center">
-                  <div class="col-lg-6">
-                    <div class="slider-content">
+              <div className="container container-inner">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="slider-content">
                       <h4
-                        class="sub-title"
+                        className="sub-title"
                         data-animation="fadeInUp"
                         data-delay=".3s"
                       >
                         top <span>Digital</span>
                       </h4>
                       <h2
-                        class="title"
+                        className="title"
                         data-animation="fadeInUp"
                         data-delay=".6s"
                       >
@@ -116,7 +146,7 @@ const Homepage = (props) => {
                       </p>
                       <a
                         href="#"
-                        class="btn"
+                        className="btn"
                         data-animation="fadeInUp"
                         data-delay="1.2s"
                       >
@@ -128,22 +158,22 @@ const Homepage = (props) => {
               </div>
             </div>
             <div
-              class="single-slider slider-bg d-flex align-items-center"
-              data-background="img/slider/slider_bg04.jpg"
+              className="single-slider slider-bg d-flex align-items-center"
+              data-background={slider_bg04}
             >
-              <div class="container container-inner">
-                <div class="row align-items-center">
-                  <div class="col-lg-6">
-                    <div class="slider-content">
+              <div className="container container-inner">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="slider-content">
                       <h4
-                        class="sub-title"
+                        className="sub-title"
                         data-animation="fadeInUp"
                         data-delay=".3s"
                       >
                         top <span>deal !</span>
                       </h4>
                       <h2
-                        class="title"
+                        className="title"
                         data-animation="fadeInUp"
                         data-delay=".6s"
                       >
@@ -154,7 +184,7 @@ const Homepage = (props) => {
                       </p>
                       <a
                         href="#"
-                        class="btn"
+                        className="btn"
                         data-animation="fadeInUp"
                         data-delay="1.2s"
                       >
@@ -169,118 +199,118 @@ const Homepage = (props) => {
         </section>
         {/* <!-- slider-area-end--> */}
         {/* <!-- categories-area --> */}
-        <section class="categories-area pt-85 pb-25">
-          <div class="container">
-            <div class="row align-items-end mb-35">
-              <div class="col-lg-6 col-md-8">
-                <div class="category-title">
+        <section className="categories-area pt-85 pb-25">
+          <div className="container">
+            <div className="row align-items-end mb-35">
+              <div className="col-lg-6 col-md-8">
+                <div className="category-title">
                   <span>EXPLORE</span>
-                  <h3 class="title">Popular Categories</h3>
+                  <h3 className="title">Popular Categories</h3>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-4">
-                <div class="category-view">
+              <div className="col-lg-6 col-md-4">
+                <div className="category-view">
                   <a href="#">View AlL</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row category-active mb-70">
-              <div class="col">
-                <div class="category-item">
+          <div className="container">
+            <div className="row category-active mb-70">
+              <div className="col">
+                <div className="category-item">
                   <a href="#">
-                    <img src="img/products/categories_01.png" alt="" />
-                    <span class="content">Health &amp; Partein</span>
+                    <img src={categories_01} alt="cat1" />
+                    <span className="content">Health &amp; Partein</span>
                   </a>
                 </div>
               </div>
-              <div class="col">
-                <div class="category-item">
+              <div className="col">
+                <div className="category-item">
                   <a href="#">
-                    <img src="img/products/categories_02.png" alt="" />
-                    <span class="content">Sesual Well</span>
+                    <img src={categories_02} alt="cat2" />
+                    <span className="content">Sesual Well</span>
                   </a>
                 </div>
               </div>
-              <div class="col">
-                <div class="category-item">
+              <div className="col">
+                <div className="category-item">
                   <a href="#">
-                    <img src="img/products/categories_03.png" alt="" />
-                    <span class="content">Health &amp; Partein</span>
+                    <img src={categories_03} alt="cat3" />
+                    <span className="content">Health &amp; Partein</span>
                   </a>
                 </div>
               </div>
-              <div class="col">
-                <div class="category-item">
+              <div className="col">
+                <div className="category-item">
                   <a href="#">
-                    <img src="img/products/categories_04.png" alt="" />
-                    <span class="content">Vitamin C Tablet</span>
+                    <img src={categories_04} alt="cat4" />
+                    <span className="content">Vitamin C Tablet</span>
                   </a>
                 </div>
               </div>
-              <div class="col">
-                <div class="category-item">
+              <div className="col">
+                <div className="category-item">
                   <a href="#">
-                    <img src="img/products/categories_05.png" alt="" />
-                    <span class="content">Health &amp; Partein</span>
+                    <img src={categories_05} alt="cat5" />
+                    <span className="content">Health &amp; Partein</span>
                   </a>
                 </div>
               </div>
-              <div class="col">
-                <div class="category-item">
+              <div className="col">
+                <div className="category-item">
                   <a href="#">
-                    <img src="img/products/categories_06.png" alt="" />
-                    <span class="content">Medicinal Kit</span>
+                    <img src={categories_06} alt="cat6" />
+                    <span className="content">Medicinal Kit</span>
                   </a>
                 </div>
               </div>
-              <div class="col">
-                <div class="category-item">
+              <div className="col">
+                <div className="category-item">
                   <a href="#">
-                    <img src="img/products/categories_07.png" alt="" />
-                    <span class="content">Sanitary Napkin</span>
+                    <img src={categories_07} alt="cat7" />
+                    <span className="content">Sanitary Napkin</span>
                   </a>
                 </div>
               </div>
-              <div class="col">
-                <div class="category-item">
+              <div className="col">
+                <div className="category-item">
                   <a href="#">
-                    <img src="img/products/categories_08.png" alt="" />
-                    <span class="content">Health &amp; Partein</span>
+                    <img src={categories_08} alt="cat8" />
+                    <span className="content">Health &amp; Partein</span>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="row shop-active">
-              <div class="col">
-                <div class="shop-item mb-60">
-                  <div class="shop-thumb">
+            <div className="row shop-active">
+              <div className="col">
+                <div className="shop-item mb-60">
+                  <div className="shop-thumb">
                     <a href="#">
-                      <img src="img/products/shop_img01.jpg" alt="" />
+                      <img src={ shop_img01 } alt="" />
                     </a>
                   </div>
-                  <div class="shop-content">
-                    <span class="cat">Sanitizers</span>
-                    <h5 class="title">
+                  <div className="shop-content">
+                    <span className="cat">Sanitizers</span>
+                    <h5 className="title">
                       {" "}
                       <a href="#">Axiom Karela Jamun Juice</a>
                     </h5>
-                    <div class="shop-item-rating">
-                      <span class="avg-rating">
+                    <div className="shop-item-rating">
+                      <span className="avg-rating">
                         {" "}
-                        3.2 <i class="far fa-star"></i>
+                        3.2 <i className="far fa-star"></i>
                       </span>
-                      <span class="total-rating">349 Ratings</span>
+                      <span className="total-rating">349 Ratings</span>
                     </div>
-                    <p class="shop-discount">
+                    <p className="shop-discount">
                       MRP <del>$300</del>{" "}
-                      <span class="discount-off">6% OFF</span>
+                      <span className="discount-off">6% OFF</span>
                     </p>
-                    <div class="shop-bottom">
+                    <div className="shop-bottom">
                       <ul>
-                        <li class="price">$97.00</li>
-                        <li class="add">
+                        <li className="price">$97.00</li>
+                        <li className="add">
                           <a href="#">ADD +</a>
                         </li>
                       </ul>
@@ -288,34 +318,34 @@ const Homepage = (props) => {
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="shop-item mb-60">
-                  <div class="shop-thumb">
+              <div className="col">
+                <div className="shop-item mb-60">
+                  <div className="shop-thumb">
                     <a href="#">
-                      <img src="img/products/shop_img02.jpg" alt="" />
+                      <img src={shop_img02} alt="" />
                     </a>
                   </div>
-                  <div class="shop-content">
-                    <span class="cat">Juice</span>
-                    <h5 class="title">
+                  <div className="shop-content">
+                    <span className="cat">Juice</span>
+                    <h5 className="title">
                       {" "}
                       <a href="#">Episoft AC Sunscreen Cream</a>
                     </h5>
-                    <div class="shop-item-rating">
-                      <span class="avg-rating">
+                    <div className="shop-item-rating">
+                      <span className="avg-rating">
                         {" "}
-                        4.5 <i class="far fa-star"></i>
+                        4.5 <i className="far fa-star"></i>
                       </span>
-                      <span class="total-rating">240 Ratings</span>
+                      <span className="total-rating">240 Ratings</span>
                     </div>
-                    <p class="shop-discount">
+                    <p className="shop-discount">
                       MRP <del>$300</del>{" "}
-                      <span class="discount-off">6% OFF</span>
+                      <span className="discount-off">6% OFF</span>
                     </p>
-                    <div class="shop-bottom">
+                    <div className="shop-bottom">
                       <ul>
-                        <li class="price">$370.00</li>
-                        <li class="add">
+                        <li className="price">$370.00</li>
+                        <li className="add">
                           <a href="#">ADD +</a>
                         </li>
                       </ul>
@@ -323,34 +353,34 @@ const Homepage = (props) => {
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="shop-item mb-60">
-                  <div class="shop-thumb">
+              <div className="col">
+                <div className="shop-item mb-60">
+                  <div className="shop-thumb">
                     <a href="#">
-                      <img src="img/products/shop_img03.jpg" alt="" />
+                      <img src={shop_img03} alt="" />
                     </a>
                   </div>
-                  <div class="shop-content">
-                    <span class="cat">Microscope</span>
-                    <h5 class="title">
+                  <div className="shop-content">
+                    <span className="cat">Microscope</span>
+                    <h5 className="title">
                       {" "}
                       <a href="#">Glucon-D Instant Energy</a>
                     </h5>
-                    <div class="shop-item-rating">
-                      <span class="avg-rating">
+                    <div className="shop-item-rating">
+                      <span className="avg-rating">
                         {" "}
-                        4.2 <i class="far fa-star"></i>
+                        4.2 <i className="far fa-star"></i>
                       </span>
-                      <span class="total-rating">349 Ratings</span>
+                      <span className="total-rating">349 Ratings</span>
                     </div>
-                    <p class="shop-discount">
+                    <p className="shop-discount">
                       MRP <del>$300</del>{" "}
-                      <span class="discount-off">6% OFF</span>
+                      <span className="discount-off">6% OFF</span>
                     </p>
-                    <div class="shop-bottom">
+                    <div className="shop-bottom">
                       <ul>
-                        <li class="price">$280.00</li>
-                        <li class="add">
+                        <li className="price">$280.00</li>
+                        <li className="add">
                           <a href="#">ADD +</a>
                         </li>
                       </ul>
@@ -358,34 +388,34 @@ const Homepage = (props) => {
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="shop-item mb-60">
-                  <div class="shop-thumb">
+              <div className="col">
+                <div className="shop-item mb-60">
+                  <div className="shop-thumb">
                     <a href="#">
-                      <img src="img/products/shop_img04.jpg" alt="" />
+                      <img src={shop_img04} alt="" />
                     </a>
                   </div>
-                  <div class="shop-content">
-                    <span class="cat">Mask</span>
-                    <h5 class="title">
+                  <div className="shop-content">
+                    <span className="cat">Mask</span>
+                    <h5 className="title">
                       {" "}
                       <a href="#">Axiom Karela Jamun Juice</a>
                     </h5>
-                    <div class="shop-item-rating">
-                      <span class="avg-rating">
+                    <div className="shop-item-rating">
+                      <span className="avg-rating">
                         {" "}
-                        3.2 <i class="far fa-star"></i>
+                        3.2 <i className="far fa-star"></i>
                       </span>
-                      <span class="total-rating">349 Ratings</span>
+                      <span className="total-rating">349 Ratings</span>
                     </div>
-                    <p class="shop-discount">
+                    <p className="shop-discount">
                       MRP <del>$300</del>{" "}
-                      <span class="discount-off">6% OFF</span>
+                      <span className="discount-off">6% OFF</span>
                     </p>
-                    <div class="shop-bottom">
+                    <div className="shop-bottom">
                       <ul>
-                        <li class="price">$52.00</li>
-                        <li class="add">
+                        <li className="price">$52.00</li>
+                        <li className="add">
                           <a href="#">ADD +</a>
                         </li>
                       </ul>
@@ -393,34 +423,34 @@ const Homepage = (props) => {
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="shop-item mb-60">
-                  <div class="shop-thumb">
+              <div className="col">
+                <div className="shop-item mb-60">
+                  <div className="shop-thumb">
                     <a href="#">
-                      <img src="img/products/shop_img05.jpg" alt="" />
+                      <img src={shop_img05} alt="" />
                     </a>
                   </div>
-                  <div class="shop-content">
-                    <span class="cat">Juice</span>
-                    <h5 class="title">
+                  <div className="shop-content">
+                    <span className="cat">Juice</span>
+                    <h5 className="title">
                       {" "}
                       <a href="#">La Shield Sunscreen Gel SPF 40</a>
                     </h5>
-                    <div class="shop-item-rating">
-                      <span class="avg-rating">
+                    <div className="shop-item-rating">
+                      <span className="avg-rating">
                         {" "}
-                        4.2 <i class="far fa-star"></i>
+                        4.2 <i className="far fa-star"></i>
                       </span>
-                      <span class="total-rating">145 Ratings</span>
+                      <span className="total-rating">145 Ratings</span>
                     </div>
-                    <p class="shop-discount">
+                    <p className="shop-discount">
                       MRP <del>$300</del>{" "}
-                      <span class="discount-off">6% OFF</span>
+                      <span className="discount-off">6% OFF</span>
                     </p>
-                    <div class="shop-bottom">
+                    <div className="shop-bottom">
                       <ul>
-                        <li class="price">$45.00</li>
-                        <li class="add">
+                        <li className="price">$45.00</li>
+                        <li className="add">
                           <a href="#">ADD +</a>
                         </li>
                       </ul>
@@ -433,122 +463,122 @@ const Homepage = (props) => {
         </section>
         {/* <!-- categories-area-end --> */}
         {/* <!-- deal-week-area --> */}
-        <section class="deal-week-area">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <div class="section-title text-center mb-30">
-                  <h3 class="title">Deal Of This Week</h3>
+        <section className="deal-week-area">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-6">
+                <div className="section-title text-center mb-30">
+                  <h3 className="title">Deal Of This Week</h3>
                   <p>
                     Want everyone to see it and find myself sharing the link
                     anywhere
                   </p>
                 </div>
-                <div class="deal-week-countdown mb-50">
-                  <div class="coming-time" data-countdown="2022/1/29"></div>
+                <div className="deal-week-countdown mb-50">
+                  <div className="coming-time" data-countdown="2022/1/29"></div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xl-3 col-lg-4 col-sm-6 order-2 order-lg-0">
-                <div class="deal-week-item">
-                  <div class="deal-week-inner">
-                    <div class="deal-week-thumb">
-                      <img src="img/products/deal_week_img01.jpg" alt="" />
+            <div className="row">
+              <div className="col-xl-3 col-lg-4 col-sm-6 order-2 order-lg-0">
+                <div className="deal-week-item">
+                  <div className="deal-week-inner">
+                    <div className="deal-week-thumb">
+                      <img src={deal_week_img01} alt="" />
                     </div>
-                    <div class="deal-week-content">
+                    <div className="deal-week-content">
                       <span>medical</span>
-                      <h4 class="title">
+                      <h4 className="title">
                         <a href="#">
                           Temperature <span>UP TO 25%</span>
                         </a>
                       </h4>
-                      <a href="#" class="btn">
+                      <a href="#" className="btn">
                         shop now
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="deal-week-item">
-                  <div class="deal-week-inner">
-                    <div class="deal-week-thumb">
-                      <img src="img/products/deal_week_img02.jpg" alt="" />
+                <div className="deal-week-item">
+                  <div className="deal-week-inner">
+                    <div className="deal-week-thumb">
+                      <img src={deal_week_img02} alt="" />
                     </div>
-                    <div class="deal-week-content">
+                    <div className="deal-week-content">
                       <span>medical</span>
-                      <h4 class="title">
+                      <h4 className="title">
                         <a href="#">
                           sanitizer Max <span>UP TO 25%</span>
                         </a>
                       </h4>
-                      <a href="#" class="btn">
+                      <a href="#" className="btn">
                         shop now
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-4">
-                <div class="deal-week-item dw-big-item">
-                  <div class="deal-week-inner">
-                    <div class="deal-week-content">
+              <div className="col-xl-6 col-lg-4">
+                <div className="deal-week-item dw-big-item">
+                  <div className="deal-week-inner">
+                    <div className="deal-week-content">
                       <span>medical pack</span>
-                      <h4 class="title">
+                      <h4 className="title">
                         <a href="#">
                           Lab Face Mask <span>UP TO 25%</span>
                         </a>
                       </h4>
-                      <a href="#" class="btn">
+                      <a href="#" className="btn">
                         shop now
                       </a>
                     </div>
-                    <div class="deal-week-thumb">
+                    <div className="deal-week-thumb">
                       <img
-                        src="img/products/deal_week_img03.jpg"
-                        class="main-img"
+                        src={deal_week_img03}
+                        className="main-img"
                         alt=""
                       />
                       <img
                         src="img/products/dw_item_des.png"
-                        class="discount-img"
+                        className="discount-img"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="deal-week-item">
-                  <div class="deal-week-inner">
-                    <div class="deal-week-thumb">
-                      <img src="img/products/deal_week_img04.jpg" alt="" />
+              <div className="col-xl-3 col-lg-4 col-sm-6">
+                <div className="deal-week-item">
+                  <div className="deal-week-inner">
+                    <div className="deal-week-thumb">
+                      <img src={deal_week_img04} alt="" />
                     </div>
-                    <div class="deal-week-content">
+                    <div className="deal-week-content">
                       <span>covid-19</span>
-                      <h4 class="title">
+                      <h4 className="title">
                         <a href="#">
                           co vaccine <span>UP TO 25%</span>
                         </a>
                       </h4>
-                      <a href="#" class="btn">
+                      <a href="#" className="btn">
                         shop now
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="deal-week-item">
-                  <div class="deal-week-inner">
-                    <div class="deal-week-thumb">
-                      <img src="img/products/deal_week_img05.jpg" alt="" />
+                <div className="deal-week-item">
+                  <div className="deal-week-inner">
+                    <div className="deal-week-thumb">
+                      <img src={deal_week_img05} alt="" />
                     </div>
-                    <div class="deal-week-content">
+                    <div className="deal-week-content">
                       <span>medical pack</span>
-                      <h4 class="title">
+                      <h4 className="title">
                         <a href="#">
                           hand gloves <span>UP TO 25%</span>
                         </a>
                       </h4>
-                      <a href="#" class="btn">
+                      <a href="#" className="btn">
                         shop now
                       </a>
                     </div>
@@ -560,112 +590,112 @@ const Homepage = (props) => {
         </section>
         {/* <!-- deal-week-area-end --> */}
         {/* <!-- testimonial-area --> */}
-        <section class="testimonial-area testimonial-bg">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-xl-6 col-lg-8">
-                <div class="section-title text-center mb-45">
-                  <h3 class="title">Our Client Says</h3>
+        <section className="testimonial-area testimonial-bg">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-xl-6 col-lg-8">
+                <div className="section-title text-center mb-45">
+                  <h3 className="title">Our Client Says</h3>
                   <p>Want everyone to see it and find myself sharing</p>
                 </div>
               </div>
             </div>
-            <div class="row testimonial-active">
-              <div class="col-xl-4">
-                <div class="testimonial-item">
-                  <div class="testi-img">
-                    <img src="img/images/testimonial_img01.png" alt="" />
+            <div className="row testimonial-active">
+              <div className="col-xl-4">
+                <div className="testimonial-item">
+                  <div className="testi-img">
+                    <img src={testimonial_img01} alt="" />
                   </div>
-                  <div class="testi-content">
+                  <div className="testi-content">
                     <p>
                       “ Want everyone to see and find myself sharing the link
                       Lorem Ipsum is simply dummy text of printing typesing
                       industry ”
                     </p>
-                    <div class="testi-avatar-info">
-                      <h5 class="title">E. Tomas Felix</h5>
+                    <div className="testi-avatar-info">
+                      <h5 className="title">E. Tomas Felix</h5>
                       <span>Founder. CEO</span>
-                      <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                      <div className="rating">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4">
-                <div class="testimonial-item">
-                  <div class="testi-img">
+              <div className="col-xl-4">
+                <div className="testimonial-item">
+                  <div className="testi-img">
+                    <img src={testimonial_img02} alt="" />
+                  </div>
+                  <div className="testi-content">
+                    <p>
+                      “ Want everyone to see and find myself sharing the link
+                      Lorem Ipsum is simply dummy text of printing typesing
+                      industry ”
+                    </p>
+                    <div className="testi-avatar-info">
+                      <h5 className="title">G. Faeian Felix</h5>
+                      <span>Founder. CEO</span>
+                      <div className="rating">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-4">
+                <div className="testimonial-item">
+                  <div className="testi-img">
+                    <img src={testimonial_img03} alt="" />
+                  </div>
+                  <div className="testi-content">
+                    <p>
+                      “ Want everyone to see and find myself sharing the link
+                      Lorem Ipsum is simply dummy text of printing typesing
+                      industry ”
+                    </p>
+                    <div className="testi-avatar-info">
+                      <h5 className="title">D. Nova Lunap</h5>
+                      <span>Founder. CEO</span>
+                      <div className="rating">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-4">
+                <div className="testimonial-item">
+                  <div className="testi-img">
                     <img src="img/images/testimonial_img02.png" alt="" />
                   </div>
-                  <div class="testi-content">
+                  <div className="testi-content">
                     <p>
                       “ Want everyone to see and find myself sharing the link
                       Lorem Ipsum is simply dummy text of printing typesing
                       industry ”
                     </p>
-                    <div class="testi-avatar-info">
-                      <h5 class="title">G. Faeian Felix</h5>
+                    <div className="testi-avatar-info">
+                      <h5 className="title">M. Hisana Kulan</h5>
                       <span>Founder. CEO</span>
-                      <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4">
-                <div class="testimonial-item">
-                  <div class="testi-img">
-                    <img src="img/images/testimonial_img03.png" alt="" />
-                  </div>
-                  <div class="testi-content">
-                    <p>
-                      “ Want everyone to see and find myself sharing the link
-                      Lorem Ipsum is simply dummy text of printing typesing
-                      industry ”
-                    </p>
-                    <div class="testi-avatar-info">
-                      <h5 class="title">D. Nova Lunap</h5>
-                      <span>Founder. CEO</span>
-                      <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4">
-                <div class="testimonial-item">
-                  <div class="testi-img">
-                    <img src="img/images/testimonial_img02.png" alt="" />
-                  </div>
-                  <div class="testi-content">
-                    <p>
-                      “ Want everyone to see and find myself sharing the link
-                      Lorem Ipsum is simply dummy text of printing typesing
-                      industry ”
-                    </p>
-                    <div class="testi-avatar-info">
-                      <h5 class="title">M. Hisana Kulan</h5>
-                      <span>Founder. CEO</span>
-                      <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                      <div className="rating">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
                       </div>
                     </div>
                   </div>
@@ -679,715 +709,7 @@ const Homepage = (props) => {
 
 
         {/* shop-area - буде окремо*/}
-        {/* <div className="shop-area shop-inner-page pt-100 pb-100">
-          <div className="container">
-            <div className="row justify-content-center row-reverse">
-              <div className="col-3 order-2 order-lg-0">
-                <aside className="shop-sidebar">
-                  <div className="widget">
-                    <div className="sidebar-search">
-                      <form action="#">
-                        <input type="text" placeholder="Search ..." />
-                        <button type="submit">
-                          <i className="fa fa-search"></i>
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                  <div className="widget">
-                    <h4 className="sidebar-title">Category</h4>
-                    <div className="shop-cat-list">
-                      <ul>
-                        <li>
-                          <a href="shop.html">
-                            Medication <span>+</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="shop.html">
-                            Disposable <span>+</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="shop.html">
-                            PPE-Kit <span>+</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="shop.html">
-                            Face-Mask <span>+</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="shop.html">
-                            Safety-Suits <span>+</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="shop.html">
-                            Eye-Protect <span>+</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="widget">
-                    <h4 className="sidebar-title">Top Brand</h4>
-                    <div className="shop-brand-list">
-                      <ul>
-                        <li>
-                          <a href="shop.html">Medication</a>
-                        </li>
-                        <li>
-                          <a href="shop.html">Carnation</a>
-                        </li>
-                        <li>
-                          <a href="shop.html">Suppke</a>
-                        </li>
-                        <li>
-                          <a href="shop.html">WeBeyond</a>
-                        </li>
-                        <li>
-                          <a href="shop.html">Edstudy</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="widget">
-                    <h4 className="sidebar-title">Filter by Price</h4>
-                    <div className="price_filter">
-                      <div
-                        id="slider-range"
-                        className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
-                      >
-                        <div
-                          className="ui-slider-range ui-widget-header ui-corner-all"
-                          style={{ left: "14.2857%", width: "64.2857%" }}
-                        ></div>
-                        <span
-                          className="ui-slider-handle ui-state-default ui-corner-all"
-                          tabindex="0"
-                          style={{ left: "14.2857%" }}
-                        ></span>
-                        <span
-                          className="ui-slider-handle ui-state-default ui-corner-all"
-                          tabindex="0"
-                          style={{ left: "78.5714%" }}
-                        ></span>
-                      </div>
-                      <div className="price_slider_amount">
-                        <span>Price :</span>
-                        <input
-                          type="text"
-                          id="amount"
-                          name="price"
-                          placeholder="Add Your Price"
-                        />
-                        <input type="submit" className="btn" value="Filter" />
-                      </div>
-                    </div>
-                  </div>
-                </aside>
-              </div>
-              <div className="col-9">
-                <div className="shop-wrap">
-                  <h4 className="title">Shop</h4>
-                  <div className="shop-page-meta mb-30">
-                    <div className="shop-grid-menu">
-                      <ul>
-                        <li className="active">
-                          <a href="#">
-                            <i className="fas fa-th"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i className="fas fa-list"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="shop-showing-result">
-                      <p>Total Items 1-12 of 13</p>
-                    </div>
-                    <div className="shop-show-list">
-                      <form action="#">
-                        <label for="show">Show</label>
-                        <select
-                          id="show"
-                          className="selected"
-                          style={{ display: "none" }}
-                        >
-                          <option value="">08</option>
-                          <option value="">12</option>
-                          <option value="">16</option>
-                          <option value="">18</option>
-                          <option value="">20</option>
-                        </select>
-                        <div className="nice-select selected" tabindex="0">
-                          <span className="current">08</span>
-                          <ul className="list">
-                            <li data-value="" className="option selected">
-                              08
-                            </li>
-                            <li data-value="" className="option">
-                              12
-                            </li>
-                            <li data-value="" className="option">
-                              16
-                            </li>
-                            <li data-value="" className="option">
-                              18
-                            </li>
-                            <li data-value="" className="option">
-                              20
-                            </li>
-                          </ul>
-                        </div>
-                      </form>
-                    </div>
-                    <div className="shop-short-by">
-                      <form action="#">
-                        <label for="shortBy">Sort By</label>
-                        <select
-                          id="shortBy"
-                          className="selected"
-                          style={{ display: "none" }}
-                        >
-                          <option value="">Sort by latest</option>
-                          <option value="">Low to high</option>
-                          <option value="">High to low</option>
-                          <option value="">Popularity</option>
-                        </select>
-                        <div className="nice-select selected" tabindex="0">
-                          <span className="current">Sort by latest</span>
-                          <ul className="list">
-                            <li data-value="" className="option selected">
-                              Sort by latest
-                            </li>
-                            <li data-value="" className="option">
-                              Low to high
-                            </li>
-                            <li data-value="" className="option">
-                              High to low
-                            </li>
-                            <li data-value="" className="option">
-                              Popularity
-                            </li>
-                          </ul>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div className="row justify-content-center">
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img1.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Sanitizers</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              3.2 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$97.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img2.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Juice</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Episoft AC Sunscreen Cream
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$370.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img3.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Microscope</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Glucon-D Instant Energy
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$280.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img4.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Mask</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$190.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img5.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Juice</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              La Shield Sunscreen Gel SPF 40
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$29.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img6.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Sanitizers</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              3.2 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$97.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img7.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Juice</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Episoft AC Sunscreen Cream
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$370.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img8.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Microscope</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Glucon-D Instant Energy
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$280.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img9.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Mask</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$190.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img10.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Juice</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              La Shield Sunscreen Gel SPF 40
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$29.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img1.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Sanitizers</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              3.2 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$97.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src="img/img2.jpg" alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">Juice</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                              Episoft AC Sunscreen Cream
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              {" "}
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">$370.00</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="shop-page-meta">
-                    <div className="shop-grid-menu">
-                      <ul>
-                        <li className="active">
-                          <a href="#">
-                            <i className="fas fa-th"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i className="fas fa-list"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="shop-showing-result">
-                      <p>Total Items 1-12 of 13</p>
-                    </div>
-                    <div className="shop-show-list">
-                      <form action="#">
-                        <label for="bottomShow">Show</label>
-                        <select
-                          id="bottomShow"
-                          className="selected"
-                          style={{ display: "none" }}
-                        >
-                          <option value="">08</option>
-                          <option value="">12</option>
-                          <option value="">16</option>
-                          <option value="">18</option>
-                          <option value="">20</option>
-                        </select>
-                        <div className="nice-select selected" tabindex="0">
-                          <span className="current">08</span>
-                          <ul className="list">
-                            <li data-value="" className="option selected">
-                              08
-                            </li>
-                            <li data-value="" className="option">
-                              12
-                            </li>
-                            <li data-value="" className="option">
-                              16
-                            </li>
-                            <li data-value="" className="option">
-                              18
-                            </li>
-                            <li data-value="" className="option">
-                              20
-                            </li>
-                          </ul>
-                        </div>
-                      </form>
-                    </div>
-                    <div className="shop-pagination">
-                      <ul>
-                        <li className="active">
-                          <a href="shop.html">1</a>
-                        </li>
-                        <li>
-                          <a href="shop.html">2</a>
-                        </li>
-                        <li>
-                          <a href="shop.html">
-                            <i className="fas fa-angle-double-right"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        {/* на Shop page */}
         {/* shop-area-end */}
       </main>
       <Footer />

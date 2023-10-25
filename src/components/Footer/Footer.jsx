@@ -1,3 +1,11 @@
+import delivery from "../../img/delivery.png";
+import return1 from "../../img/return.png";
+import headphone from "../../img/headphone.png";
+import gp from "../../img/gp.png";
+import as from "../../img/as.png";
+import card from "../../img/card.png";
+
+
 const Footer = (props) => {
   return (
     <footer>
@@ -8,7 +16,7 @@ const Footer = (props) => {
             <div className="col-lg-4 col-md-6">
               <div className="core-features-item mb-30">
                 <div className="core-features-icon">
-                  <img src="img/delivery.png" alt="" />
+                  <img src={delivery} alt="" />
                 </div>
                 <div className="core-features-content">
                   <h4 className="title">Home Delivery</h4>
@@ -21,7 +29,7 @@ const Footer = (props) => {
             <div className="col-lg-4 col-md-6">
               <div className="core-features-item mb-30">
                 <div className="core-features-icon">
-                  <img src="img/return.png" alt="" />
+                  <img src={return1} alt="" />
                 </div>
                 <div className="core-features-content">
                   <h4 className="title">Click and Pick</h4>
@@ -34,7 +42,7 @@ const Footer = (props) => {
             <div className="col-lg-4 col-md-6">
               <div className="core-features-item mb-30">
                 <div className="core-features-icon">
-                  <img src="img/headphone.png" alt="" />
+                  <img src={headphone} alt="" />
                 </div>
                 <div className="core-features-content">
                   <h4 className="title">Quality Support</h4>
@@ -146,10 +154,10 @@ const Footer = (props) => {
                 </div>
                 <div className="fw-download-btn">
                   <a href="#">
-                    <img src="img/gp.png" alt="" />
+                    <img src={gp} alt="" />
                   </a>
                   <a href="#">
-                    <img src="img/as.png" alt="" />
+                    <img src={as} alt="" />
                   </a>
                 </div>
               </div>
@@ -305,7 +313,7 @@ const Footer = (props) => {
             </div>
             <div className="col-md-6">
               <div className="payment-method-img text-center text-md-right">
-                <img src="img/card.png" alt="" />
+                <img src={card} alt="" />
               </div>
             </div>
           </div>

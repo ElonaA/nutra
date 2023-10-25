@@ -1,5 +1,18 @@
+import "./Shop.css";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+
+import img1 from "../../img/img1.jpg";
+import img2 from "../../img/img2.jpg";
+import img3 from "../../img/img3.jpg";
+import img4 from "../../img/img4.jpg";
+import img5 from "../../img/img5.jpg";
+import img6 from "../../img/img6.jpg";
+import img7 from "../../img/img7.jpg";
+import img8 from "../../img/img8.jpg";
+import img9 from "../../img/img9.jpg";
+import img10 from "../../img/img10.jpg";
+
 
 const Shop = (props) => {
   return (
@@ -212,7 +225,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img1.jpg" alt="" />
+                            <img src={img1} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -248,7 +261,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img2.jpg" alt="" />
+                            <img src={img2} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -284,7 +297,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img3.jpg" alt="" />
+                            <img src={img3} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -320,7 +333,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img4.jpg" alt="" />
+                            <img src={img4} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -356,7 +369,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img5.jpg" alt="" />
+                            <img src={img5} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -392,7 +405,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img6.jpg" alt="" />
+                            <img src={img6} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -428,7 +441,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img7.jpg" alt="" />
+                            <img src={img7} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -464,7 +477,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img8.jpg" alt="" />
+                            <img src={img8} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -500,7 +513,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img9.jpg" alt="" />
+                            <img src={img9} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -536,7 +549,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img10.jpg" alt="" />
+                            <img src={img10} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -572,7 +585,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img1.jpg" alt="" />
+                            <img src={img1} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
@@ -608,7 +621,7 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src="img/img2.jpg" alt="" />
+                            <img src={img2} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
