@@ -14,9 +14,9 @@ function App(props) {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Homepage offers={props.offers}/>} />
         <Route path="/shop" element={<Shop offers={props.offers} />} />
-        <Route path="/offers" element={<Offers />} />
+        <Route path="/offers" element={<Offers offers={props.offers}/>} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/modal" element={<Modal />} />
         <Route path="/admin" element={<AdminPanel />} />

@@ -1,11 +1,22 @@
 import React, { useState } from "react";
-import SimpleSlider from "../../components/slider/slick-carousel";
+import SimpleSlider from "../../components/sliders/offers_page_sliders/slick-carousel";
 import Button from "../../components/inc-button";
 import Modal from "../Modal";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
-import img1 from "../../img/img1.jpg"
+import offer_1 from "../../img/offers/1.png";
+import offer_2 from "../../img/offers/2.png";
+import offer_3 from "../../img/offers/3.png";
+import offer_4 from "../../img/offers/4.png";
+import offer_5 from "../../img/offers/5.png";
+import offer_6 from "../../img/offers/6.jpg";
+import offer_7 from "../../img/offers/7.png";
+import offer_8 from "../../img/offers/8.png";
+import offer_9 from "../../img/offers/9.png";
+import offer_10 from "../../img/offers/10.png";
+import offer_11 from "../../img/offers/11.png";
+import offer_12 from "../../img/offers/12.png";
 
 const Offers = (props) => {
   const [modalActive, setModalActive] = useState(false);
@@ -89,18 +100,15 @@ const Offers = (props) => {
             <div className="content__right">
               <div className="product">
                 <div className="product__gallery">
-                  <img className="product__img" src={img1}></img>
+                  <img className="product__img" src={ offer_1 }></img>
                 </div>
                 <div className="product__info">
-                  <p className="product__category">Hand Sanitizer</p>
-                  <h3 className="product__title">Axiom Karela Juice</h3>
+                  <p className="product__category">{props.offers[0].category}</p>
+                  <h3 className="product__title">{props.offers[0].title}</h3>
                   <p className="product__status">In stock</p>
-                  <p className="product__price">$44.00</p>
+                  <p className="product__price">{props.offers[0].price}</p>
                   <p className="product__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                    molestiae veniam quidem praesentium minus harum, numquam
-                    porro asperiores officiis excepturi est aliquam repellendus
-                    accusantium mollitia dolorum nihil eveniet obcaecati fugit!
+                  {props.offers[0].description}
                   </p>
                   <div className="product__order">
                     <div className="product__quantity">
@@ -137,21 +145,15 @@ const Offers = (props) => {
                 </ul>
                 <div className="tabs__content">
                   <p className="tabs__text">
-                    1 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Recusandae velit, nulla, est debitis nemo sapiente
-                    blanditiis tenetur accusamus laboriosam nobis minus
-                    voluptatum molestias consequatur neque vero eum quia, nam
-                    corrupti! Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Ipsum adipisci commodi dolor dignissimos
-                    omnis, quisquam aliquam error et repudiandae inventore
-                    itaque in obcaecati numquam, iure voluptatum tempora
-                    perspiciatis voluptates perferendis?
+                    {props.offers[0].advantages["1"]}<br/>
+                    {props.offers[0].advantages["2"]}<br/>
+                    {props.offers[0].advantages["3"]}<br/>
                   </p>
                 </div>
               </div>
               <h2 className="slider__titile">Related Products</h2>
               <div className="slider__wrapper">
-                <SimpleSlider></SimpleSlider>
+                <SimpleSlider offers={props.offers}></SimpleSlider>
               </div>
             </div>
           </section>

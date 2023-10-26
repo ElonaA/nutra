@@ -32,9 +32,23 @@ import deal_week_img05 from "../../img/products/deal_week_img05.jpg";
 import testimonial_img01 from "../../img/images/testimonial_img01.png";
 import testimonial_img02 from "../../img/images/testimonial_img02.png";
 import testimonial_img03 from "../../img/images/testimonial_img03.png";
+import HomeOfferItem from "./HomeOfferItem/HomeOfferItem";
 
 
 const Homepage = (props) => {
+  // offers list
+  const HomeOffersList = props.offers.map((item) => (
+    <HomeOfferItem
+      category={item.category}
+      title={item.title}
+      rating={item.rating}
+      old_price={item.old_price}
+      discount={item.discount}
+      price={item.price}
+      img={item.img}
+    />
+  ));
+
   return (
     <div>
       <Header />
@@ -283,7 +297,10 @@ const Homepage = (props) => {
               </div>
             </div>
             <div className="row shop-active">
-              <div className="col">
+              { HomeOffersList }
+              
+              {/* замінено на HomeOffersList */}
+              {/* <div className="col">
                 <div className="shop-item mb-60">
                   <div className="shop-thumb">
                     <a href="#">
@@ -457,7 +474,7 @@ const Homepage = (props) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

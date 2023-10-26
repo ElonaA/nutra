@@ -11,9 +11,7 @@ import offer_10 from "../../../img/offers/10.png";
 import offer_11 from "../../../img/offers/11.png";
 import offer_12 from "../../../img/offers/12.png";
 
-
-const ShopOfferItem = ({category, title, rating, old_price, discount, price, img}) => {
-
+const HomeOfferItem = ({category, title, rating, old_price, discount, price, img}) => {
   let currentImage;
   if (img === "offer_1") {
     currentImage = offer_1;
@@ -40,19 +38,18 @@ const ShopOfferItem = ({category, title, rating, old_price, discount, price, img
   } else if (img === "offer_12") {
     currentImage = offer_12;
   }
-  
   return (
     <div className="col">
-      <div className="shop-item mb-45">
+      <div className="shop-item mb-60">
         <div className="shop-thumb">
-          <a href="shop-details.html">
-            <img src={ currentImage } alt="product-1" />
+          <a href="#">
+            <img src={ currentImage } alt="" />
           </a>
         </div>
         <div className="shop-content">
           <span className="cat">{ category }</span>
           <h5 className="title">
-            <a href="shop-details.html">{ title }</a>
+            <a href="#">{ title }</a>
           </h5>
           <div className="shop-item-rating">
             <span className="avg-rating">
@@ -61,14 +58,13 @@ const ShopOfferItem = ({category, title, rating, old_price, discount, price, img
             <span className="total-rating">349 Ratings</span>
           </div>
           <p className="shop-discount">
-            <del>{ old_price }</del>
-            <span className="discount-off">{ discount }</span>
+           <del>{ old_price }</del> <span className="discount-off">{ discount }</span>
           </p>
           <div className="shop-bottom">
             <ul>
               <li className="price">{ price }</li>
               <li className="add">
-                <a href="shop-details.html">ADD +</a>
+                <a href="#">ADD +</a>
               </li>
             </ul>
           </div>
@@ -78,4 +74,4 @@ const ShopOfferItem = ({category, title, rating, old_price, discount, price, img
   );
 };
 
-export default ShopOfferItem;
+export default HomeOfferItem;

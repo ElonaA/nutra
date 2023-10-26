@@ -1,7 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
+import SlickCarouselItem from "./SlickCarouselItem";
 
-export default function SimpleSlider() {
+export default function SimpleSlider(props) {
   var settings = {
     dots: true,
     infinite: true,
@@ -48,9 +49,16 @@ export default function SimpleSlider() {
       </div>
     ),
   };
+  
+  // offers list for slider
+  const sliderList = props.offers.map(item => <SlickCarouselItem key={item.id} category={item.category} title={item.title} price={item.price} img={item.img}/>)
+
   return (
     <Slider {...settings}>
-      <div className="card__wrapper">
+      { sliderList }
+
+     {/* Було раніше, замінено на sliderList */}
+      {/* <div className="card__wrapper">
         <div className="card">
           <div className="product__card">
             <div className="product__top">
@@ -264,7 +272,7 @@ export default function SimpleSlider() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Slider>
   );
 }

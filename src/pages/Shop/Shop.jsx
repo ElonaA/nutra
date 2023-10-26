@@ -2,19 +2,23 @@ import "./Shop.css";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
-import img1 from "../../img/img1.jpg";
-import img2 from "../../img/img2.jpg";
-import img3 from "../../img/img3.jpg";
-import img4 from "../../img/img4.jpg";
-import img5 from "../../img/img5.jpg";
-import img6 from "../../img/img6.jpg";
-import img7 from "../../img/img7.jpg";
-import img8 from "../../img/img8.jpg";
-import img9 from "../../img/img9.jpg";
-import img10 from "../../img/img10.jpg";
-
+import ShopOfferItem from "./ShopOfferItem/ShopOfferItem";
 
 const Shop = (props) => {
+  
+  // offers list
+  const offersList = props.offers.map((item) => (
+    <ShopOfferItem
+      category={item.category}
+      title={item.title}
+      rating={item.rating}
+      old_price={item.old_price}
+      discount={item.discount}
+      price={item.price}
+      img={item.img}
+    />
+  ));
+
   return (
     <div>
       <Header />
@@ -221,34 +225,37 @@ const Shop = (props) => {
                     </div>
                   </div>
                   <div className="row justify-content-center">
-                    <div className="col">
+                    { offersList }
+
+                    {/* замінено на offersList */}
+                    {/* <div className="col">
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img1} alt="" />
+                            <img src={offer_1} alt="product-1" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Sanitizers</span>
+                          <span className="cat">{props.offers[0].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
+                            {props.offers[0].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               3.2 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                            <del>14 GEL</del>
+                            <span className="discount-off">100% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$97.00</li>
+                              <li className="price">{props.offers[0].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -261,30 +268,29 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img2} alt="" />
+                            <img src={offer_2} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Juice</span>
+                          <span className="cat">{props.offers[1].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Episoft AC Sunscreen Cream
+                            {props.offers[1].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                            <del>14 GEL</del>
+                            <span className="discount-off">100% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$370.00</li>
+                              <li className="price">{props.offers[1].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -297,30 +303,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img3} alt="" />
+                            <img src={offer_3} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Microscope</span>
+                          <span className="cat">{props.offers[2].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Glucon-D Instant Energy
+                            {props.offers[2].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                            
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                            <del>30 GEL</del>
+                            <span className="discount-off">100% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$280.00</li>
+                              <li className="price">{props.offers[2].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -333,30 +339,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img4} alt="" />
+                            <img src={offer_4} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Mask</span>
+                          <span className="cat">{props.offers[3].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
+                            {props.offers[3].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                            <del>99 GEL</del>
+                            <span className="discount-off">92% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$190.00</li>
+                              <li className="price">{props.offers[3].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -369,30 +375,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img5} alt="" />
+                            <img src={offer_5} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Juice</span>
+                          <span className="cat">{props.offers[4].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              La Shield Sunscreen Gel SPF 40
+                            {props.offers[4].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                             <del>159.8 GEL</del>
+                            <span className="discount-off">100% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$29.00</li>
+                              <li className="price">{props.offers[4].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -405,30 +411,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img6} alt="" />
+                            <img src={offer_6} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Sanitizers</span>
+                          <span className="cat">{props.offers[5].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
+                            {props.offers[5].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               3.2 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                            <del>30 GEL</del>
+                            <span className="discount-off">50% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$97.00</li>
+                              <li className="price">{props.offers[5].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -441,30 +447,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img7} alt="" />
+                            <img src={offer_7} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Juice</span>
+                          <span className="cat">{props.offers[6].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Episoft AC Sunscreen Cream
+                            {props.offers[6].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                            <del>15 GEL</del>
+                            <span className="discount-off">50% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$370.00</li>
+                              <li className="price">{props.offers[6].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -477,30 +483,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img8} alt="" />
+                            <img src={offer_8} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Microscope</span>
+                          <span className="cat">{props.offers[7].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Glucon-D Instant Energy
+                            {props.offers[7].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                            <del>100 GEL</del>{" "}
+                            <span className="discount-off">75% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$280.00</li>
+                              <li className="price">{props.offers[7].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -513,30 +519,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img9} alt="" />
+                            <img src={offer_9} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Mask</span>
+                          <span className="cat">{props.offers[8].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
+                            {props.offers[8].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                             <del>30 GEL</del>
+                            <span className="discount-off">50% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$190.00</li>
+                              <li className="price">{props.offers[8].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -549,30 +555,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img10} alt="" />
+                            <img src={offer_10} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Juice</span>
+                          <span className="cat">{props.offers[9].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              La Shield Sunscreen Gel SPF 40
+                            {props.offers[9].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                             <del>30 GEL</del>
+                            <span className="discount-off">50% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$29.00</li>
+                              <li className="price">{props.offers[9].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -585,30 +591,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img1} alt="" />
+                            <img src={offer_11} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Sanitizers</span>
+                          <span className="cat">{props.offers[10].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Axiom Karela Jamun Juice
+                            {props.offers[10].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               3.2 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                             <del>30 GEL</del>
+                            <span className="discount-off">50% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$97.00</li>
+                              <li className="price">{props.offers[10].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -621,30 +627,30 @@ const Shop = (props) => {
                       <div className="shop-item mb-45">
                         <div className="shop-thumb">
                           <a href="shop-details.html">
-                            <img src={img2} alt="" />
+                            <img src={offer_12} alt="" />
                           </a>
                         </div>
                         <div className="shop-content">
-                          <span className="cat">Juice</span>
+                          <span className="cat">{props.offers[11].category}</span>
                           <h5 className="title">
                             <a href="shop-details.html">
-                              Episoft AC Sunscreen Cream
+                            {props.offers[11].title}
                             </a>
                           </h5>
                           <div className="shop-item-rating">
                             <span className="avg-rating">
-                              {" "}
+                              
                               4.5 <i className="far fa-star"></i>
                             </span>
                             <span className="total-rating">349 Ratings</span>
                           </div>
                           <p className="shop-discount">
-                            MRP <del>$300</del>{" "}
-                            <span className="discount-off">6% OFF</span>
+                             <del>30 GEL</del>
+                            <span className="discount-off">100% OFF</span>
                           </p>
                           <div className="shop-bottom">
                             <ul>
-                              <li className="price">$370.00</li>
+                              <li className="price">{props.offers[11].price}</li>
                               <li className="add">
                                 <a href="shop-details.html">ADD +</a>
                               </li>
@@ -652,7 +658,7 @@ const Shop = (props) => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="shop-page-meta">
                     <div className="shop-grid-menu">
@@ -731,7 +737,7 @@ const Shop = (props) => {
         </div>
         {/* shop-area-end */}
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
