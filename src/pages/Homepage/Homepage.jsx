@@ -6,11 +6,6 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
 // images
-  // додати через стилі для слайдера
-  import slider_bg01 from "../../img/slider/slider_bg01.jpg"; 
-  import slider_bg02 from "../../img/slider/slider_bg02.jpg";
-  import slider_bg03 from "../../img/slider/slider_bg03.jpg";
-  import slider_bg04 from "../../img/slider/slider_bg04.jpg";
 import categories_01 from "../../img/products/categories_01.png";
 import categories_02 from "../../img/products/categories_02.png";
 import categories_03 from "../../img/products/categories_03.png";
@@ -19,11 +14,7 @@ import categories_05 from "../../img/products/categories_05.png";
 import categories_06 from "../../img/products/categories_06.png";
 import categories_07 from "../../img/products/categories_07.png";
 import categories_08 from "../../img/products/categories_08.png";
-import shop_img01 from "../../img/products/shop_img01.jpg";
-import shop_img02 from "../../img/products/shop_img02.jpg";
-import shop_img03 from "../../img/products/shop_img03.jpg";
-import shop_img04 from "../../img/products/shop_img04.jpg";
-import shop_img05 from "../../img/products/shop_img05.jpg";
+
 import deal_week_img01 from "../../img/products/deal_week_img01.jpg";
 import deal_week_img02 from "../../img/products/deal_week_img02.jpg";
 import deal_week_img03 from "../../img/products/deal_week_img03.jpg";
@@ -33,6 +24,7 @@ import testimonial_img01 from "../../img/images/testimonial_img01.png";
 import testimonial_img02 from "../../img/images/testimonial_img02.png";
 import testimonial_img03 from "../../img/images/testimonial_img03.png";
 import HomeOfferItem from "./HomeOfferItem/HomeOfferItem";
+import HomeHeroSlider from "./HomeHeroSlider/HomeHeroSlider";
 
 
 const Homepage = (props) => {
@@ -55,7 +47,7 @@ const Homepage = (props) => {
       <main>
         
         {/* <!-- slider-area --> */}
-        <section className="slider-area">
+        {/* <section className="slider-area">
           <div classNameName="slider-active">
             <div
               classNameName="single-slider slider-bg d-flex align-items-center"
@@ -210,7 +202,8 @@ const Homepage = (props) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <HomeHeroSlider/>
         {/* <!-- slider-area-end--> */}
         {/* <!-- categories-area --> */}
         <section className="categories-area pt-85 pb-25">

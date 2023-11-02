@@ -183,14 +183,14 @@ const Header = (props) => {
             </nav>
           </div>
           {/* <!-- Mobile Menu  --> */}
-          <div className="mobile-menu">
+          {/* <div className="mobile-menu">
                         <nav className="menu-box">
                             <div className="close-btn"><i className="fas fa-times"></i></div>
                             <div className="nav-logo"><a href="#"><img src="img/logo/logo.png" alt="" title=""/></a>
                             </div>
-                            <div className="menu-outer">
+                            <div className="menu-outer"> */}
                                 {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
-                            </div>
+                            {/* </div>
                             <div className="social-links">
                                 <ul className="clearfix">
                                     <li><a href="#"><span className="fab fa-twitter"></span></a></li>
@@ -201,8 +201,8 @@ const Header = (props) => {
                                 </ul>
                             </div>
                         </nav>
-              </div>
-          <div className="menu-backdrop"></div>
+              </div> */}
+          {/* <div className="menu-backdrop"></div> */}
           {/* <!-- End Mobile Menu --> */}
         </div>
       </div>

@@ -1,0 +1,43 @@
+/* 5. Slider */
+.slider-bg {
+    background-size: cover;
+    background-position: right center;
+    padding: 100px 0;
+    min-height: 574px;
+}
+.slider-content .sub-title {
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+.slider-content .sub-title > span {
+    color: #61b8f9;
+}
+.slider-content .title {
+    text-align: start;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.slider-content p {
+    font-size: 15px;
+    color: #282828;
+    margin-bottom: 40px;
+}
+
+.bg-1 {
+    background-image: url("../../../img/slider/slider_bg01.jpg");
+}
+.bg-2 {
+    background-image: url("../../../img/slider/slider_bg02.jpg");
+}
+.bg-3 {
+    background-image: url("../../../img/slider/slider_bg03.jpg");
+}
+.bg-4 {
+    background-image: url("../../../img/slider/slider_bg04.jpg");
+}
