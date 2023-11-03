@@ -6,15 +6,6 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
 // images
-import categories_01 from "../../img/products/categories_01.png";
-import categories_02 from "../../img/products/categories_02.png";
-import categories_03 from "../../img/products/categories_03.png";
-import categories_04 from "../../img/products/categories_04.png";
-import categories_05 from "../../img/products/categories_05.png";
-import categories_06 from "../../img/products/categories_06.png";
-import categories_07 from "../../img/products/categories_07.png";
-import categories_08 from "../../img/products/categories_08.png";
-
 import deal_week_img01 from "../../img/products/deal_week_img01.jpg";
 import deal_week_img02 from "../../img/products/deal_week_img02.jpg";
 import deal_week_img03 from "../../img/products/deal_week_img03.jpg";
@@ -25,6 +16,7 @@ import testimonial_img02 from "../../img/images/testimonial_img02.png";
 import testimonial_img03 from "../../img/images/testimonial_img03.png";
 import HomeOfferItem from "./HomeOfferItem/HomeOfferItem";
 import HomeHeroSlider from "./HomeHeroSlider/HomeHeroSlider";
+import HomeCategorySlider from "../../components/sliders/home_page_sliders/HomeCategorySlider";
 
 
 const Homepage = (props) => {
@@ -223,7 +215,10 @@ const Homepage = (props) => {
             </div>
           </div>
           <div className="container">
-            <div className="row category-active mb-70">
+            <HomeCategorySlider/>
+
+            {/* замість HomeCategorySlider */}
+            {/* <div className="row category-active mb-70">
               <div className="col">
                 <div className="category-item">
                   <a href="#">
@@ -288,7 +283,8 @@ const Homepage = (props) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
+            
             <div className="row shop-active">
               { HomeOffersList }
               
