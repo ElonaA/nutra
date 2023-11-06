@@ -1,0 +1,78 @@
+/* 11. Category */
+.category-title span,
+.shop-section-title .sub-title {
+    color: #878688;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.category-title .title,
+.shop-section-title .title {
+	text-align: start;
+    font-size: 26px;
+    color: #282828;
+    font-weight: 600;
+    text-transform: uppercase;
+	margin-bottom: 0;
+}
+.category-view {
+    text-align: right;
+}
+.category-view a {
+	display: inline-block;
+    color: #50b1f9;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.category-view a:hover {
+	color: #282828;
+}
+.category-active.row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.category-active.row [class*="col"] {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+.category-item > a {
+    display: block;
+    border: 1px solid #dceaf3;
+    border-radius: 8px;
+    padding: 30px 20px 25px;
+    text-align: center;
+}
+.category-item > a:hover {
+    background: #ebf5fb;
+}
+.category-item > a span {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #58575b;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+.category-item > a img {
+	display: inline-block;
+}
+
+/* вручну */
+.categories-area {
+    padding-top: 85px;
+    padding-bottom: 25px;
+}
+.categories-area .container:not(:last-child) {
+    margin-bottom: 35px;
+}
+.categories-area .row {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+.categories-area .row .col-md-8 {
+    width: fit-content;
+}

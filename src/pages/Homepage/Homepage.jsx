@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../../style.css";
+import "./Homepage.css";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -14,25 +15,13 @@ import deal_week_img05 from "../../img/products/deal_week_img05.jpg";
 import testimonial_img01 from "../../img/images/testimonial_img01.png";
 import testimonial_img02 from "../../img/images/testimonial_img02.png";
 import testimonial_img03 from "../../img/images/testimonial_img03.png";
-import HomeOfferItem from "./HomeOfferItem/HomeOfferItem";
-import HomeHeroSlider from "./HomeHeroSlider/HomeHeroSlider";
-import HomeCategorySlider from "../../components/sliders/home_page_sliders/HomeCategorySlider";
+import HomeHeroSlider from "../../components/sliders/home_page_sliders/HomeHeroSlider/HomeHeroSlider";
+import HomeCategorySlider from "../../components/sliders/home_page_sliders/HomeCategorySlider/HomeCategorySlider";
+import HomeOffersSlider from "../../components/sliders/home_page_sliders/HomeOffersSlider/HomeOffersSlider";
 
 
 const Homepage = (props) => {
-  // offers list
-  const HomeOffersList = props.offers.map((item) => (
-    <HomeOfferItem
-      category={item.category}
-      title={item.title}
-      rating={item.rating}
-      old_price={item.old_price}
-      discount={item.discount}
-      price={item.price}
-      img={item.img}
-    />
-  ));
-
+  
   return (
     <div>
       <Header />
@@ -216,8 +205,7 @@ const Homepage = (props) => {
           </div>
           <div className="container">
             <HomeCategorySlider/>
-
-            {/* замість HomeCategorySlider */}
+            {/* замість цього HomeCategorySlider */}
             {/* <div className="row category-active mb-70">
               <div className="col">
                 <div className="category-item">
@@ -285,186 +273,12 @@ const Homepage = (props) => {
               </div>
             </div> */}
             
-            <div className="row shop-active">
+            <HomeOffersSlider offers={props.offers}/>
+            {/* замість цього HomeOffersSlider */}
+            {/* <div className="row shop-active">
               { HomeOffersList }
-              
-              {/* замінено на HomeOffersList */}
-              {/* <div className="col">
-                <div className="shop-item mb-60">
-                  <div className="shop-thumb">
-                    <a href="#">
-                      <img src={ shop_img01 } alt="" />
-                    </a>
-                  </div>
-                  <div className="shop-content">
-                    <span className="cat">Sanitizers</span>
-                    <h5 className="title">
-                      {" "}
-                      <a href="#">Axiom Karela Jamun Juice</a>
-                    </h5>
-                    <div className="shop-item-rating">
-                      <span className="avg-rating">
-                        {" "}
-                        3.2 <i className="far fa-star"></i>
-                      </span>
-                      <span className="total-rating">349 Ratings</span>
-                    </div>
-                    <p className="shop-discount">
-                      MRP <del>$300</del>{" "}
-                      <span className="discount-off">6% OFF</span>
-                    </p>
-                    <div className="shop-bottom">
-                      <ul>
-                        <li className="price">$97.00</li>
-                        <li className="add">
-                          <a href="#">ADD +</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="shop-item mb-60">
-                  <div className="shop-thumb">
-                    <a href="#">
-                      <img src={shop_img02} alt="" />
-                    </a>
-                  </div>
-                  <div className="shop-content">
-                    <span className="cat">Juice</span>
-                    <h5 className="title">
-                      {" "}
-                      <a href="#">Episoft AC Sunscreen Cream</a>
-                    </h5>
-                    <div className="shop-item-rating">
-                      <span className="avg-rating">
-                        {" "}
-                        4.5 <i className="far fa-star"></i>
-                      </span>
-                      <span className="total-rating">240 Ratings</span>
-                    </div>
-                    <p className="shop-discount">
-                      MRP <del>$300</del>{" "}
-                      <span className="discount-off">6% OFF</span>
-                    </p>
-                    <div className="shop-bottom">
-                      <ul>
-                        <li className="price">$370.00</li>
-                        <li className="add">
-                          <a href="#">ADD +</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="shop-item mb-60">
-                  <div className="shop-thumb">
-                    <a href="#">
-                      <img src={shop_img03} alt="" />
-                    </a>
-                  </div>
-                  <div className="shop-content">
-                    <span className="cat">Microscope</span>
-                    <h5 className="title">
-                      {" "}
-                      <a href="#">Glucon-D Instant Energy</a>
-                    </h5>
-                    <div className="shop-item-rating">
-                      <span className="avg-rating">
-                        {" "}
-                        4.2 <i className="far fa-star"></i>
-                      </span>
-                      <span className="total-rating">349 Ratings</span>
-                    </div>
-                    <p className="shop-discount">
-                      MRP <del>$300</del>{" "}
-                      <span className="discount-off">6% OFF</span>
-                    </p>
-                    <div className="shop-bottom">
-                      <ul>
-                        <li className="price">$280.00</li>
-                        <li className="add">
-                          <a href="#">ADD +</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="shop-item mb-60">
-                  <div className="shop-thumb">
-                    <a href="#">
-                      <img src={shop_img04} alt="" />
-                    </a>
-                  </div>
-                  <div className="shop-content">
-                    <span className="cat">Mask</span>
-                    <h5 className="title">
-                      {" "}
-                      <a href="#">Axiom Karela Jamun Juice</a>
-                    </h5>
-                    <div className="shop-item-rating">
-                      <span className="avg-rating">
-                        {" "}
-                        3.2 <i className="far fa-star"></i>
-                      </span>
-                      <span className="total-rating">349 Ratings</span>
-                    </div>
-                    <p className="shop-discount">
-                      MRP <del>$300</del>{" "}
-                      <span className="discount-off">6% OFF</span>
-                    </p>
-                    <div className="shop-bottom">
-                      <ul>
-                        <li className="price">$52.00</li>
-                        <li className="add">
-                          <a href="#">ADD +</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="shop-item mb-60">
-                  <div className="shop-thumb">
-                    <a href="#">
-                      <img src={shop_img05} alt="" />
-                    </a>
-                  </div>
-                  <div className="shop-content">
-                    <span className="cat">Juice</span>
-                    <h5 className="title">
-                      {" "}
-                      <a href="#">La Shield Sunscreen Gel SPF 40</a>
-                    </h5>
-                    <div className="shop-item-rating">
-                      <span className="avg-rating">
-                        {" "}
-                        4.2 <i className="far fa-star"></i>
-                      </span>
-                      <span className="total-rating">145 Ratings</span>
-                    </div>
-                    <p className="shop-discount">
-                      MRP <del>$300</del>{" "}
-                      <span className="discount-off">6% OFF</span>
-                    </p>
-                    <div className="shop-bottom">
-                      <ul>
-                        <li className="price">$45.00</li>
-                        <li className="add">
-                          <a href="#">ADD +</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-            </div>
+            </div> */}
+
           </div>
         </section>
         {/* <!-- categories-area-end --> */}

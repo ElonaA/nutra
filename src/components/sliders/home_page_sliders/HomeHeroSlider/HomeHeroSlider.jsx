@@ -2,6 +2,8 @@ import Slider from "react-slick";
 import "./HomeHeroSlider.css";
 import React from "react";
 
+
+
 class HomeHeroSlider extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +19,7 @@ class HomeHeroSlider extends React.Component {
   
   render () {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
