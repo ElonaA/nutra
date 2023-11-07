@@ -76,3 +76,232 @@
 .categories-area .row .col-md-8 {
     width: fit-content;
 }
+
+/* 15. Deal-week */
+.deal-week-area {
+    background: #ebf5fb;
+    padding: 85px 0 60px;
+}
+.section-title .title {
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.1;
+    margin-bottom: 7px;
+}
+.section-title p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.deal-week-countdown .coming-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.deal-week-countdown .coming-time .time-count {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 9px 16.74px 1.26px rgba(159, 198, 221, 0.17);
+    min-width: 88px;
+    min-height: 89px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    margin: 20px 10px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+}
+.deal-week-countdown .coming-time .time-count span {
+    display: block;
+    font-size: 26px;
+    line-height: 1;
+    color: #282828;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.deal-week-countdown .coming-time .time-count::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 60px;
+    height: 5px;
+    border-radius: 4px 4px 0px 0px;
+    bottom: 0;
+    margin: 0 auto;
+    background: #50b1f9;
+}
+.deal-week-item {
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 25px;
+}
+.deal-week-inner {
+    position: relative;
+	overflow: hidden;
+}
+.deal-week-content {
+    position: absolute;
+    left: 27px;
+    top: 35px;
+    width: 56%;
+    z-index: 1;
+}
+.deal-week-content > span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5a5960;
+    margin-bottom: 5px;
+}
+.deal-week-content .title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #232323;
+    margin-bottom: 20px;
+}
+.deal-week-content .title > a span {
+	font-size: 16px;
+    display: block;
+}
+.deal-week-content .btn {
+    padding: 14px 20px;
+    font-size: 13px;
+}
+.dw-big-item .deal-week-content {
+    position: unset;
+    width: 42%;
+    text-align: center;
+    margin: 0 auto 30px;
+    left: auto;
+    top: auto;
+}
+.deal-week-item.dw-big-item {
+    min-height: calc(100% - 30px);
+}
+.dw-big-item .deal-week-inner {
+    background: #f4fafd;
+    text-align: center;
+    padding: 40px 30px 35px;
+}
+.dw-big-item .deal-week-thumb {
+	position: relative;
+}
+.dw-big-item .deal-week-thumb .main-img {
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+}
+.dw-big-item .deal-week-thumb .discount-img {
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+.dw-big-item .deal-week-content .title {
+    font-size: 28px;
+	line-height: 1.15;
+}
+.dw-big-item .deal-week-content .title > a span {
+    font-size: 24px;
+}
+.dw-big-item .deal-week-content > span {
+	margin-bottom: 10px;
+}
+
+/* 17. Testimonial */
+.testimonial-bg {
+	background-image: url("../../img/bg/testimonial_bg.jpg");
+	background-position: center;
+	background-size: cover;
+	padding: 85px 0 90px;
+}
+.testimonial-item {
+    text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 9px 16.74px 1.26px rgba(159, 198, 221, 0.09);
+    padding: 33px 50px 45px;
+	border: 1px solid #fff;
+    position: relative;
+	margin-bottom: 30px;
+	z-index: 1;
+}
+.testi-img {
+	margin-bottom: 25px;
+}
+.testi-img img {
+    border-radius: 50%;
+    display: inline-block;
+}
+.testi-content > p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.testi-avatar-info {
+    margin-top: 28px;
+}
+.testi-avatar-info .title {
+    line-height: 1;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.testi-avatar-info span {
+    display: block;
+    font-size: 13px;
+}
+.testi-avatar-info .rating {
+    line-height: 1;
+    font-size: 12px;
+    color: #50b1f9;
+    letter-spacing: -.5px;
+    margin-top: 17px;
+}
+.testimonial-item::before {
+    content: "\f10e";
+    position: absolute;
+    right: 70px;
+    top: 50px;
+    font-size: 72px;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    color: #50b1f9;
+    font-weight: 700;
+    z-index: -1;
+    opacity: .07;
+}
+.slick-active.slick-center .testimonial-item {
+	border-color: #50b1f9;
+}
+.testimonial-active .slick-dots {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+.testimonial-active .slick-dots li {
+    line-height: 0;
+    margin: 0 3px;
+}
+.testimonial-active .slick-dots li button {
+    text-indent: -9999999px;
+    border: 2px solid #50b1f9;
+    padding: 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    transition: .3s linear;
+	background: #fff;
+}
+.testimonial-active .slick-dots li.slick-active button {
+	background: #50b1f9;
+}

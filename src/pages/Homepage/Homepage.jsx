@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../style.css";
+// import "../../style.css"; підключено в App
 import "./Homepage.css";
 
 import Header from "../../components/Header/Header";
@@ -18,6 +18,7 @@ import testimonial_img03 from "../../img/images/testimonial_img03.png";
 import HomeHeroSlider from "../../components/sliders/home_page_sliders/HomeHeroSlider/HomeHeroSlider";
 import HomeCategorySlider from "../../components/sliders/home_page_sliders/HomeCategorySlider/HomeCategorySlider";
 import HomeOffersSlider from "../../components/sliders/home_page_sliders/HomeOffersSlider/HomeOffersSlider";
+import HomeTestimonialSlider from "../../components/sliders/home_page_sliders/HomeTestimonialSlider/HomeTestimonialSlider";
 
 
 const Homepage = (props) => {
@@ -420,7 +421,8 @@ const Homepage = (props) => {
                 </div>
               </div>
             </div>
-            <div className="row testimonial-active">
+            <HomeTestimonialSlider/>
+            {/* <div className="row testimonial-active">
               <div className="col-xl-4">
                 <div className="testimonial-item">
                   <div className="testi-img">
@@ -521,7 +523,7 @@ const Homepage = (props) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
         {/* <!-- testimonial-area-end --> */}

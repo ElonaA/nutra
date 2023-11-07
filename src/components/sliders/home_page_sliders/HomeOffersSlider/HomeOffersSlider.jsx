@@ -33,8 +33,8 @@ class HomeOffersSlider extends React.Component {
     var settings = {
       dots: false,
       infinite: true,
-      speed: 500,
-      slidesToShow: 6,
+      speed: 800,
+      slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -42,7 +42,7 @@ class HomeOffersSlider extends React.Component {
         {
           breakpoint: 1170,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
@@ -51,19 +51,12 @@ class HomeOffersSlider extends React.Component {
         {
           breakpoint: 800,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
           },
         },
         {
-          breakpoint: 400,
+          breakpoint: 480,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

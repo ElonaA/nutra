@@ -29,11 +29,11 @@ class HomeCategorySlider extends React.Component {
     var settings = {
       dots: false,
       infinite: true,
-      speed: 500,
+      speed: 900,
       slidesToShow: 6,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 1170,
