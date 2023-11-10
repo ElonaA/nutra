@@ -4,7 +4,7 @@ import SlickCarouselItem from "./SlickCarouselItem";
 
 export default function SimpleSlider(props) {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -49,9 +49,15 @@ export default function SimpleSlider(props) {
       </div>
     ),
   };
-  
+
+  //передаємо id офера на верх
+  const onOfferSelectHandler = (offerId) => {
+    // props.offerSelect(offerId);
+    // console.log(offerId + "id");
+  };
+ 
   // offers list for slider
-  const sliderList = props.offers.map(item => <SlickCarouselItem key={item.id} category={item.category} title={item.title} price={item.price} img={item.img}/>)
+  const sliderList = props.offers.map(item => <SlickCarouselItem key={item.id} category={item.category} title={item.title} price={item.price} img={item.img}/>);
 
   return (
     <Slider {...settings}>

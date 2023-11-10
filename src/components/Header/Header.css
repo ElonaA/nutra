@@ -1,6 +1,21 @@
-
-
 /* вручну */
+header {
+    border-bottom: 3px solid #50b1f9;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    min-width: 100vw;
+    background-color: #fff;
+}
+main {
+    padding-top: 99px;
+    min-height: 100vh;
+}
+/* ??? */
+.menu-wrap .menu-nav .row {
+    justify-content: flex-end;
+}
+
 .logo a {
     padding-right: 0px;
     display: flex;

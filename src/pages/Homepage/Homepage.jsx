@@ -3,6 +3,7 @@ import React from "react";
 // import "../../style.css"; підключено в App
 import "./Homepage.css";
 
+
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
@@ -12,9 +13,8 @@ import deal_week_img02 from "../../img/products/deal_week_img02.jpg";
 import deal_week_img03 from "../../img/products/deal_week_img03.jpg";
 import deal_week_img04 from "../../img/products/deal_week_img04.jpg";
 import deal_week_img05 from "../../img/products/deal_week_img05.jpg";
-import testimonial_img01 from "../../img/images/testimonial_img01.png";
-import testimonial_img02 from "../../img/images/testimonial_img02.png";
-import testimonial_img03 from "../../img/images/testimonial_img03.png";
+import dw_item_des from "../../img/products/dw_item_des.png";
+
 import HomeHeroSlider from "../../components/sliders/home_page_sliders/HomeHeroSlider/HomeHeroSlider";
 import HomeCategorySlider from "../../components/sliders/home_page_sliders/HomeCategorySlider/HomeCategorySlider";
 import HomeOffersSlider from "../../components/sliders/home_page_sliders/HomeOffersSlider/HomeOffersSlider";
@@ -187,6 +187,7 @@ const Homepage = (props) => {
         </section> */}
         <HomeHeroSlider/>
         {/* <!-- slider-area-end--> */}
+
         {/* <!-- categories-area --> */}
         <section className="categories-area pt-85 pb-25">
           <div className="container">
@@ -283,8 +284,11 @@ const Homepage = (props) => {
           </div>
         </section>
         {/* <!-- categories-area-end --> */}
-        {/* <!-- deal-week-area --> */}
-        <section className="deal-week-area">
+
+
+
+        {/* <!-- deal-week-area - тичасово прибрали --> */}
+        {/* <section className="deal-week-area">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-6">
@@ -360,7 +364,7 @@ const Homepage = (props) => {
                         alt=""
                       />
                       <img
-                        src="img/products/dw_item_des.png"
+                        src={ dw_item_des }
                         className="discount-img"
                         alt=""
                       />
@@ -408,8 +412,9 @@ const Homepage = (props) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <!-- deal-week-area-end --> */}
+
         {/* <!-- testimonial-area --> */}
         <section className="testimonial-area testimonial-bg">
           <div className="container">

@@ -175,6 +175,8 @@
 .deal-week-content .btn {
     padding: 14px 20px;
     font-size: 13px;
+    /* color: #fff;
+    background-color: #50b1f9; */
 }
 .dw-big-item .deal-week-content {
     position: unset;
@@ -196,6 +198,7 @@
 	position: relative;
 }
 .dw-big-item .deal-week-thumb .main-img {
+    margin: 0 auto; 
     border-radius: 50%;
     border: 1px solid #e1e1e1;
 }

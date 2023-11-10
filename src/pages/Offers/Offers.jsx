@@ -5,6 +5,8 @@ import Modal from "../Modal";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
+import "./Offers.css";
+
 import offer_1 from "../../img/offers/1.png";
 import offer_2 from "../../img/offers/2.png";
 import offer_3 from "../../img/offers/3.png";
@@ -20,11 +22,18 @@ import offer_12 from "../../img/offers/12.png";
 
 const Offers = (props) => {
   const [modalActive, setModalActive] = useState(false);
+  const [offerId, setOfferId] = useState(0);
+
+  const setOfferIdHandler = (Id) => {
+    setOfferId(Id);
+    console.log(Id)
+  };
+
   return (
     <div>
       <Header />
-      <div>
-        <div className="container">
+      
+        <div className="container offers_container">
           <section className="product-content">
             <div className="content__left">
               <div className="search">
@@ -153,12 +162,12 @@ const Offers = (props) => {
               </div>
               <h2 className="slider__titile">Related Products</h2>
               <div className="slider__wrapper">
-                <SimpleSlider offers={props.offers}></SimpleSlider>
+                <SimpleSlider offerSelect={ (Id)=>setOfferIdHandler(Id) } offers={props.offers}></SimpleSlider>
               </div>
             </div>
           </section>
         </div>
-      </div>
+      
       <Footer />
     </div>
   );

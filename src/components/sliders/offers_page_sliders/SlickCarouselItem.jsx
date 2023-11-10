@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./SlickCarouselItem.css";
+
 import offer_1 from "../../../img/offers/1.png";
 import offer_2 from "../../../img/offers/2.png";
 import offer_3 from "../../../img/offers/3.png";
@@ -46,9 +48,9 @@ const SlickCarouselItem = ({ category, title, price, img }) => {
       <div className="card">
         <div className="product__card">
           <div className="product__top">
-            <a href="">
-              <img className="product__photo" src={currentImage} />
-            </a>
+            <div>
+              <img className="product__photo" src={ currentImage } />
+            </div>
           </div>
           <div className="card__content">
             <span className="card__category">{category}</span>

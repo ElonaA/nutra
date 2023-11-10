@@ -11,9 +11,11 @@ const Header = (props) => {
     <header>
       <div id="sticky-header" className="menu-area">
         <div className="container">
-          <div className="mobile-nav-toggler">
+
+          {/* тимчасово вимикаємо - бургер меню */}
+          {/* <div className="mobile-nav-toggler">
             <i className="fas fa-bars"></i>
-          </div>
+          </div> */}
           <div className="menu-wrap">
             <nav className="menu-nav">
               <div className="row align-items-center">
@@ -89,7 +91,9 @@ const Header = (props) => {
                   </div>
                 </div>
                 <div className="col-lg-5 col-md-9">
-                  <div className="header-action">
+
+                  {/* тичасово вимикаємо - права частина хедера, корзина і т д */}
+                  {/* <div className="header-action">
                     <ul>
                       <li className="header-search">
                         <form action="#">
@@ -177,7 +181,7 @@ const Header = (props) => {
                         </ul>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </nav>
@@ -206,7 +210,9 @@ const Header = (props) => {
           {/* <!-- End Mobile Menu --> */}
         </div>
       </div>
-      <div className="header-category d-none d-lg-block">
+
+      {/* тимчасово викнули */}
+      {/* <div className="header-category d-none d-lg-block">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -243,9 +249,11 @@ const Header = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      {/* тимчасово-вимкнули - не видаляти! */}
       {/* breadcrumb-area */}
-      <div className="breadcrumb-area">
+      {/* <div className="breadcrumb-area">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
@@ -267,7 +275,7 @@ const Header = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* breadcrumb-area-end */}
     </header>
   );

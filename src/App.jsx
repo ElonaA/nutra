@@ -4,11 +4,12 @@ import "./App.css";
 import "./style.css";
 
 // додаткові - Я
+import "./style_new/bootstrap.min.css";
 import "./style_new/style-new.css";
 // import "./style_new/animate.min.css";
 // import "./style_new/default.css";
 // import "./style_new/responsive.css";
-// import "./style_new/bootstrap.min.css";
+
 
 
 import { Routes, Route, Link } from "react-router-dom";

@@ -1,5 +1,7 @@
 import Slider from "react-slick";
 
+import "./HomeTestimonialSlider.css";
+
 import testimonial_img01 from "../../../../img/images/testimonial_img01.png";
 import testimonial_img02 from "../../../../img/images/testimonial_img02.png";
 import testimonial_img03 from "../../../../img/images/testimonial_img03.png";
