@@ -5,10 +5,15 @@ import Header from "../../components/Header/Header";
 import ShopOfferItem from "./ShopOfferItem/ShopOfferItem";
 
 const Shop = (props) => {
+  //on the select offer
+  const selectOfferHandler = (ID) => {
+    props.selectOffer(ID);
+  };
   
   // offers list
   const offersList = props.offers.map((item) => (
-    <ShopOfferItem
+    <ShopOfferItem 
+      onClick={()=>selectOfferHandler(item.id)}
       category={item.category}
       title={item.title}
       rating={item.rating}
@@ -27,7 +32,9 @@ const Shop = (props) => {
         <div className="shop-area shop-inner-page pt-100 pb-100">
           <div className="container">
             <div className="row justify-content-center row-reverse">
-              <div className="col-3 order-2 order-lg-0">
+
+              {/* тимчасово вимкнути - не видаляти! */}
+              {/* <div className="col-3 order-2 order-lg-0">
                 <aside className="shop-sidebar">
                   <div className="widget">
                     <div className="sidebar-search">
@@ -133,11 +140,13 @@ const Shop = (props) => {
                     </div>
                   </div>
                 </aside>
-              </div>
+              </div> */}
               <div className="col-9">
                 <div className="shop-wrap">
                   <h4 className="title">Shop</h4>
-                  <div className="shop-page-meta mb-30">
+                  
+                  {/* тимчасово вимкнути - не видаляти! */}
+                  {/* <div className="shop-page-meta mb-30">
                     <div className="shop-grid-menu">
                       <ul>
                         <li className="active">
@@ -223,444 +232,13 @@ const Shop = (props) => {
                         </div>
                       </form>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="row justify-content-center">
                     { offersList }
-
-                    {/* замінено на offersList */}
-                    {/* <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_1} alt="product-1" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[0].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[0].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              3.2 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            <del>14 GEL</del>
-                            <span className="discount-off">100% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[0].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_2} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[1].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[1].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            <del>14 GEL</del>
-                            <span className="discount-off">100% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[1].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_3} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[2].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[2].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                            
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            <del>30 GEL</del>
-                            <span className="discount-off">100% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[2].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_4} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[3].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[3].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            <del>99 GEL</del>
-                            <span className="discount-off">92% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[3].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_5} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[4].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[4].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                             <del>159.8 GEL</del>
-                            <span className="discount-off">100% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[4].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_6} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[5].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[5].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              3.2 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            <del>30 GEL</del>
-                            <span className="discount-off">50% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[5].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_7} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[6].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[6].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            <del>15 GEL</del>
-                            <span className="discount-off">50% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[6].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_8} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[7].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[7].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                            <del>100 GEL</del>{" "}
-                            <span className="discount-off">75% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[7].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_9} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[8].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[8].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                             <del>30 GEL</del>
-                            <span className="discount-off">50% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[8].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_10} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[9].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[9].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                             <del>30 GEL</del>
-                            <span className="discount-off">50% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[9].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_11} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[10].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[10].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              3.2 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                             <del>30 GEL</del>
-                            <span className="discount-off">50% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[10].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="shop-item mb-45">
-                        <div className="shop-thumb">
-                          <a href="shop-details.html">
-                            <img src={offer_12} alt="" />
-                          </a>
-                        </div>
-                        <div className="shop-content">
-                          <span className="cat">{props.offers[11].category}</span>
-                          <h5 className="title">
-                            <a href="shop-details.html">
-                            {props.offers[11].title}
-                            </a>
-                          </h5>
-                          <div className="shop-item-rating">
-                            <span className="avg-rating">
-                              
-                              4.5 <i className="far fa-star"></i>
-                            </span>
-                            <span className="total-rating">349 Ratings</span>
-                          </div>
-                          <p className="shop-discount">
-                             <del>30 GEL</del>
-                            <span className="discount-off">100% OFF</span>
-                          </p>
-                          <div className="shop-bottom">
-                            <ul>
-                              <li className="price">{props.offers[11].price}</li>
-                              <li className="add">
-                                <a href="shop-details.html">ADD +</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
                   </div>
-                  <div className="shop-page-meta">
+
+                  {/* тимчасово вимкнути - не видаляти! */}
+                  {/* <div className="shop-page-meta">
                     <div className="shop-grid-menu">
                       <ul>
                         <li className="active">
@@ -729,7 +307,7 @@ const Shop = (props) => {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

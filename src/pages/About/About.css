@@ -1,0 +1,11 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 120px;
+    min-height: 100vh;
+}
+.about h1 {
+    text-align: center;
+}

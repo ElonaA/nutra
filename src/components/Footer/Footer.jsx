@@ -8,7 +8,7 @@ import card from "../../img/card.png";
 
 const Footer = (props) => {
   return (
-    <footer>
+    <footer id="footer">
       {/* core-features-area */}
       <div className="core-features-area">
         <div className="container">

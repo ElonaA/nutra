@@ -1,3 +1,6 @@
 .card__wrapper {
     cursor: pointer;
 }
+.card__wrapper .card {
+    max-width: 100%;
+}

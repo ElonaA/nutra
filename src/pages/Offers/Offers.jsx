@@ -22,12 +22,6 @@ import offer_12 from "../../img/offers/12.png";
 
 const Offers = (props) => {
   const [modalActive, setModalActive] = useState(false);
-  const [offerId, setOfferId] = useState(0);
-
-  const setOfferIdHandler = (Id) => {
-    setOfferId(Id);
-    console.log(Id)
-  };
 
   return (
     <div>
@@ -35,7 +29,9 @@ const Offers = (props) => {
       
         <div className="container offers_container">
           <section className="product-content">
-            <div className="content__left">
+
+            {/* тимчасово прибрали - не видаляти! */}
+            {/* <div className="content__left">
               <div className="search">
                 <form className="search__form">
                   <input
@@ -105,7 +101,7 @@ const Offers = (props) => {
                 <li className="contact__item">Campany: </li>
                 <li className="contact__item">E-mail: </li>
               </ul>
-            </div>
+            </div> */}
             <div className="content__right">
               <div className="product">
                 <div className="product__gallery">
@@ -113,17 +109,24 @@ const Offers = (props) => {
                 </div>
                 <div className="product__info">
                   <p className="product__category">{props.offers[0].category}</p>
-                  <h3 className="product__title">{props.offers[0].title}</h3>
+                  <h3 className="product__title">{props.offers[props.offerID].title}</h3>
                   <p className="product__status">In stock</p>
                   <p className="product__price">{props.offers[0].price}</p>
                   <p className="product__description">
-                  {props.offers[0].description}
+                    <ul className="list">
+                      <li><b>1.</b> {props.offers[0].advantages["1"]}</li>
+                      <li><b>2.</b> {props.offers[0].advantages["2"]}</li>
+                      <li><b>3.</b> {props.offers[0].advantages["3"]}</li>
+                    </ul>
+                  
                   </p>
                   <div className="product__order">
-                    <div className="product__quantity">
+
+                    {/* тимчасово вимкнули - не видаляти! */}
+                    {/* <div className="product__quantity">
                       <p className="quantity__text">Quantity:</p>
                       <Button></Button>
-                    </div>
+                    </div> */}
                     <button
                       onClick={() => setModalActive(true)}
                       className="product__btn"
@@ -143,26 +146,27 @@ const Offers = (props) => {
 
               <div className="info-tabs">
                 <ul className="tabs">
+                  
                   <li className="tabs__item">
                     <a className="tabs__link characteristics tabs__active">
-                      Characteristics
+                    Information
                     </a>
                   </li>
-                  <li className="tabs__item">
+
+                  {/* тимчасово - вимкнутий */}
+                  {/* <li className="tabs__item">
                     <a className="tabs__link information">Order information</a>
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="tabs__content">
                   <p className="tabs__text">
-                    {props.offers[0].advantages["1"]}<br/>
-                    {props.offers[0].advantages["2"]}<br/>
-                    {props.offers[0].advantages["3"]}<br/>
+                    {props.offers[0].description}
                   </p>
                 </div>
               </div>
               <h2 className="slider__titile">Related Products</h2>
               <div className="slider__wrapper">
-                <SimpleSlider offerSelect={ (Id)=>setOfferIdHandler(Id) } offers={props.offers}></SimpleSlider>
+                <SimpleSlider offers={props.offers}></SimpleSlider>
               </div>
             </div>
           </section>

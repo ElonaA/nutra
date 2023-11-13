@@ -25,7 +25,9 @@ const Header = (props) => {
                       <li>
                         <Link to="/">Home</Link>
                       </li>
-                      <li className="menu-item-has-children">
+
+                      {/* тимчасово викнули - не видаляти! */}
+                      {/* <li className="menu-item-has-children">
                         <Link to="/categories">Pages</Link>
                         <ul className="sub-menu">
                           <li>
@@ -44,7 +46,9 @@ const Header = (props) => {
                         <div className="dropdown-btn">
                           <span className="fas fa-angle-down"></span>
                         </div>
-                      </li>
+                      </li> */}
+
+                      {/* тимчасово викнули - не видаляти! */}
                       {/* <li className="active menu-item-has-children">
                           <Link to="/offers">Shop</Link>
                           <ul className="sub-menu">
@@ -60,22 +64,29 @@ const Header = (props) => {
                           </div>
                         </li> */}
                       <li className="active menu-item-has-children">
-                        <a>Shop</a>
-                        <ul className="sub-menu">
+                        <Link to="/shop">Shop</Link>
+
+                        {/* тимчасово викнули - не видаляти! */}
+                        {/* <ul className="sub-menu">
                           <li className="active">
                             <Link to="/shop">Our Shop</Link>
                           </li>
                           <li>
                             <Link to="/offers">Shop Details</Link>
                           </li>
-                        </ul>
+                        </ul> */}
                         <div className="dropdown-btn">
                           <span className="fas fa-angle-down"></span>
                         </div>
                       </li>
                       <li>
-                        <Link to="#">ASK DOCTOR</Link>
+                        <Link to="/about">About Us</Link>
                       </li>
+
+                      {/* тимчасово викнули - не видаляти! */}
+                      {/* <li>
+                        <Link to="#">ASK DOCTOR</Link>
+                      </li> */}
 
                       <li>
                         <Link to="/admin">Admin Panel</Link>
@@ -186,6 +197,8 @@ const Header = (props) => {
               </div>
             </nav>
           </div>
+
+          {/* тимчасово вимкнули - не видаляти! */}
           {/* <!-- Mobile Menu  --> */}
           {/* <div className="mobile-menu">
                         <nav className="menu-box">
@@ -211,7 +224,7 @@ const Header = (props) => {
         </div>
       </div>
 
-      {/* тимчасово викнули */}
+      {/* тимчасово викнули - не видаляти */}
       {/* <div className="header-category d-none d-lg-block">
         <div className="container">
           <div className="row">

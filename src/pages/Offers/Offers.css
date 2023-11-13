@@ -1,4 +1,16 @@
 .offers_container {
-    padding-top: 85px;
+    padding-top: 184px;
     padding-bottom: 25px;
+}
+.product-content {
+    justify-content: center;
+}
+.product-content .content__right {
+    min-width: 100%;
+}
+.content__right .slider__wrapper {
+    min-width: 100%;
+}
+.content__right .product .product__gallery .product__img {
+    width: 70%;
 }

@@ -55,7 +55,7 @@ class HomeHeroSlider extends React.Component {
                       Get up to 50% off Today Only
                     </p>
                     <a
-                      href="#"
+                      href="#footer"
                       className="btn"
                       data-animation="fadeInUp"
                       data-delay="1.2s"
@@ -90,7 +90,7 @@ class HomeHeroSlider extends React.Component {
                       Get up to 50% off Today Only
                     </p>
                     <a
-                      href="#"
+                      href="#footer"
                       className="btn"
                       data-animation="fadeInUp"
                       data-delay="1.2s"
@@ -125,7 +125,7 @@ class HomeHeroSlider extends React.Component {
                       Get up to 50% off Today Only
                     </p>
                     <a
-                      href="#"
+                      href="#footer"
                       className="btn"
                       data-animation="fadeInUp"
                       data-delay="1.2s"
@@ -160,7 +160,7 @@ class HomeHeroSlider extends React.Component {
                       Get up to 50% off Today Only
                     </p>
                     <a
-                      href="#"
+                      href="#footer"
                       className="btn"
                       data-animation="fadeInUp"
                       data-delay="1.2s"

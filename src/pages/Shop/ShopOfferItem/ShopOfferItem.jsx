@@ -1,3 +1,7 @@
+import "./ShopOfferItem.css";
+
+import { Link } from "react-router-dom";
+
 import offer_1 from "../../../img/offers/1.png";
 import offer_2 from "../../../img/offers/2.png";
 import offer_3 from "../../../img/offers/3.png";
@@ -45,9 +49,9 @@ const ShopOfferItem = ({category, title, rating, old_price, discount, price, img
     <div className="col">
       <div className="shop-item mb-45">
         <div className="shop-thumb">
-          <a href="shop-details.html">
+          <Link to="/shop/offers">
             <img src={ currentImage } alt="product-1" />
-          </a>
+          </Link>
         </div>
         <div className="shop-content">
           <span className="cat">{ category }</span>
