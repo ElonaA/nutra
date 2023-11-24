@@ -26,7 +26,7 @@ function App(props) {
     <div className="App">
       <Routes>
         <Route path="/" element={<Homepage offers={props.offers}/>} />
-        <Route path="/shop" element={<Shop selectOffer={(ID) => setOfferID(ID)} offers={props.offers} />} />
+        <Route path="/shop" element={<Shop offers={props.offers} selectOffer={ (ID) => setOfferID(ID) }/>} />
           <Route path="/shop/offers" element={<Offers offers={props.offers} offerID={offerID}/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/categories" element={<Categories />} />

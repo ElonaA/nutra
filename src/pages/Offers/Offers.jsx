@@ -22,6 +22,33 @@ import offer_12 from "../../img/offers/12.png";
 
 const Offers = (props) => {
   const [modalActive, setModalActive] = useState(false);
+  let offerID = props.offerID;
+  let offerImg;
+  if (offerID == 0) {
+    offerImg = offer_1
+  } else if (offerID == 1) {
+    offerImg = offer_2
+  } else if (offerID == 2) {
+    offerImg = offer_3
+  } else if (offerID == 3) {
+     offerImg = offer_4
+  } else if (offerID == 4) {
+     offerImg = offer_5
+  } else if (offerID == 5) {
+     offerImg = offer_6
+  } else if (offerID == 6) {
+     offerImg = offer_7
+  } else if (offerID == 7) {
+     offerImg = offer_8
+  } else if (offerID == 8) {
+     offerImg = offer_9
+  } else if (offerID == 9) {
+     offerImg = offer_10
+  } else if (offerID == 10) {
+     offerImg = offer_11
+  } else if (offerID == 11) {
+     offerImg = offer_12
+  }  
 
   return (
     <div>
@@ -105,18 +132,18 @@ const Offers = (props) => {
             <div className="content__right">
               <div className="product">
                 <div className="product__gallery">
-                  <img className="product__img" src={ offer_1 }></img>
+                  <img className="product__img" src={ offerImg }></img>
                 </div>
                 <div className="product__info">
-                  <p className="product__category">{props.offers[0].category}</p>
-                  <h3 className="product__title">{props.offers[props.offerID].title}</h3>
+                  <p className="product__category">{props.offers[offerID].category}</p>
+                  <h3 className="product__title">{props.offers[offerID].title}</h3>
                   <p className="product__status">In stock</p>
-                  <p className="product__price">{props.offers[0].price}</p>
+                  <p className="product__price">{props.offers[offerID].price}</p>
                   <p className="product__description">
                     <ul className="list">
-                      <li><b>1.</b> {props.offers[0].advantages["1"]}</li>
-                      <li><b>2.</b> {props.offers[0].advantages["2"]}</li>
-                      <li><b>3.</b> {props.offers[0].advantages["3"]}</li>
+                      <li><b>1.</b> {props.offers[offerID].advantages["1"]}</li>
+                      <li><b>2.</b> {props.offers[offerID].advantages["2"]}</li>
+                      <li><b>3.</b> {props.offers[offerID].advantages["3"]}</li>
                     </ul>
                   
                   </p>

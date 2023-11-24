@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Shop.css";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -5,6 +7,7 @@ import Header from "../../components/Header/Header";
 import ShopOfferItem from "./ShopOfferItem/ShopOfferItem";
 
 const Shop = (props) => {
+
   //on the select offer
   const selectOfferHandler = (ID) => {
     props.selectOffer(ID);
@@ -13,7 +16,7 @@ const Shop = (props) => {
   // offers list
   const offersList = props.offers.map((item) => (
     <ShopOfferItem 
-      onClick={()=>selectOfferHandler(item.id)}
+      // onClick={ () => selectOfferHandler(item.id)}
       category={item.category}
       title={item.title}
       rating={item.rating}
@@ -28,6 +31,17 @@ const Shop = (props) => {
     <div>
       <Header />
       <main>
+      <Link to="/shop/offers">
+        <button onClick={ () => {selectOfferHandler(0)}}>1</button>
+      </Link>
+      <Link to="/shop/offers">
+        <button onClick={ () => {selectOfferHandler(1)}}>2</button>
+      </Link>
+      <Link to="/shop/offers">
+        <button onClick={ () => {selectOfferHandler(2)}}>3</button>
+      </Link>
+        
+        
         {/* shop-area-start*/}
         <div className="shop-area shop-inner-page pt-100 pb-100">
           <div className="container">
