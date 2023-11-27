@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 import "./Shop.css";
 import Footer from "../../components/Footer/Footer";
@@ -9,44 +8,34 @@ import ShopOfferItem from "./ShopOfferItem/ShopOfferItem";
 const Shop = (props) => {
 
   //on the select offer
-  const selectOfferHandler = (ID) => {
-    props.selectOffer(ID);
+  const selectOfferHandler = (selectedID) => {
+    props.selectOffer(selectedID);
   };
-  
+
   // offers list
   const offersList = props.offers.map((item) => (
-    <ShopOfferItem 
-      // onClick={ () => selectOfferHandler(item.id)}
-      category={item.category}
-      title={item.title}
-      rating={item.rating}
-      old_price={item.old_price}
-      discount={item.discount}
-      price={item.price}
-      img={item.img}
-    />
+      <ShopOfferItem
+        selectOffer={ selectOfferHandler }
+        category={item.category}
+        title={item.title}
+        rating={item.rating}
+        old_price={item.old_price}
+        discount={item.discount}
+        price={item.price}
+        img={item.img}
+        id={item.id}
+        key={item.id}
+      />
   ));
 
   return (
     <div>
       <Header />
       <main>
-      <Link to="/shop/offers">
-        <button onClick={ () => {selectOfferHandler(0)}}>1</button>
-      </Link>
-      <Link to="/shop/offers">
-        <button onClick={ () => {selectOfferHandler(1)}}>2</button>
-      </Link>
-      <Link to="/shop/offers">
-        <button onClick={ () => {selectOfferHandler(2)}}>3</button>
-      </Link>
-        
-        
         {/* shop-area-start*/}
         <div className="shop-area shop-inner-page pt-100 pb-100">
           <div className="container">
             <div className="row justify-content-center row-reverse">
-
               {/* тимчасово вимкнути - не видаляти! */}
               {/* <div className="col-3 order-2 order-lg-0">
                 <aside className="shop-sidebar">
@@ -158,7 +147,7 @@ const Shop = (props) => {
               <div className="col-9">
                 <div className="shop-wrap">
                   <h4 className="title">Shop</h4>
-                  
+
                   {/* тимчасово вимкнути - не видаляти! */}
                   {/* <div className="shop-page-meta mb-30">
                     <div className="shop-grid-menu">
@@ -248,8 +237,8 @@ const Shop = (props) => {
                     </div>
                   </div> */}
                   <div className="row justify-content-center">
-                    { offersList }
-                  </div>
+                    {offersList}
+                    </div>
 
                   {/* тимчасово вимкнути - не видаляти! */}
                   {/* <div className="shop-page-meta">

@@ -1,7 +1,7 @@
 import React from "react";
-import formImg from "../img/form-img.png";
+// import formImg from "../img/form-img.png";
 
-const Modal = ({ active, setActiv }) => {
+const Modal = ({ active, setActiv, offerTitle, offerFlow }) => {
   return (
     <div
       className={active ? "modal__wrapper active" : "modal__wrapper"}
@@ -12,14 +12,15 @@ const Modal = ({ active, setActiv }) => {
           <div className="close-btn__wrapper" onClick={() => setActiv(false)}>
             <span className="material-symbols-outlined close-btn">close</span>
           </div>
-          <h1 className="main-title">Order (product name)</h1>
+          <h1 className="main-title">Order {offerTitle}</h1>
         </div>
         <div className="form__container">
           <div className="left">
             <h2 className="form__title">
               Fill out the fields bellow to recive prodduct
             </h2>
-            <form className="form">
+            <form className="form" >
+              
               <label className="form__label" for="name">
                 Name
               </label>

@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import SlickCarouselItem from "./SlickCarouselItem";
 
-export default function SimpleSlider(props) {
+export default function SimpleSlider({ offers, selectOffer }) {
   var settings = {
     dots: false,
     infinite: true,
@@ -56,17 +56,23 @@ export default function SimpleSlider(props) {
   };
 
   //передаємо id офера на верх
-  const onOfferSelectHandler = (offerId) => {
-    // props.offerSelect(offerId);
-    // console.log(offerId + "id");
-  };
- 
-  // offers list for slider
-  const sliderList = props.offers.map(item => <SlickCarouselItem key={item.id} category={item.category} title={item.title} price={item.price} img={item.img}/>);
+  // const onOfferSelectHandler = (offerId) => {
+  // props.offerSelect(offerId);
+  // console.log(offerId + "id");
+  // };
 
-  return (
-    <Slider {...settings}>
-      { sliderList }
-    </Slider>
-  );
+  // offers list for slider
+  const sliderList = offers.map((item) => (
+    <SlickCarouselItem
+      category={item.category}
+      title={item.title}
+      price={item.price}
+      img={item.img}
+      key={item.id}
+      id={item.id}
+      selectOffer={selectOffer}
+    />
+  ));
+
+  return <Slider {...settings}>{sliderList}</Slider>;
 }

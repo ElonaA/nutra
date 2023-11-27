@@ -15,7 +15,7 @@ import offer_10 from "../../../img/offers/10.png";
 import offer_11 from "../../../img/offers/11.png";
 import offer_12 from "../../../img/offers/12.png";
 
-const SlickCarouselItem = ({ category, title, price, img }) => {
+const SlickCarouselItem = ({ category, title, price, img, id, selectOffer }) => {
   let currentImage;
   if (img === "offer_1") {
     currentImage = offer_1;
@@ -44,7 +44,7 @@ const SlickCarouselItem = ({ category, title, price, img }) => {
   }
 
   return (
-    <div className="card__wrapper">
+    <div className="card__wrapper" onClick={() => selectOffer(id-1)}>
       <div className="card">
         <div className="product__card">
           <div className="product__top">

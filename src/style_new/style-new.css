@@ -288,5 +288,9 @@ label {
     font-size: 13px;
     line-height: 24px;
 }
+.server-button {
+	position: fixed;
+	z-index: 1000;
+}
 
 

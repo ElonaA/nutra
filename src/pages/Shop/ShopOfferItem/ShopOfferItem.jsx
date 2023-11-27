@@ -16,8 +16,9 @@ import offer_11 from "../../../img/offers/11.png";
 import offer_12 from "../../../img/offers/12.png";
 
 
-const ShopOfferItem = ({category, title, rating, old_price, discount, price, img}) => {
+const ShopOfferItem = ({selectOffer, category, title, rating, old_price, discount, price, img, id}) => {
 
+  //поки фото оферу беремо так так бо файли локальні, приберемо коли буде готовий backend
   let currentImage;
   if (img === "offer_1") {
     currentImage = offer_1;
@@ -46,12 +47,11 @@ const ShopOfferItem = ({category, title, rating, old_price, discount, price, img
   }
   
   return (
-    <div className="col">
+    <div className="col" onClick={ () => selectOffer(id - 1)}>
+      <Link to="/shop/offers">
       <div className="shop-item mb-45">
         <div className="shop-thumb">
-          <Link to="/shop/offers">
             <img src={ currentImage } alt="product-1" />
-          </Link>
         </div>
         <div className="shop-content">
           <span className="cat">{ category }</span>
@@ -78,6 +78,7 @@ const ShopOfferItem = ({category, title, rating, old_price, discount, price, img
           </div>
         </div>
       </div>
+      </Link>
     </div>
   );
 };

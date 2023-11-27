@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SimpleSlider from "../../components/sliders/offers_page_sliders/slick-carousel";
-import Button from "../../components/inc-button";
+// import Button from "../../components/inc-button";
 import Modal from "../Modal";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -20,33 +20,33 @@ import offer_10 from "../../img/offers/10.png";
 import offer_11 from "../../img/offers/11.png";
 import offer_12 from "../../img/offers/12.png";
 
-const Offers = (props) => {
+const Offers = ({ offers, offerID, selectOffer }) => {
   const [modalActive, setModalActive] = useState(false);
-  let offerID = props.offerID;
+  
   let offerImg;
-  if (offerID == 0) {
+  if (offerID === 0) {
     offerImg = offer_1
-  } else if (offerID == 1) {
+  } else if (offerID === 1) {
     offerImg = offer_2
-  } else if (offerID == 2) {
+  } else if (offerID === 2) {
     offerImg = offer_3
-  } else if (offerID == 3) {
+  } else if (offerID === 3) {
      offerImg = offer_4
-  } else if (offerID == 4) {
+  } else if (offerID === 4) {
      offerImg = offer_5
-  } else if (offerID == 5) {
+  } else if (offerID === 5) {
      offerImg = offer_6
-  } else if (offerID == 6) {
+  } else if (offerID === 6) {
      offerImg = offer_7
-  } else if (offerID == 7) {
+  } else if (offerID === 7) {
      offerImg = offer_8
-  } else if (offerID == 8) {
+  } else if (offerID === 8) {
      offerImg = offer_9
-  } else if (offerID == 9) {
+  } else if (offerID === 9) {
      offerImg = offer_10
-  } else if (offerID == 10) {
+  } else if (offerID === 10) {
      offerImg = offer_11
-  } else if (offerID == 11) {
+  } else if (offerID === 11) {
      offerImg = offer_12
   }  
 
@@ -135,15 +135,15 @@ const Offers = (props) => {
                   <img className="product__img" src={ offerImg }></img>
                 </div>
                 <div className="product__info">
-                  <p className="product__category">{props.offers[offerID].category}</p>
-                  <h3 className="product__title">{props.offers[offerID].title}</h3>
+                  <p className="product__category">{offers[offerID].category}</p>
+                  <h3 className="product__title">{offers[offerID].title}</h3>
                   <p className="product__status">In stock</p>
-                  <p className="product__price">{props.offers[offerID].price}</p>
+                  <p className="product__price">{offers[offerID].price}</p>
                   <p className="product__description">
                     <ul className="list">
-                      <li><b>1.</b> {props.offers[offerID].advantages["1"]}</li>
-                      <li><b>2.</b> {props.offers[offerID].advantages["2"]}</li>
-                      <li><b>3.</b> {props.offers[offerID].advantages["3"]}</li>
+                      <li><b>1.</b> {offers[offerID].advantages["1"]}</li>
+                      <li><b>2.</b> {offers[offerID].advantages["2"]}</li>
+                      <li><b>3.</b> {offers[offerID].advantages["3"]}</li>
                     </ul>
                   
                   </p>
@@ -166,6 +166,8 @@ const Offers = (props) => {
                     <Modal
                       active={modalActive}
                       setActiv={setModalActive}
+                      offerTitle={ offers[offerID].title }
+                      offerFlow={ offers[offerID].flow }
                     ></Modal>
                   </div>
                 </div>
@@ -187,13 +189,13 @@ const Offers = (props) => {
                 </ul>
                 <div className="tabs__content">
                   <p className="tabs__text">
-                    {props.offers[0].description}
+                    {offers[offerID].description}
                   </p>
                 </div>
               </div>
               <h2 className="slider__titile">Related Products</h2>
               <div className="slider__wrapper">
-                <SimpleSlider offers={props.offers}></SimpleSlider>
+                <SimpleSlider offers={ offers } selectOffer={ selectOffer }></SimpleSlider>
               </div>
             </div>
           </section>
