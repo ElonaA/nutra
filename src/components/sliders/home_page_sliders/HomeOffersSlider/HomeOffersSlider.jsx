@@ -27,6 +27,7 @@ class HomeOffersSlider extends React.Component {
         discount={item.discount}
         price={item.price}
         img={item.img}
+        key={item.id}
       />
     ));
 

@@ -22,31 +22,15 @@ import { useState } from "react";
 function App(props) {
   const [offerID, setOfferID] = useState(0);
 
-  // const getServerHandler = (e) => {
-  //   fetch("https://ro.wennedy.com/HtJSHVPY", {
-  //     method: "POST",
-  //     header: {
-  //       'Content-Type': 'application/x-www-form-urlencoded',
-  //     },
-  //     body: JSON.stringify({action: 1}) 
-  //   })
-  //   .then(response => response.text())
-  //   .then(response => {
-  //     alert(response);
-  //   })
-  // };
 
   return (
     <div className="App">
-      {/* <button className="server-button" onClick={(e) => getServerHandler(e)}>Get Server</button> */}
       <Routes>
         <Route path="/" element={<Homepage offers={props.offers} />} />
         <Route
           path="/shop"
           element={
-            <Shop offers={props.offers} 
-            selectOffer={(ID) => setOfferID(ID)} 
-            />
+            <Shop offers={props.offers} selectOffer={(ID) => setOfferID(ID)} />
           }
         />
         <Route

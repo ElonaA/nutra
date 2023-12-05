@@ -1,7 +1,45 @@
 import React from "react";
+import axios from "axios";
+import { useState } from "react";
 // import formImg from "../img/form-img.png";
 
+
+
 const Modal = ({ active, setActiv, offerTitle, offerFlow }) => {
+
+
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+  });
+  
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  
+    axios.post('http://handler', JSON.stringify({
+      ...formData,
+      'subid': 'hj12g312',
+      'sub_id_2': 'mish',
+      'sub_id_3': 'metka',
+      'stream_key': offerFlow,
+      'pixel': '11111111111',
+    }))
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error('Ошибка при отправке данных', error);
+      });
+      setActiv(false);
+  };
+
+
   return (
     <div
       className={active ? "modal__wrapper active" : "modal__wrapper"}
@@ -19,7 +57,7 @@ const Modal = ({ active, setActiv, offerTitle, offerFlow }) => {
             <h2 className="form__title">
               Fill out the fields bellow to recive prodduct
             </h2>
-            <form className="form" >
+            <form className="form" onSubmit={ handleSubmit }>
               
               <label className="form__label" for="name">
                 Name
@@ -29,6 +67,8 @@ const Modal = ({ active, setActiv, offerTitle, offerFlow }) => {
                 id="name"
                 className="form__input"
                 placeholder="Enter your name"
+                value={formData.name}
+                onChange={handleChange}
                 required
               ></input>
 
@@ -40,6 +80,8 @@ const Modal = ({ active, setActiv, offerTitle, offerFlow }) => {
                 id="phone"
                 className="form__input"
                 placeholder="Enter your phone"
+                value={formData.phone}
+                onChange={handleChange}
                 required
               ></input>
               <button className="form__submit">Buy</button>
