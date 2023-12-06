@@ -89,7 +89,7 @@ const Header = (props) => {
                       </li> */}
 
                       <li>
-                        <Link to="/admin">Admin Panel</Link>
+                        <Link to="/admin-panel">Admin Panel</Link>
                       </li>
                     </ul>
                   </div>

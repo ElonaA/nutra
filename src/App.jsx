@@ -46,7 +46,7 @@ function App(props) {
         <Route path="/about" element={<About />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/modal" element={<Modal />} />
-        <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
