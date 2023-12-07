@@ -20,7 +20,7 @@ import offer_10 from "../../img/offers/10.png";
 import offer_11 from "../../img/offers/11.png";
 import offer_12 from "../../img/offers/12.png";
 
-const Offers = ({ offers, offerID, selectOffer }) => {
+const Offers = ({ offers, offerID, subId, pixel, selectOffer }) => {
   const [modalActive, setModalActive] = useState(false);
   
   let offerImg;
@@ -168,6 +168,8 @@ const Offers = ({ offers, offerID, selectOffer }) => {
                       setActiv={setModalActive}
                       offerTitle={ offers[offerID].title }
                       offerFlow={ offers[offerID].flow }
+                      subId={subId}
+                      pixel={pixel}
                     ></Modal>
                   </div>
                 </div>

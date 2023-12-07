@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-const Modal = ({ active, setActiv, offerTitle, offerFlow }) => {
+const Modal = ({ active, setActiv, offerTitle, offerFlow, subId, pixel }) => {
 
 
   const [formData, setFormData] = useState({
@@ -24,11 +24,12 @@ const Modal = ({ active, setActiv, offerTitle, offerFlow }) => {
   
     axios.post('http://handler', JSON.stringify({
       ...formData,
-      'subid': 'hj12g312',
+      'subid': subId,
       'sub_id_2': 'mish',
       'sub_id_3': 'metka',
+      'sub_id_4': 'vitrina',
       'stream_key': offerFlow,
-      'pixel': '11111111111',
+      'pixel': pixel,
     }))
       .then((response) => {
         console.log(response.data);

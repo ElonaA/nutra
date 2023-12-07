@@ -17,11 +17,46 @@ import Modal from "./pages/Modal";
 import AdminPanel from "./pages/AdminPanel";
 import Shop from "./pages/Shop/Shop";
 import About from "./pages/About/About";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App(props) {
   const [offerID, setOfferID] = useState(0);
+  const [subId, setSubId] = useState("");
+  const [pixel, setPixel] = useState("");
 
+  //get sub_id from URL
+  useEffect(() => {
+   
+    if (String(document.location.href).includes('sub_id')) {
+      let str = String(document.location.href)
+      str = str.split("?");
+      let str_2 = str[1].split("&");
+      let str_3 = str_2[0].split("=");
+      let sub_id = str_3[1];
+      if (sub_id) {
+        console.log(sub_id);
+        setSubId(String(sub_id));
+      }
+    };
+
+  }, []);
+  //get pixel from URL
+  useEffect(() => {
+   
+    if (String(document.location.href).includes('pixel')) {
+      let str = String(document.location.href)
+      console.log(str);
+      str = str.split("?");
+      let str_2 = str[1].split("&");
+      let str_3 = str_2[1].split("=");
+      let pixel = str_3[1];
+      if (pixel) {
+        console.log(pixel)
+        setPixel(String(pixel));
+      }
+    };
+
+  }, []);
 
   return (
     <div className="App">
@@ -39,6 +74,8 @@ function App(props) {
             <Offers
               offers={props.offers}
               offerID={offerID}
+              subId={subId}
+              pixel={pixel}
               selectOffer={(ID) => setOfferID(ID)}
             />
           }
