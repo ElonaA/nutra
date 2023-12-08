@@ -1,23 +1,27 @@
 import React from "react";
 import axios from "axios";
 import { useState } from "react";
+import { Navigate } from 'react-router-dom';
 // import formImg from "../img/form-img.png";
 
+const Modal = ({ active, setActiv, offerTitle, offerFlow, pixel, subId, subId_2, subId_3 }) => {
 
-
-const Modal = ({ active, setActiv, offerTitle, offerFlow, subId, pixel }) => {
-
-
+  //form data
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
   });
+
+  //thank-you page check
+  const [submit, setSubmit] = useState(false);
   
+  //check form inputs
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
   
+  //submit form
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
@@ -25,22 +29,26 @@ const Modal = ({ active, setActiv, offerTitle, offerFlow, subId, pixel }) => {
     axios.post('http://handler', JSON.stringify({
       ...formData,
       'subid': subId,
-      'sub_id_2': 'mish',
-      'sub_id_3': 'metka',
+      'sub_id_2': subId_2,
+      'sub_id_3': subId_3,
       'sub_id_4': 'vitrina',
-      'stream_key': offerFlow,
       'pixel': pixel,
+      'stream_key': offerFlow, 
     }))
       .then((response) => {
         console.log(response.data);
+        let pixel_server = String(response.data.split(' ')[1])
+        localStorage.setItem('pixel', pixel_server);
+        setSubmit(true);
       })
       .catch((error) => {
         console.error('Ошибка при отправке данных', error);
       });
+
       setActiv(false);
   };
 
-
+  if (submit) return <Navigate to="/thank-you" />
   return (
     <div
       className={active ? "modal__wrapper active" : "modal__wrapper"}

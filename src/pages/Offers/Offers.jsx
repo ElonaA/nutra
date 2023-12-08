@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SimpleSlider from "../../components/sliders/offers_page_sliders/slick-carousel";
 // import Button from "../../components/inc-button";
-import Modal from "../Modal";
+import Modal from "./Modal/Modal";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
@@ -19,8 +19,9 @@ import offer_9 from "../../img/offers/9.png";
 import offer_10 from "../../img/offers/10.png";
 import offer_11 from "../../img/offers/11.png";
 import offer_12 from "../../img/offers/12.png";
+import { Link } from "react-router-dom";
 
-const Offers = ({ offers, offerID, subId, pixel, selectOffer }) => {
+const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3 }) => {
   const [modalActive, setModalActive] = useState(false);
   
   let offerImg;
@@ -53,7 +54,6 @@ const Offers = ({ offers, offerID, subId, pixel, selectOffer }) => {
   return (
     <div>
       <Header />
-      
         <div className="container offers_container">
           <section className="product-content">
 
@@ -168,8 +168,10 @@ const Offers = ({ offers, offerID, subId, pixel, selectOffer }) => {
                       setActiv={setModalActive}
                       offerTitle={ offers[offerID].title }
                       offerFlow={ offers[offerID].flow }
-                      subId={subId}
                       pixel={pixel}
+                      subId={subId}
+                      subId_2={subId_2}
+                      subId_3={subId_3}
                     ></Modal>
                   </div>
                 </div>
