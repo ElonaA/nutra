@@ -21,7 +21,7 @@ import offer_11 from "../../img/offers/11.png";
 import offer_12 from "../../img/offers/12.png";
 import { Link } from "react-router-dom";
 
-const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3 }) => {
+const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, cancelOffersCategory }) => {
   const [modalActive, setModalActive] = useState(false);
   
   let offerImg;
@@ -53,7 +53,7 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3 }
 
   return (
     <div>
-      <Header />
+      <Header cancelOffersCategory={cancelOffersCategory}/>
         <div className="container offers_container">
           <section className="product-content">
 

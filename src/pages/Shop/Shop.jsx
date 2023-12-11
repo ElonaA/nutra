@@ -1,11 +1,16 @@
-
 import "./Shop.css";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
 import ShopOfferItem from "./ShopOfferItem/ShopOfferItem";
+// import { useEffect, useState } from "react";
 
 const Shop = (props) => {
+
+  //category filter
+  const category = props.offersCategory;
+
+  const categoryTitle = category ? ` (${category})`: '';
 
   //on the select offer
   const selectOfferHandler = (selectedID) => {
@@ -13,9 +18,11 @@ const Shop = (props) => {
   };
 
   // offers list
-  const offersList = props.offers.map((item) => (
+  let offersList;
+  if (category === "") { //all offers
+    offersList = props.offers.map((item) => (
       <ShopOfferItem
-        selectOffer={ selectOfferHandler }
+        selectOffer={selectOfferHandler}
         category={item.category}
         title={item.title}
         rating={item.rating}
@@ -26,11 +33,29 @@ const Shop = (props) => {
         id={item.id}
         key={item.id}
       />
-  ));
+    ));
+  } else { //offers in current category
+    offersList = props.offers
+    .filter(item => item.category === category)
+    .map((item) => (
+      <ShopOfferItem
+        selectOffer={selectOfferHandler}
+        category={item.category}
+        title={item.title}
+        rating={item.rating}
+        old_price={item.old_price}
+        discount={item.discount}
+        price={item.price}
+        img={item.img}
+        id={item.id}
+        key={item.id}
+      />
+    ));
+  }
 
   return (
     <div>
-      <Header />
+      <Header cancelOffersCategory={ props.cancelOffersCategory }/>
       <main>
         {/* shop-area-start*/}
         <div className="shop-area shop-inner-page pt-100 pb-100">
@@ -146,7 +171,7 @@ const Shop = (props) => {
               </div> */}
               <div className="col-9">
                 <div className="shop-wrap">
-                  <h4 className="title">Shop</h4>
+                  <h4 className="title">Მაღაზია {categoryTitle}</h4>
 
                   {/* тимчасово вимкнути - не видаляти! */}
                   {/* <div className="shop-page-meta mb-30">
@@ -236,9 +261,7 @@ const Shop = (props) => {
                       </form>
                     </div>
                   </div> */}
-                  <div className="row justify-content-center">
-                    {offersList}
-                    </div>
+                  <div className="row justify-content-center">{offersList}</div>
 
                   {/* тимчасово вимкнути - не видаляти! */}
                   {/* <div className="shop-page-meta">

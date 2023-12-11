@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+//images
 import offer_1 from "../../../img/offers/1.png";
 import offer_2 from "../../../img/offers/2.png";
 import offer_3 from "../../../img/offers/3.png";
@@ -11,7 +14,7 @@ import offer_10 from "../../../img/offers/10.png";
 import offer_11 from "../../../img/offers/11.png";
 import offer_12 from "../../../img/offers/12.png";
 
-const HomeOfferItem = ({category, title, rating, old_price, discount, price, img}) => {
+const HomeOfferItem = ({selectOffer, category, title, rating, old_price, discount, price, img, id}) => {
   let currentImage;
   if (img === "offer_1") {
     currentImage = offer_1;
@@ -39,7 +42,8 @@ const HomeOfferItem = ({category, title, rating, old_price, discount, price, img
     currentImage = offer_12;
   }
   return (
-    <div className="col">
+    <div className="col" onClick={ () => selectOffer(id - 1)}>
+      <Link to="/shop/offers">
       <div className="shop-item mb-60">
         <div className="shop-thumb">
           <a href="#">
@@ -55,7 +59,7 @@ const HomeOfferItem = ({category, title, rating, old_price, discount, price, img
             <span className="avg-rating">
               { rating } <i className="far fa-star"></i>
             </span>
-            <span className="total-rating">349 Ratings</span>
+            <span className="total-rating"> რეიტინგები</span>
           </div>
           <p className="shop-discount">
            <del>{ old_price }</del> <span className="discount-off">{ discount }</span>
@@ -64,12 +68,13 @@ const HomeOfferItem = ({category, title, rating, old_price, discount, price, img
             <ul>
               <li className="price">{ price }</li>
               <li className="add">
-                <a href="#">ADD +</a>
+                <a href="#">დამატება +</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      </Link>
     </div>
   );
 };

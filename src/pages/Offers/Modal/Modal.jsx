@@ -25,8 +25,10 @@ const Modal = ({ active, setActiv, offerTitle, offerFlow, pixel, subId, subId_2,
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-  
-    axios.post('http://handler', JSON.stringify({
+
+    // http://handler'  - local server
+    
+    axios.post('https://garezz.com/index.php', JSON.stringify({
       ...formData,
       'subid': subId,
       'sub_id_2': subId_2,

@@ -2,16 +2,15 @@ import "./Header.css";
 
 import { Link } from "react-router-dom";
 import logo from "../../img/header/logo.png";
-import cart from "../../img/header/cart.png";
-import cart1 from "../../img/header/cart1.jpg";
-import cart2 from "../../img/header/cart2.jpg";
+// import cart from "../../img/header/cart.png";
+// import cart1 from "../../img/header/cart1.jpg";
+// import cart2 from "../../img/header/cart2.jpg";
 
 const Header = (props) => {
   return (
     <header>
       <div id="sticky-header" className="menu-area">
         <div className="container">
-
           {/* тимчасово вимикаємо - бургер меню */}
           {/* <div className="mobile-nav-toggler">
             <i className="fas fa-bars"></i>
@@ -23,7 +22,7 @@ const Header = (props) => {
                   <div className="navbar-wrap main-menu d-none d-lg-flex">
                     <ul className="navigation">
                       <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/">მთავარი</Link>
                       </li>
 
                       {/* тимчасово викнули - не видаляти! */}
@@ -63,8 +62,8 @@ const Header = (props) => {
                             <span className="fas fa-angle-down"></span>
                           </div>
                         </li> */}
-                      <li className="active menu-item-has-children">
-                        <Link to="/shop">Shop</Link>
+                      <li className="active menu-item-has-children" onClick={() => props.cancelOffersCategory()}>
+                        <Link to="/shop">Მაღაზია</Link>
 
                         {/* тимчасово викнули - не видаляти! */}
                         {/* <ul className="sub-menu">
@@ -79,30 +78,30 @@ const Header = (props) => {
                           <span className="fas fa-angle-down"></span>
                         </div>
                       </li>
-                      <li>
+                      {/* тимчасово викнули - не видаляти! */}
+                      {/* <li>
                         <Link to="/about">About Us</Link>
-                      </li>
+                      </li> */}
 
                       {/* тимчасово викнули - не видаляти! */}
                       {/* <li>
                         <Link to="#">ASK DOCTOR</Link>
                       </li> */}
-
-                      <li>
+                      {/* тимчасово викнули - не видаляти! */}
+                      {/* <li>
                         <Link to="/admin-panel">Admin Panel</Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-3">
                   <div className="logo">
                     <a href="#">
-                      <img src={ logo } alt="logo" />
+                      <img src={logo} alt="logo" />
                     </a>
                   </div>
                 </div>
                 <div className="col-lg-5 col-md-9">
-
                   {/* тичасово вимикаємо - права частина хедера, корзина і т д */}
                   {/* <div className="header-action">
                     <ul>
@@ -206,8 +205,8 @@ const Header = (props) => {
                             <div className="nav-logo"><a href="#"><img src="img/logo/logo.png" alt="" title=""/></a>
                             </div>
                             <div className="menu-outer"> */}
-                                {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
-                            {/* </div>
+          {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--> */}
+          {/* </div>
                             <div className="social-links">
                                 <ul className="clearfix">
                                     <li><a href="#"><span className="fab fa-twitter"></span></a></li>
@@ -289,7 +288,7 @@ const Header = (props) => {
             </div>
           </div>
         </div> */}
-        {/* breadcrumb-area-end */}
+      {/* breadcrumb-area-end */}
     </header>
   );
 };

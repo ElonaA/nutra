@@ -36,14 +36,14 @@
 }
 
 .bg-1 {
-    background-image: url("../../../../img/slider/slider_bg01.jpg");
+    background-image: url("../../../../img/slider/slider_1.jpg");
 }
 .bg-2 {
-    background-image: url("../../../../img/slider/slider_bg02.jpg");
+    background-image: url("../../../../img/slider/slider_2.jpg");
 }
-.bg-3 {
+/* .bg-3 {
     background-image: url("../../../../img/slider/slider_bg03.jpg");
 }
 .bg-4 {
     background-image: url("../../../../img/slider/slider_bg04.jpg");
-}
+} */

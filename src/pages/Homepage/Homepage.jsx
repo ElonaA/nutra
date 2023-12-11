@@ -3,31 +3,28 @@ import React from "react";
 // import "../../style.css"; підключено в App
 import "./Homepage.css";
 
-
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
 // images
-import deal_week_img01 from "../../img/products/deal_week_img01.jpg";
-import deal_week_img02 from "../../img/products/deal_week_img02.jpg";
-import deal_week_img03 from "../../img/products/deal_week_img03.jpg";
-import deal_week_img04 from "../../img/products/deal_week_img04.jpg";
-import deal_week_img05 from "../../img/products/deal_week_img05.jpg";
-import dw_item_des from "../../img/products/dw_item_des.png";
+// import deal_week_img01 from "../../img/products/deal_week_img01.jpg";
+// import deal_week_img02 from "../../img/products/deal_week_img02.jpg";
+// import deal_week_img03 from "../../img/products/deal_week_img03.jpg";
+// import deal_week_img04 from "../../img/products/deal_week_img04.jpg";
+// import deal_week_img05 from "../../img/products/deal_week_img05.jpg";
+// import dw_item_des from "../../img/products/dw_item_des.png";
 
 import HomeHeroSlider from "../../components/sliders/home_page_sliders/HomeHeroSlider/HomeHeroSlider";
 import HomeCategorySlider from "../../components/sliders/home_page_sliders/HomeCategorySlider/HomeCategorySlider";
 import HomeOffersSlider from "../../components/sliders/home_page_sliders/HomeOffersSlider/HomeOffersSlider";
 import HomeTestimonialSlider from "../../components/sliders/home_page_sliders/HomeTestimonialSlider/HomeTestimonialSlider";
-
+import { Link } from "react-router-dom";
 
 const Homepage = (props) => {
-  
   return (
     <div>
-      <Header />
+      <Header cancelOffersCategory={props.cancelOffersCategory}/>
       <main>
-        
         {/* <!-- slider-area --> */}
         {/* <section className="slider-area">
           <div classNameName="slider-active">
@@ -185,7 +182,7 @@ const Homepage = (props) => {
             </div>
           </div>
         </section> */}
-        <HomeHeroSlider/>
+        <HomeHeroSlider />
         {/* <!-- slider-area-end--> */}
 
         {/* <!-- categories-area --> */}
@@ -194,19 +191,22 @@ const Homepage = (props) => {
             <div className="row align-items-end mb-35">
               <div className="col-lg-6 col-md-8">
                 <div className="category-title">
-                  <span>EXPLORE</span>
-                  <h3 className="title">Popular Categories</h3>
+                  <span>ᲒᲐᲛᲝᲙᲕᲚᲔᲕᲐ</span>
+                  <h3 className="title">პოპულარული კატეგორიები</h3>
                 </div>
               </div>
               <div className="col-lg-6 col-md-4">
-                <div className="category-view">
-                  <a href="#">View AlL</a>
+                <div className="category-view" onClick={() => props.cancelOffersCategory()}>
+                  <Link to="/shop">Ყველას ნახვა</Link>
                 </div>
               </div>
             </div>
           </div>
           <div className="container">
-            <HomeCategorySlider/>
+            <HomeCategorySlider 
+              offers={props.offers}
+              selectCategory={props.selectCategory}
+            />
             {/* замість цього HomeCategorySlider */}
             {/* <div className="row category-active mb-70">
               <div className="col">
@@ -274,18 +274,19 @@ const Homepage = (props) => {
                 </div>
               </div>
             </div> */}
-            
-            <HomeOffersSlider offers={props.offers}/>
+
+            <HomeOffersSlider
+              offers={props.offers}
+              offerID={props.offerID}
+              selectOffer={props.selectOffer}
+            />
             {/* замість цього HomeOffersSlider */}
             {/* <div className="row shop-active">
               { HomeOffersList }
             </div> */}
-
           </div>
         </section>
         {/* <!-- categories-area-end --> */}
-
-
 
         {/* <!-- deal-week-area - тичасово прибрали --> */}
         {/* <section className="deal-week-area">
@@ -421,12 +422,12 @@ const Homepage = (props) => {
             <div className="row justify-content-center">
               <div className="col-xl-6 col-lg-8">
                 <div className="section-title text-center mb-45">
-                  <h3 className="title">Our Client Says</h3>
-                  <p>Want everyone to see it and find myself sharing</p>
+                  <h3 className="title">ჩვენი კლიენტი ამბობს</h3>
+                  <p>მინდა, რომ ყველამ ნახოს და ვიპოვო ჩემი გაზიარება</p>
                 </div>
               </div>
             </div>
-            <HomeTestimonialSlider/>
+            <HomeTestimonialSlider />
             {/* <div className="row testimonial-active">
               <div className="col-xl-4">
                 <div className="testimonial-item">
@@ -532,8 +533,6 @@ const Homepage = (props) => {
           </div>
         </section>
         {/* <!-- testimonial-area-end --> */}
-
-
 
         {/* shop-area - буде окремо*/}
         {/* на Shop page */}

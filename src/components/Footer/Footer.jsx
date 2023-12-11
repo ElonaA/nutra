@@ -1,10 +1,9 @@
 import delivery from "../../img/delivery.png";
 import return1 from "../../img/return.png";
 import headphone from "../../img/headphone.png";
-import gp from "../../img/gp.png";
-import as from "../../img/as.png";
-import card from "../../img/card.png";
-
+// import gp from "../../img/gp.png";
+// import as from "../../img/as.png";
+import card from "../../img/card.png"; 
 
 const Footer = (props) => {
   return (
@@ -56,7 +55,7 @@ const Footer = (props) => {
         </div>
       </div>
       {/* core-features-area-end */}
-      <div className="footer-top-wrap">
+      {/* <div className="footer-top-wrap">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-xl-2 col-lg-2 col-md-4 col-sm-6">
@@ -160,6 +159,79 @@ const Footer = (props) => {
                     <img src={as} alt="" />
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div class="footer-top-wrap">
+        <div class="container">
+          <div class="row justify-content-between">
+            {/* <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h4 class="fw-title">Know Us</h4>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Business Partnership</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Sehat Ke Sathi</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> --> */}
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+              <div class="footer-widget">
+                <h4 class="fw-title">Our Policies</h4>
+                <div class="fw-link">
+                  <ul>
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms and Conditions</a>
+                    </li>
+                    {/* <!-- <li><a href="#">Editorial Policy</a></li>
+                                        <li><a href="#">Return Policy</a></li>
+                                        <li><a href="#">IP Policy</a></li>
+                                        <li><a href="#">Grievance Redressal Policy</a></li> --> */}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {/* <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                            <div class="footer-widget">
+                                <h4 class="fw-title">Our Services</h4>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Order Medicines</a></li>
+                                        <li><a href="#">Book Lab Tests</a></li>
+                                        <li><a href="#">Consult a Doctor</a></li>
+                                        <li><a href="#">Ayurveda Articles</a></li>
+                                        <li><a href="#">English Articles</a></li>
+                                        <li><a href="#">1mg Care Plan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> --> */}
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class="footer-widget">
+                <h4 class="fw-title">Subscribe Our Newsletter</h4>
+                <div class="f-newsletter">
+                  <p>Get a free subscription to our health &amp; fitness</p>
+                  <form action="#" class="newsletter-form">
+                    <input type="text" placeholder="Enter Your Email Address" />
+                    <button>
+                      <i class="fas fa-rocket"></i>
+                    </button>
+                  </form>
+                </div>
+                {/* <!-- <div class="fw-download-btn">
+                                    <a href="#"><img src="img/icon/download_btn01.png" alt=""></a>
+                                    <a href="#"><img src="img/icon/download_btn02.png" alt=""></a>
+                                </div> --> */}
               </div>
             </div>
           </div>

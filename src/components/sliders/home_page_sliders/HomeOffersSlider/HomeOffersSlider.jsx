@@ -17,9 +17,15 @@ class HomeOffersSlider extends React.Component {
   }
 
   render() {
+    //on the select offer
+    const selectOfferHandler = (selectedID) => {
+      this.props.selectOffer(selectedID);
+    };
+
     // offers list
     const HomeOffersList = this.props.offers.map((item) => (
       <HomeOfferItem
+        selectOffer={ selectOfferHandler }
         category={item.category}
         title={item.title}
         rating={item.rating}
@@ -27,6 +33,7 @@ class HomeOffersSlider extends React.Component {
         discount={item.discount}
         price={item.price}
         img={item.img}
+        id={item.id}
         key={item.id}
       />
     ));
@@ -67,7 +74,7 @@ class HomeOffersSlider extends React.Component {
     };
     return (
       <Slider {...settings} className="row shop-active">
-        { HomeOffersList }
+        {HomeOffersList}
       </Slider>
     );
   }

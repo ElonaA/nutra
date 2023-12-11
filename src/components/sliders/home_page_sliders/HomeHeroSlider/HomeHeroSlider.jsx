@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "./HomeHeroSlider.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -37,31 +38,31 @@ class HomeHeroSlider extends React.Component {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="slider-content">
-                    <h4
+                    {/* <h4
                       className="sub-title"
                       data-animation="fadeInUp"
                       data-delay=".3s"
                     >
                       top <span>deal !</span>
-                    </h4>
+                    </h4> */}
                     <h2
                       className="title"
                       data-animation="fadeInUp"
                       data-delay=".6s"
                     >
-                      servikal gloves
+                      გაწუხებთ სახსრების ტკივილი?
                     </h2>
                     <p data-animation="fadeInUp" data-delay=".9s">
-                      Get up to 50% off Today Only
+                    მიიღეთ 50%-იანი ფასდაკლება ართროზის საუკეთესო საშუალებებზე დღესვე.
                     </p>
-                    <a
+                    <Link to="/shop"
                       href="#footer"
                       className="btn"
                       data-animation="fadeInUp"
                       data-delay="1.2s"
                     >
-                      contact us
-                    </a>
+                      უფრო ვრცლად
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -72,37 +73,39 @@ class HomeHeroSlider extends React.Component {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="slider-content">
-                    <h4
+                    {/* <h4
                       className="sub-title"
                       data-animation="fadeInUp"
                       data-delay=".3s"
                     >
                       top <span>deal !</span>
-                    </h4>
+                    </h4> */}
                     <h2
                       className="title"
                       data-animation="fadeInUp"
                       data-delay=".6s"
                     >
-                      ONLINE PHARMACY
+                      არტერიული წნევის შესამცირებელი საშუალებები
                     </h2>
                     <p data-animation="fadeInUp" data-delay=".9s">
-                      Get up to 50% off Today Only
+                    მიიღეთ 100%-მდე ფასდაკლება მხოლოდ დღეს
                     </p>
-                    <a
+                    <Link to="/shop"
                       href="#footer"
                       className="btn"
                       data-animation="fadeInUp"
                       data-delay="1.2s"
                     >
-                      contact us
-                    </a>
+                      უფრო ვრცლად
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="single-slider slider-bg bg-3 d-flex align-items-center">
+
+
+          {/* <div className="single-slider slider-bg bg-3 d-flex align-items-center">
             <div className="container container-inner">
               <div className="row align-items-center">
                 <div className="col-lg-6">
@@ -171,7 +174,7 @@ class HomeHeroSlider extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </Slider>
       </section>
     );

@@ -1,58 +1,237 @@
-.body {
-    font-family: Arial, sans-serif;
-    background-image: url("./background.jpg");
-    /* Замените 'background.jpg' на URL вашего фонового изображения */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 15px;
-    min-height: 100vh;
+
+.thankyouBody {
+  font-family: Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: url("./images/body-bg.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.main {
+  padding: 0px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1290px;
+  padding: 0 10px;
 }
 
-  .header {
-    background-color: #333333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
+.thank .thank__bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 540px;
+  height: auto;
+}
+/* текст дякую! */
+.thank .container {
+  padding-top: 97px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 125px;
+}
 
-  .container-1 {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255,
-        255,
-        255,
-        0.8);
-    /* Чтобы сделать контейнер полупрозрачным */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin-top: 20px;
-  }
+.thank .thank__text {
+  position: relative;
+  z-index: 2;
+  max-width: 770px;
+  color: #1c2e6d;
+}
 
-  .h1 {
-    font-size: 36px;
-    color: #333;
-  }
+.thank .thank__text .title {
+  margin-bottom: 33px;
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 97.74px;
+  color: #1c2e6d;
+}
 
-  .p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-  }
+.thank .thank__text .info {
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 46.55px;
+  color: #1c2e6d;
+}
+/* список оферів */
+.offers .offers__title {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  line-height: 57.5px;
+  margin-bottom: 70px;
+  text-shadow: 0 4px 5px #00000025;
+}
+.offers .offers__list {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 288px 288px 288px 288px;
+  grid-template-rows: 437px 437px 437px;
+  gap: 44px;
+}
 
-  .btn {
+.offers__listItem {
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 15px 15px #00000065;
+}
+.offers__listItem a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.offers__listItem a .link__top {
+  height: 287px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/card-bg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 5px;
+}
+.link__top img {
+  width: 190px;
+  height: auto;
+}
+.link__top span {
+  position: absolute;
+  display: block;
+  padding: 7px 34px;
+  background: #cc0000;
+  top: 19px;
+  right: 0px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.offers__listItem a .link__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 22px;
+  height: calc(100% - 287px);
+}
+.link__bottom h3 {
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1c2e6d !important;
+}
+.link__bottom h3 b {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 29px;
+}
+.link__bottom .price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.price .old-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  text-decoration: line-through;
+  color: #888888;
+}
+.price .newPrice {
+  font-size: 30px;
+  font-weight: 700;
+  color: #cc0000;
+}
+/* коментарі */
+.footer {
+  padding: 90px 0 130px 0;
+}
+.footer__title {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  line-height: 57.5px;
+  margin-bottom: 70px;
+  text-shadow: 0 4px 5px #00000025;
+}
+.footer__comments {
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 15px 15px #00000065;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 55px !important;
+}
+.footer__commentsItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px 19px 10px;
+}
+.footer__commentsItem:not(:last-child) {
+  margin-bottom: 19px;
+  border-bottom: 1px solid #2d2d2d;
+}
+.footer__commentsItem img {
+  margin-right: 35px;
+  width: 109px;
+  height: auto;
+}
+.footer__commentsItem .textBlock {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #575656;
+}
+.footer__commentsItem .textBlock span {
     display: inline-block;
-    background-color: #007acc;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 20px;
+  font-size: 25px;
+  line-height: 29px;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.pixelImg {
+  height: 1px;
+  width: 1px;
+}
+
+/* для надпису Дякую! */
+@media (max-width: 1100px) {
+  .main .thank .thank__bg {
+    display: none;
   }
-  .pixelImg {
-    height: 1px;
-    width: 1px;
+  .main .thank .container {
+    justify-content: center;
   }
+}
+/* офери grid */
+@media (max-width: 1235px) {
+  .offers .offers__list {
+    grid-template-columns: 288px 288px 288px;
+    grid-template-rows: 437px 437px 437px 437px;
+  }
+}
+@media (max-width: 920px) {
+  .offers .offers__list {
+    grid-template-columns: 288px 288px;
+    grid-template-rows: repeat(6, 437px);
+  }
+}
+@media (max-width: 620px) {
+  .offers .offers__list {
+    grid-template-columns: 288px;
+    grid-template-rows: repeat(12, 437px);
+  }
+}
