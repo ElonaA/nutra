@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./HomeOfferItem.css";
 
 //images
 import offer_1 from "../../../img/offers/1.png";
@@ -52,7 +53,7 @@ const HomeOfferItem = ({selectOffer, category, title, rating, old_price, discoun
         </div>
         <div className="shop-content">
           <span className="cat">{ category }</span>
-          <h5 className="title">
+          <h5 className="title offer-title">
             <a href="#">{ title }</a>
           </h5>
           <div className="shop-item-rating">

@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import styles from "./ThankYouPage.module.css";
 
 //images
-import womans_cs from "./images/женщины кц.png";
+import womans_cs from "./images/womans-bg.png";
 import prod_1 from "./images/prod-1-head hair.png";
-import prod_2 from "./images/prod-2-Сила пчелы.png";
+import prod_2 from "./images/prod-2-bee power.png";
 import prod_3 from "./images/prod-3-Fungizol.png";
 import prod_4 from "./images/prod-4-dash diet.jpg";
 import prod_5 from "./images/prod-5-Joint Balm.png";

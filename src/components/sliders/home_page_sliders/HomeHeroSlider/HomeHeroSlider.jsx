@@ -56,7 +56,7 @@ class HomeHeroSlider extends React.Component {
                     მიიღეთ 50%-იანი ფასდაკლება ართროზის საუკეთესო საშუალებებზე დღესვე.
                     </p>
                     <Link to="/shop"
-                      href="#footer"
+                      onClick = {() => this.props.selectCategory("სახსრების დაავადებები")}
                       className="btn"
                       data-animation="fadeInUp"
                       data-delay="1.2s"
@@ -91,7 +91,7 @@ class HomeHeroSlider extends React.Component {
                     მიიღეთ 100%-მდე ფასდაკლება მხოლოდ დღეს
                     </p>
                     <Link to="/shop"
-                      href="#footer"
+                      onClick = {() => this.props.selectCategory("ჰიპერტენზია")}
                       className="btn"
                       data-animation="fadeInUp"
                       data-delay="1.2s"

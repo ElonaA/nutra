@@ -3,7 +3,8 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
 import ShopOfferItem from "./ShopOfferItem/ShopOfferItem";
-// import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
+
 
 const Shop = (props) => {
 
@@ -51,12 +52,18 @@ const Shop = (props) => {
         key={item.id}
       />
     ));
-  }
+  };
+
+  //scroll to top
+  const ref = useRef(null);
+  useEffect(() => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  });
 
   return (
-    <div>
+    <div ref={ref}>
       <Header cancelOffersCategory={ props.cancelOffersCategory }/>
-      <main>
+      <main className="main-shop" ref={ref}>
         {/* shop-area-start*/}
         <div className="shop-area shop-inner-page pt-100 pb-100">
           <div className="container">
@@ -341,7 +348,7 @@ const Shop = (props) => {
         </div>
         {/* shop-area-end */}
       </main>
-      <Footer />
+      <Footer cancelOffersCategory={props.cancelOffersCategory}/>
     </div>
   );
 };

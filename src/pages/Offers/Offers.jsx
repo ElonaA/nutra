@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SimpleSlider from "../../components/sliders/offers_page_sliders/slick-carousel";
 // import Button from "../../components/inc-button";
 import Modal from "./Modal/Modal";
@@ -49,10 +49,17 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
      offerImg = offer_11
   } else if (offerID === 11) {
      offerImg = offer_12
-  }  
+  }
+  
+  //scroll to top
+  const ref = useRef(null);
+  useEffect(() => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  });
+
 
   return (
-    <div>
+    <div ref={ref}>
       <Header cancelOffersCategory={cancelOffersCategory}/>
         <div className="container offers_container">
           <section className="product-content">
@@ -137,7 +144,7 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
                 <div className="product__info">
                   <p className="product__category">{offers[offerID].category}</p>
                   <h3 className="product__title">{offers[offerID].title}</h3>
-                  <p className="product__status">In stock</p>
+                  <p className="product__status">Საწყობში</p>
                   <p className="product__price">{offers[offerID].price}</p>
                   <p className="product__description">
                     <ul className="list">
@@ -158,7 +165,7 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
                       onClick={() => setModalActive(true)}
                       className="product__btn"
                     >
-                      Buy
+                      იყიდე
                       <span className="material-symbols-outlined btn-icon">
                         add
                       </span>
@@ -182,7 +189,7 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
                   
                   <li className="tabs__item">
                     <a className="tabs__link characteristics tabs__active">
-                    Information
+                    ინფორმაცია
                     </a>
                   </li>
 
@@ -197,7 +204,7 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
                   </p>
                 </div>
               </div>
-              <h2 className="slider__titile">Related Products</h2>
+              <h2 className="slider__titile">მსგავსი პროდუქტები</h2>
               <div className="slider__wrapper">
                 <SimpleSlider offers={ offers } selectOffer={ selectOffer }></SimpleSlider>
               </div>
@@ -205,7 +212,7 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
           </section>
         </div>
       
-      <Footer />
+      <Footer cancelOffersCategory={cancelOffersCategory}/>
     </div>
   );
 };

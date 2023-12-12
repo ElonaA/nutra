@@ -18,8 +18,8 @@ const Header = (props) => {
           <div className="menu-wrap">
             <nav className="menu-nav">
               <div className="row align-items-center">
-                <div className="col-lg-5 d-none d-lg-block">
-                  <div className="navbar-wrap main-menu d-none d-lg-flex">
+                <div className="col-lg-5 d-lg-block">
+                  <div className="navbar-wrap main-menu d-lg-flex"> 
                     <ul className="navigation">
                       <li>
                         <Link to="/">მთავარი</Link>
@@ -62,7 +62,7 @@ const Header = (props) => {
                             <span className="fas fa-angle-down"></span>
                           </div>
                         </li> */}
-                      <li className="active menu-item-has-children" onClick={() => props.cancelOffersCategory()}>
+                      <li className="menu-item-has-children" onClick={() => props.cancelOffersCategory()}>
                         <Link to="/shop">Მაღაზია</Link>
 
                         {/* тимчасово викнули - не видаляти! */}
@@ -94,7 +94,7 @@ const Header = (props) => {
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3">
+                <div className="">
                   <div className="logo">
                     <a href="#">
                       <img src={logo} alt="logo" />

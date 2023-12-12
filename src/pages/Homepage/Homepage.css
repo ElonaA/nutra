@@ -269,7 +269,7 @@
     margin-top: 17px;
 }
 .testimonial-item::before {
-    content: "\f10e";
+    /* content: "\f10e"; */
     position: absolute;
     right: 70px;
     top: 50px;

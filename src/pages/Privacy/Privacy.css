@@ -1,0 +1,11 @@
+.privacy-page {
+    padding: 120px 15px 40px 15px;
+}
+.privacy-page h2 {
+    display: none;
+}
+
+.privacy-page .first-list {
+    font-weight: 800;
+    margin-bottom: 20px;
+}

@@ -61,41 +61,41 @@ const Modal = ({ active, setActiv, offerTitle, offerFlow, pixel, subId, subId_2,
           <div className="close-btn__wrapper" onClick={() => setActiv(false)}>
             <span className="material-symbols-outlined close-btn">close</span>
           </div>
-          <h1 className="main-title">Order {offerTitle}</h1>
+          <h1 className="main-title">შეკვეთა {offerTitle}</h1>
         </div>
         <div className="form__container">
           <div className="left">
             <h2 className="form__title">
-              Fill out the fields bellow to recive prodduct
+            პროდუქტის მისაღებად შეავსეთ ქვემოთ მოცემული ველები
             </h2>
             <form className="form" onSubmit={ handleSubmit }>
               
               <label className="form__label" for="name">
-                Name
+              სახელი
               </label>
               <input
                 name="name"
                 id="name"
                 className="form__input"
-                placeholder="Enter your name"
+                placeholder="შეიყვანეთ თქვენი სახელი"
                 value={formData.name}
                 onChange={handleChange}
                 required
               ></input>
 
               <label className="form__label" for="phone">
-                Phone
+              ტელეფონი
               </label>
               <input
                 name="phone"
                 id="phone"
                 className="form__input"
-                placeholder="Enter your phone"
+                placeholder="შეიყვანეთ თქვენი ტელეფონი: +995 ..."
                 value={formData.phone}
                 onChange={handleChange}
                 required
               ></input>
-              <button className="form__submit">Buy</button>
+              <button className="form__submit">იყიდე</button>
             </form>
           </div>
 

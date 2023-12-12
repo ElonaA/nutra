@@ -1,9 +1,13 @@
+import "./Footer.css";
+
+//images
 import delivery from "../../img/delivery.png";
 import return1 from "../../img/return.png";
 import headphone from "../../img/headphone.png";
-// import gp from "../../img/gp.png";
-// import as from "../../img/as.png";
-import card from "../../img/card.png"; 
+import card_1 from "../../img/card.png";
+import card_2 from "../../img/card-2.jpg";
+import card_3 from "../../img/card-3.png";
+import { Link } from "react-router-dom";
 
 const Footer = (props) => {
   return (
@@ -18,10 +22,10 @@ const Footer = (props) => {
                   <img src={delivery} alt="" />
                 </div>
                 <div className="core-features-content">
-                  <h4 className="title">Home Delivery</h4>
-                  <p>
-                    Product Delivery is a customer-centric approach to defining.
-                  </p>
+                  <h4 className="title">
+                    მიწოდება მთელი საქართველოს მასშტაბით
+                  </h4>
+                  <p>თქვენ მიიღებთ თქვენს პროდუქტს რაც შეიძლება სწრაფად.</p>
                 </div>
               </div>
             </div>
@@ -31,9 +35,10 @@ const Footer = (props) => {
                   <img src={return1} alt="" />
                 </div>
                 <div className="core-features-content">
-                  <h4 className="title">Click and Pick</h4>
+                  <h4 className="title">სერტიფიცირებული პროდუქტები</h4>
                   <p>
-                    Product Delivery is a customer-centric approach to defining.
+                    ჩვენ არ გვაქვს ყალბი, მხოლოდ ხარისხის სერთიფიკატების მქონე
+                    პროდუქტები.
                   </p>
                 </div>
               </div>
@@ -44,10 +49,8 @@ const Footer = (props) => {
                   <img src={headphone} alt="" />
                 </div>
                 <div className="core-features-content">
-                  <h4 className="title">Quality Support</h4>
-                  <p>
-                    Product Delivery is a customer-centric approach to defining.
-                  </p>
+                  <h4 className="title">მხარდაჭერა</h4>
+                  <p>ჩვენ გაგიწევთ კონსულტაციას ნებისმიერ კითხვაზე.</p>
                 </div>
               </div>
             </div>
@@ -164,13 +167,13 @@ const Footer = (props) => {
           </div>
         </div>
       </div> */}
-      <div class="footer-top-wrap">
-        <div class="container">
-          <div class="row justify-content-between">
-            {/* <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                            <div class="footer-widget">
-                                <h4 class="fw-title">Know Us</h4>
-                                <div class="fw-link">
+      <div className="footer-top-wrap">
+        <div className="container">
+          <div className="row justify-content-between">
+            {/* <!-- <div className="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                            <div className="footer-widget">
+                                <h4 className="fw-title">Know Us</h4>
+                                <div className="fw-link">
                                     <ul>
                                         <li><a href="#">About Us</a></li>
                                         <li><a href="#">Contact Us</a></li>
@@ -182,16 +185,19 @@ const Footer = (props) => {
                                 </div>
                             </div>
                         </div> --> */}
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-              <div class="footer-widget">
-                <h4 class="fw-title">Our Policies</h4>
-                <div class="fw-link">
+            <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 widget-wrapper">
+              <div className="footer-widget">
+                <h4 className="fw-title">ჩვენი პოლიტიკა</h4>
+                <div className="fw-link">
                   <ul>
                     <li>
-                      <a href="#">Privacy Policy</a>
+                      <Link to="/terms">Ვადები და პირობები</Link>
                     </li>
                     <li>
-                      <a href="#">Terms and Conditions</a>
+                      <Link to="/privacy">Კონფიდენციალურობის პოლიტიკა</Link>
+                    </li>
+                    <li>
+                      <Link to="/cookie">ქუქიების პოლიტიკა</Link>
                     </li>
                     {/* <!-- <li><a href="#">Editorial Policy</a></li>
                                         <li><a href="#">Return Policy</a></li>
@@ -201,10 +207,10 @@ const Footer = (props) => {
                 </div>
               </div>
             </div>
-            {/* <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-                            <div class="footer-widget">
-                                <h4 class="fw-title">Our Services</h4>
-                                <div class="fw-link">
+            {/* <!-- <div className="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                            <div className="footer-widget">
+                                <h4 className="fw-title">Our Services</h4>
+                                <div className="fw-link">
                                     <ul>
                                         <li><a href="#">Order Medicines</a></li>
                                         <li><a href="#">Book Lab Tests</a></li>
@@ -216,28 +222,29 @@ const Footer = (props) => {
                                 </div>
                             </div>
                         </div> --> */}
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-              <div class="footer-widget">
-                <h4 class="fw-title">Subscribe Our Newsletter</h4>
-                <div class="f-newsletter">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div className="footer-widget">
+                <h4 className="fw-title">Subscribe Our Newsletter</h4>
+                <div className="f-newsletter">
                   <p>Get a free subscription to our health &amp; fitness</p>
-                  <form action="#" class="newsletter-form">
+                  <form action="#" className="newsletter-form">
                     <input type="text" placeholder="Enter Your Email Address" />
                     <button>
-                      <i class="fas fa-rocket"></i>
+                      <i className="fas fa-rocket"></i>
                     </button>
                   </form>
                 </div>
-                {/* <!-- <div class="fw-download-btn">
+                <!-- <div className="fw-download-btn">
                                     <a href="#"><img src="img/icon/download_btn01.png" alt=""></a>
                                     <a href="#"><img src="img/icon/download_btn02.png" alt=""></a>
-                                </div> --> */}
+                                </div> -->
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="container">
+
+      {/* <div className="container">
         <div className="footer-counter-wrap">
           <div className="row">
             <div className="col-12">
@@ -374,18 +381,28 @@ const Footer = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="copyright-area">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
+          <div className="row align-items-center copyright-wrapper" >
+            <div className="col-md-6 copyright-1">
               <div className="copyright-text">
-                <p>Copyright © 20221 Yed. All Rights Reserved</p>
+                {/* <p>Copyright © 20221 Yed. All Rights Reserved</p> */}
+                <p>საავტორო უფლება © 2021 Yed. Ყველა უფლება დაცულია</p>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="payment-method-img text-center text-md-right">
-                <img src={card} alt="" />
+            <div className="col-md-6 copyright-2">
+              <div className="payment-method-img text-center text-md-right" onClick={() => props.cancelOffersCategory()}>
+                <Link to="/shop" >
+                  <img src={card_1} alt="" />
+                </Link>
+                <Link to="/shop">
+                  <img src={card_2} alt="" />
+                </Link>
+                <Link to="/shop">
+                  <img src={card_3} alt="" />
+                </Link>
+                
               </div>
             </div>
           </div>

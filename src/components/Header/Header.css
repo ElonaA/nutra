@@ -9,15 +9,24 @@ header {
 }
 main {
     padding-top: 99px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
-/* ??? */
-.menu-wrap .menu-nav .row {
-    justify-content: flex-end;
+.menu-nav .row {
+    flex-wrap: nowrap;
 }
-
+.logo {
+    width: fit-content;
+}
 .logo a {
     padding-right: 0px;
     display: flex;
+    width: 87px;
+    height: auto;
     justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .menu-area {
+      padding: 0px;
+    }
 }

@@ -2,3 +2,7 @@
 .col-xl-4 {
     min-width: 100%;
 }
+.testimonial-item .testi-img img {
+    width: 100px;
+    height: 100px;
+}

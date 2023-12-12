@@ -56,13 +56,13 @@ const ShopOfferItem = ({selectOffer, category, title, rating, old_price, discoun
         <div className="shop-content">
           <span className="cat">{ category }</span>
           <h5 className="title">
-            <a href="shop-details.html">{ title }</a>
+            <a href="#">{ title }</a>
           </h5>
           <div className="shop-item-rating">
             <span className="avg-rating">
               { rating } <i className="far fa-star"></i>
             </span>
-            <span className="total-rating">349 Ratings</span>
+            <span className="total-rating">349 რეიტინგები</span>
           </div>
           <p className="shop-discount">
             <del>{ old_price }</del>
@@ -72,7 +72,7 @@ const ShopOfferItem = ({selectOffer, category, title, rating, old_price, discoun
             <ul>
               <li className="price">{ price }</li>
               <li className="add">
-                <a href="shop-details.html">ADD +</a>
+                <a href="#">დამატება +</a>
               </li>
             </ul>
           </div>

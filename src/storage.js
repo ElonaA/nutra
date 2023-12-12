@@ -15,7 +15,7 @@ export const storage = {
         "price": "0 GEL",
         "flow": "zuaOKEv4vc",
           "old_price": "14 GEL",
-          "discount": "100% OFF",
+          "discount": "100% ფასდაკლება",
           "rating": 3.2,
 
       },
@@ -33,7 +33,7 @@ export const storage = {
         "price": "0 GEL",
         "flow": "BvyflGJDpL",
         "old_price": "14 GEL",
-          "discount": "100% OFF",
+          "discount": "100% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -50,7 +50,7 @@ export const storage = {
         "price": "0 GEL",
         "flow": "L6iGswvz5J",
         "old_price": "30 GEL",
-          "discount": "100% OFF",
+          "discount": "100% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -67,7 +67,7 @@ export const storage = {
         "price": "7 GEL",
         "flow": "OKFSpG88fN",
         "old_price": "99 GEL",
-          "discount": "92% OFF",
+          "discount": "92% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -84,7 +84,7 @@ export const storage = {
         "price": "0 GEL",
         "flow": "7CngHkyYis",
         "old_price": "159.8 GEL",
-          "discount": "100% OFF",
+          "discount": "100% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -101,7 +101,7 @@ export const storage = {
         "price": "15 GEL",
         "flow": "5Zzt3ao2Tj",
         "old_price": "30 GEL",
-          "discount": "50% OFF",
+          "discount": "50% ფასდაკლება",
           "rating": 3.2,
       },
       {
@@ -118,7 +118,7 @@ export const storage = {
         "price": "15 GEL",
         "flow": "PmPFD5LrC3",
         "old_price": "15 GEL",
-          "discount": "50% OFF",
+          "discount": "50% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -135,7 +135,7 @@ export const storage = {
         "price": "15 GEL",
         "flow": "5RmkuLgVSf",
         "old_price": "100 GEL",
-          "discount": "75% OFF",
+          "discount": "75% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -152,7 +152,7 @@ export const storage = {
         "price": "15 GEL",
         "flow": "VdHM8MAwks",
         "old_price": "30 GEL",
-          "discount": "50% OFF",
+          "discount": "50% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -169,7 +169,7 @@ export const storage = {
         "price": "15 GEL",
         "flow": "LK8EjwWK5M",
         "old_price": "30 GEL",
-          "discount": "50% OFF",
+          "discount": "50% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -186,7 +186,7 @@ export const storage = {
         "price": "15 GEL",
         "flow": "ORiW8uweOT",
         "old_price": "30 GEL",
-          "discount": "50% OFF",
+          "discount": "50% ფასდაკლება",
           "rating": 4.5,
       },
       {
@@ -203,7 +203,7 @@ export const storage = {
         "price": "0 GEL",
         "flow": "wcVbdQjT8Q",
         "old_price": "30 GEL",
-          "discount": "100% OFF",
+          "discount": "100% ფასდაკლება",
           "rating": 4.5,
       }
     ]

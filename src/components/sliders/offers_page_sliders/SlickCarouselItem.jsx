@@ -57,12 +57,12 @@ const SlickCarouselItem = ({ category, title, price, img, id, selectOffer }) => 
             <h5 className="card__title">
               <a href="shop-details.html">{title}</a>
             </h5>
-            <p className="card__status">In stock</p>
+            <p className="card__status">Საწყობში</p>
             <div className="card__bottom">
               <ul className="card__buy">
                 <li className="price">{price}</li>
                 <li className="add">
-                  <a href="">ADD +</a>
+                  <a href="">დამატება +</a>
                 </li>
               </ul>
             </div>

@@ -182,7 +182,7 @@ const Homepage = (props) => {
             </div>
           </div>
         </section> */}
-        <HomeHeroSlider />
+        <HomeHeroSlider selectCategory={props.selectCategory}/>
         {/* <!-- slider-area-end--> */}
 
         {/* <!-- categories-area --> */}
@@ -538,7 +538,7 @@ const Homepage = (props) => {
         {/* на Shop page */}
         {/* shop-area-end */}
       </main>
-      <Footer />
+      <Footer cancelOffersCategory={props.cancelOffersCategory}/>
     </div>
   );
 };
