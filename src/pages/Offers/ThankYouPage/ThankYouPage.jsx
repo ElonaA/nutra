@@ -8,7 +8,7 @@ import prod_2 from "./images/prod-2-bee power.png";
 import prod_3 from "./images/prod-3-Fungizol.png";
 import prod_4 from "./images/prod-4-dash diet.jpg";
 import prod_5 from "./images/prod-5-Joint Balm.png";
-import prod_6 from "./images/prod-6-Сила пчелы.png";
+import prod_6 from "./images/prod-6-bee power.png";
 import prod_7 from "./images/prod-7-DM-NORM.jpg";
 import prod_8 from "./images/prod-8-Prostonix.jpg";
 import prod_9 from "./images/prod-9-Hyperton.jpg";
