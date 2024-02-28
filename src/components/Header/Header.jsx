@@ -2,19 +2,12 @@ import "./Header.css";
 
 import { Link } from "react-router-dom";
 import logo from "../../img/header/logo.png";
-// import cart from "../../img/header/cart.png";
-// import cart1 from "../../img/header/cart1.jpg";
-// import cart2 from "../../img/header/cart2.jpg";
 
 const Header = (props) => {
   return (
     <header>
       <div id="sticky-header" className="menu-area">
         <div className="container">
-          {/* тимчасово вимикаємо - бургер меню */}
-          {/* <div className="mobile-nav-toggler">
-            <i className="fas fa-bars"></i>
-          </div> */}
           <div className="menu-wrap">
             <nav className="menu-nav">
               <div className="row align-items-center">
@@ -96,9 +89,9 @@ const Header = (props) => {
                 </div>
                 <div className="">
                   <div className="logo">
-                    <a href="#">
+                    <span>
                       <img src={logo} alt="logo" />
-                    </a>
+                    </span>
                   </div>
                 </div>
                 <div className="col-lg-5 col-md-9">

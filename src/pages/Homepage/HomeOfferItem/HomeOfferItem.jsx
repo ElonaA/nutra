@@ -47,14 +47,14 @@ const HomeOfferItem = ({selectOffer, category, title, rating, old_price, discoun
       <Link to="/shop/offers">
       <div className="shop-item mb-60">
         <div className="shop-thumb">
-          <a href="#">
+          <span>
             <img src={ currentImage } alt="" />
-          </a>
+          </span>
         </div>
         <div className="shop-content">
           <span className="cat">{ category }</span>
           <h5 className="title offer-title">
-            <a href="#">{ title }</a>
+            <span>{ title }</span>
           </h5>
           <div className="shop-item-rating">
             <span className="avg-rating">
@@ -69,7 +69,7 @@ const HomeOfferItem = ({selectOffer, category, title, rating, old_price, discoun
             <ul>
               <li className="price">{ price }</li>
               <li className="add">
-                <a href="#">დამატება +</a>
+                <span>დამატება +</span>
               </li>
             </ul>
           </div>

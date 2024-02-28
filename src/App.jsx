@@ -1,21 +1,16 @@
-import "./App.css";
+import "./App.css"; //ВІДКЛЮЧАЄМО І ПЕРЕПИСУЄМО НА МОДУЛЬНІ ДЛЯ КОЖНОЇ КОМПОНЕНТИ!!!
+import "./style.css"; //ВІДКЛЮЧАЄМО І ПЕРЕПИСУЄМО НА МОДУЛЬНІ ДЛЯ КОЖНОЇ КОМПОНЕНТИ!!!
+import "./style_new/bootstrap.min.css"; //ВІДКЛЮЧАЄМО І ПЕРЕПИСУЄМО НА МОДУЛЬНІ ДЛЯ КОЖНОЇ КОМПОНЕНТИ!!! 
+import "./style_new/style-new.css"; //ВІДКЛЮЧАЄМО І ПЕРЕПИСУЄМО НА МОДУЛЬНІ ДЛЯ КОЖНОЇ КОМПОНЕНТИ!!! 
 
-// Діми файл
-import "./style.css";
-
-// додаткові - Я
-import "./style_new/bootstrap.min.css";
-import "./style_new/style-new.css";
 import { Routes, Route } from "react-router-dom";
 
 import Homepage from "./pages/Homepage/Homepage";
 import Offers from "./pages/Offers/Offers";
-// import Categories from "./pages/Categories";
 import NotFound from "./pages/404";
 import Modal from "./pages/Offers/Modal/Modal";
 import AdminPanel from "./pages/AdminPanel";
 import Shop from "./pages/Shop/Shop";
-// import About from "./pages/About/About";
 import { useEffect, useState } from "react";
 import ThankYouPage from "./pages/Offers/ThankYouPage/ThankYouPage";
 import Terms from "./pages/Terms/Terms";
@@ -131,8 +126,6 @@ function App(props) {
             />
           }
         />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/categories" element={<Categories />} /> */}
         <Route path="/modal" element={<Modal />} />
         <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="/thank-you" element={<ThankYouPage />} />

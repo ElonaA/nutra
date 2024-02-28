@@ -19,7 +19,7 @@ import offer_9 from "../../img/offers/9.png";
 import offer_10 from "../../img/offers/10.png";
 import offer_11 from "../../img/offers/11.png";
 import offer_12 from "../../img/offers/12.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, cancelOffersCategory }) => {
   const [modalActive, setModalActive] = useState(false);
@@ -64,82 +64,10 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
         <div className="container offers_container">
           <section className="product-content">
 
-            {/* тимчасово прибрали - не видаляти! */}
-            {/* <div className="content__left">
-              <div className="search">
-                <form className="search__form">
-                  <input
-                    className="search__input"
-                    type="text"
-                    placeholder="Search..."
-                  ></input>
-                  <button type="submit" className="search__btn">
-                    <span className="material-symbols-outlined">search</span>
-                  </button>
-                </form>
-              </div>
-              <h2 className="section__title">Category</h2>
-              <ul className="category__list">
-                <li className="category__item">
-                  <a className="category__link" href="#">
-                    1 category
-                  </a>
-                  <span className="material-symbols-outlined add-icon">
-                    add
-                  </span>
-                </li>
-                <li className="category__item">
-                  <a className="category__link" href="#">
-                    2 category
-                  </a>
-                  <span className="material-symbols-outlined add-icon">
-                    add
-                  </span>
-                </li>
-                <li className="category__item">
-                  <a className="category__link" href="#">
-                    3 category
-                  </a>
-                  <span className="material-symbols-outlined add-icon">
-                    add
-                  </span>
-                </li>
-                <li className="category__item">
-                  <a className="category__link" href="#">
-                    4 category
-                  </a>
-                  <span className="material-symbols-outlined add-icon">
-                    add
-                  </span>
-                </li>
-                <li className="category__item">
-                  <a className="category__link" href="#">
-                    5 category
-                  </a>
-                  <span className="material-symbols-outlined add-icon">
-                    add
-                  </span>
-                </li>
-                <li className="category__item">
-                  <a className="category__link" href="#">
-                    6 category
-                  </a>
-                  <span className="material-symbols-outlined add-icon">
-                    add
-                  </span>
-                </li>
-              </ul>
-
-              <h2 className="section__title">Contacts</h2>
-              <ul className="contact__list">
-                <li className="contact__item">Campany: </li>
-                <li className="contact__item">E-mail: </li>
-              </ul>
-            </div> */}
             <div className="content__right">
               <div className="product">
                 <div className="product__gallery">
-                  <img className="product__img" src={ offerImg }></img>
+                  <img className="product__img" alt="product-card" src={ offerImg }></img>
                 </div>
                 <div className="product__info">
                   <p className="product__category">{offers[offerID].category}</p>
@@ -156,11 +84,7 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
                   </p>
                   <div className="product__order">
 
-                    {/* тимчасово вимкнули - не видаляти! */}
-                    {/* <div className="product__quantity">
-                      <p className="quantity__text">Quantity:</p>
-                      <Button></Button>
-                    </div> */}
+                    
                     <button
                       onClick={() => setModalActive(true)}
                       className="product__btn"
@@ -188,15 +112,11 @@ const Offers = ({ offers, offerID, selectOffer, pixel, subId, subId_2, subId_3, 
                 <ul className="tabs">
                   
                   <li className="tabs__item">
-                    <a className="tabs__link characteristics tabs__active">
+                    <span className="tabs__link characteristics tabs__active">
                     ინფორმაცია
-                    </a>
+                    </span>
                   </li>
 
-                  {/* тимчасово - вимкнутий */}
-                  {/* <li className="tabs__item">
-                    <a className="tabs__link information">Order information</a>
-                  </li> */}
                 </ul>
                 <div className="tabs__content">
                   <p className="tabs__text">

@@ -49,7 +49,7 @@ const SlickCarouselItem = ({ category, title, price, img, id, selectOffer }) => 
         <div className="product__card">
           <div className="product__top">
             <div>
-              <img className="product__photo" src={ currentImage } />
+              <img className="product__photo" alt="offer" src={ currentImage } />
             </div>
           </div>
           <div className="card__content">
@@ -62,7 +62,7 @@ const SlickCarouselItem = ({ category, title, price, img, id, selectOffer }) => 
               <ul className="card__buy">
                 <li className="price">{price}</li>
                 <li className="add">
-                  <a href="">დამატება +</a>
+                  <span>დამატება +</span>
                 </li>
               </ul>
             </div>

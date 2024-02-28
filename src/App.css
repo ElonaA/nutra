@@ -597,7 +597,7 @@ header,
 .right {
   display: flex;
   justify-content: right;
-  align-items: end;
+  align-items: flex-end;
   position: relative;
   z-index: 1;
 }
@@ -608,8 +608,8 @@ header,
   width: 550px;
   height: 540px;
   display: flex;
-  justify-content: end;
-  align-items: start;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .close-btn__wrapper {
